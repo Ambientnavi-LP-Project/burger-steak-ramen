@@ -1263,6 +1263,9 @@ section.halal { padding: 130px 0; background: var(--paper-warm); position: relat
   top: 100px;
 }
 .access-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+/* 地図を隠したとき（hideGoogleLinks）はグリッドを1カラムにして左情報が間延びしないようにする */
+.access-grid.is-map-hidden { grid-template-columns: 1fr; max-width: 640px; }
+.access-grid.is-map-hidden .access-map { display: none; }
 
 /* ============ FAQ ============ */
 .faq { padding: 110px 0; background: var(--paper); }
@@ -1886,11 +1889,11 @@ footer {
       <div class="menu-hero-content">
         <span class="menu-hero-tag">SIGNATURE</span>
         <h3>
-          <span>100% Wagyu Steak — Platinum / Gold (300g)</span>
+          <span>100% Wagyu Steak — Platinum 200g / Gold 300g</span>
         </h3>
         <p>
           <span>Hand-selected and seasoned only with salt and pepper. Choose from</span>
-          <strong style="color:#cfcfcf;">Platinum 300g</strong>
+          <strong style="color:#cfcfcf;">Platinum 200g</strong>
           <span>or</span>
           <strong style="color:#c4a06a;">Gold 300g</strong>
           <span>.</span>
@@ -1977,7 +1980,7 @@ footer {
               <span class="tier gold">GOLD</span>
             </div>
             <div class="fm-card-name">
-              100% Japanese Wagyu Steak — Platinum / Gold (300g)
+              100% Japanese Wagyu Steak — Platinum 200g / Gold 300g
             </div>
             <div class="fm-card-meta">
             </div>
@@ -2155,6 +2158,58 @@ footer {
   </div>
 </section>
 
+<!-- ============ REVIEWS ============ -->
+<section class="reviews">
+  <div class="container">
+    <div class="reviews-header reveal">
+      <div class="eyebrow">GUEST REVIEWS</div>
+      <div class="reviews-score">4.8<span class="out">/ 5</span></div>
+      <div class="reviews-stars">★★★★★</div>
+      <div class="reviews-count"><span>Based on 1,000+ Google Reviews</span></div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <span class="quote-mark">"</span>
+        <div class="review-quote">Best Wagyu burger in Tokyo. Period.</div>
+        <div class="review-author">
+          <div class="review-flag">UK</div>
+          <div>
+            <div class="review-name">Sarah K.</div>
+            <div class="review-loc">London</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <span class="quote-mark">"</span>
+        <div class="review-quote">Finally, a Muslim-friendly place that actually feels special.</div>
+        <div class="review-author">
+          <div class="review-flag">MY</div>
+          <div>
+            <div class="review-name">Ahmad R.</div>
+            <div class="review-loc">Kuala Lumpur</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <span class="quote-mark">"</span>
+        <div class="review-quote">We came for the Skytree, stayed for the steak.</div>
+        <div class="review-author">
+          <div class="review-flag">IN</div>
+          <div>
+            <div class="review-name">Priya P.</div>
+            <div class="review-loc">Mumbai</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-cta reveal" data-store-hide="hideGoogleLinks">
+      <a href="#" data-store-attr="mapPlaceUrl:href" target="_blank" rel="noopener noreferrer">Read more on Google →</a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ FROM MIYAZAKI ============ -->
 <section class="farm light-section">
   <div class="container farm-inner">
@@ -2282,58 +2337,6 @@ footer {
   </div>
 </section>
 
-<!-- ============ REVIEWS ============ -->
-<section class="reviews">
-  <div class="container">
-    <div class="reviews-header reveal">
-      <div class="eyebrow">GUEST REVIEWS</div>
-      <div class="reviews-score">4.8<span class="out">/ 5</span></div>
-      <div class="reviews-stars">★★★★★</div>
-      <div class="reviews-count"><span>Based on 1,000+ Google Reviews</span></div>
-    </div>
-    <div class="reviews-grid">
-      <div class="review-card reveal">
-        <span class="quote-mark">"</span>
-        <div class="review-quote">Best Wagyu burger in Tokyo. Period.</div>
-        <div class="review-author">
-          <div class="review-flag">UK</div>
-          <div>
-            <div class="review-name">Sarah K.</div>
-            <div class="review-loc">London</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="review-card reveal">
-        <span class="quote-mark">"</span>
-        <div class="review-quote">Finally, a Muslim-friendly place that actually feels special.</div>
-        <div class="review-author">
-          <div class="review-flag">MY</div>
-          <div>
-            <div class="review-name">Ahmad R.</div>
-            <div class="review-loc">Kuala Lumpur</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="review-card reveal">
-        <span class="quote-mark">"</span>
-        <div class="review-quote">We came for the Skytree, stayed for the steak.</div>
-        <div class="review-author">
-          <div class="review-flag">IN</div>
-          <div>
-            <div class="review-name">Priya P.</div>
-            <div class="review-loc">Mumbai</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="reviews-cta reveal">
-      <a href="#" data-store-attr="mapPlaceUrl:href" target="_blank" rel="noopener noreferrer">Read more on Google →</a>
-    </div>
-  </div>
-</section>
-
 <!-- ============ ACCESS ============ -->
 <section class="access light-section">
   <div class="container">
@@ -2378,7 +2381,7 @@ footer {
         </div>
       </div>
 
-      <div class="access-map reveal">
+      <div class="access-map reveal" data-store-hide="hideGoogleLinks">
         <iframe
           data-store-attr="mapEmbedUrl:src"
           src="https://www.google.com/maps?q=1-13-1+Narihira,+Sumida+City,+Tokyo&output=embed"
@@ -2617,9 +2620,10 @@ footer {
   if (!modal) return;
   if (sessionStorage.getItem('exitShown')) return;
   if (window.matchMedia('(hover: none)').matches) return;
+  // 開いてから 20 秒間は exit-intent を無効化（誤発火防止＋閲覧時間の確保）
   const startTime = Date.now();
   function onLeave(e) {
-    if (Date.now() - startTime < 3000) return;
+    if (Date.now() - startTime < 20000) return;
     if (e.clientY > 0) return;
     if (sessionStorage.getItem('exitShown')) return;
     sessionStorage.setItem('exitShown', '1');

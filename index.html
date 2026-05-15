@@ -4,12 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962 | Muslim-Friendly, 5 min from Tokyo Skytree</title>
-<meta name="description" content="Real Japanese Wagyu, prepared the Muslim-friendly way. Five minutes from Tokyo Skytree. Five generations of family-run wagyu farming since 1962. No pork, no alcohol — steak, burgers, ramen.">
+<meta name="description" content="Real Japanese Wagyu, prepared the Muslim-friendly way. Five minutes from Tokyo Skytree. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.">
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Preload key above-the-fold images (hero first slide + signature menu backgrounds) -->
+<link rel="preload" as="image" href="image/steak/Wagyu%20Steak.jpg">
+<link rel="preload" as="image" href="image/ramen/ramen.jpg">
+<link rel="preload" as="image" href="image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg">
 
 <!-- Stylesheet -->
 <style>
@@ -173,15 +177,23 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.85;
+  opacity: 1;
 }
+.hero-slideshow { position: absolute; inset: 0; }
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.6s ease-in-out;
+}
+.hero-slide.is-active { opacity: 1; }
 .hero-media::after {
   content: '';
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(10,8,7,0.92) 0%, rgba(10,8,7,0.55) 40%, rgba(10,8,7,0.2) 70%, rgba(10,8,7,0.5) 100%),
-    linear-gradient(180deg, rgba(10,8,7,0.4) 0%, transparent 30%, rgba(10,8,7,0.6) 100%);
+    linear-gradient(90deg, rgba(10,8,7,0.78) 0%, rgba(10,8,7,0.34) 45%, rgba(10,8,7,0.12) 72%, rgba(10,8,7,0.32) 100%),
+    linear-gradient(180deg, rgba(10,8,7,0.25) 0%, transparent 35%, rgba(10,8,7,0.45) 100%);
 }
 .hero-content { position: relative; z-index: 2; padding: 120px 0 60px; width: 100%; }
 .hero-eyebrow { color: rgba(245, 241, 234, 0.75); margin-bottom: 28px; }
@@ -1223,6 +1235,24 @@ section.halal { padding: 130px 0; background: var(--paper-warm); position: relat
   font-weight: 500;
   letter-spacing: 0.05em;
 }
+.access-amenities { list-style: none; }
+.access-amenities li {
+  position: relative;
+  padding: 7px 0 7px 22px;
+  font-size: 15px;
+  color: var(--light-ink);
+  line-height: 1.6;
+}
+.access-amenities li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 15px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--light-gold);
+}
 .access-map {
   background: var(--light-paper-warm);
   min-height: 480px;
@@ -1608,7 +1638,7 @@ footer {
   .hero { min-height: 92vh; }
   .hero-content { padding: 100px 20px 50px; }
   .hero-media::after {
-    background: linear-gradient(180deg, rgba(10,8,7,0.55) 0%, rgba(10,8,7,0.8) 100%);
+    background: linear-gradient(180deg, rgba(10,8,7,0.35) 0%, rgba(10,8,7,0.62) 100%);
   }
   .hero-sub { font-size: 17px; margin-bottom: 28px; }
   .hero-ctas { gap: 12px; }
@@ -1670,6 +1700,17 @@ footer {
   }
   .menu-hero-content { padding: 50px 28px; max-width: 100%; }
   .menu-grid { grid-template-columns: 1fr; gap: 18px; }
+
+  /* OUR ROOTS stats: stack vertically on mobile (was cramped 3-col) */
+  .farm-points { grid-template-columns: 1fr; }
+  .farm-point {
+    padding: 26px 20px;
+    border-right: none;
+    border-bottom: 1px solid var(--light-line);
+  }
+  .farm-point:last-child { border-bottom: none; }
+  .farm-point-num { margin-bottom: 8px; }
+  .farm-point-desc { font-size: 14px; max-width: 320px; margin: 0 auto; }
 
   .full-menu { padding: 70px 0; }
   .full-menu-header { margin-bottom: 36px; }
@@ -1765,13 +1806,13 @@ footer {
 <!-- ============ FV ============ -->
 <section class="hero">
   <div class="hero-media">
-    <!-- When the video is ready, uncomment below and place image/hero.mp4 -->
-    <!--
-    <video autoplay muted loop playsinline poster="image/steak/Wagyu%20Steak.jpg">
-      <source src="image/hero.mp4" type="video/mp4">
-    </video>
-    -->
-    <img src="image/steak/Wagyu%20Steak.jpg" alt="Muslim-friendly Japanese Wagyu steak served at Wagyu Beef (Halal) Steak Hamburger &amp; Ramen Skytree Restaurant 5W-Tokyo" fetchpriority="high">
+    <div class="hero-slideshow">
+      <img class="hero-slide is-active" src="image/steak/Wagyu%20Steak.jpg" alt="Halal Japanese Wagyu steak at Wagyu Beef (Halal) Steak Hamburger &amp; Ramen Skytree Restaurant 5W-Tokyo" fetchpriority="high">
+      <img class="hero-slide" src="image/burger/Wagyu%20Big%20Cheese%20Burger.jpg" alt="Wagyu big cheese burger" loading="lazy">
+      <img class="hero-slide" src="image/ramen/ramen.jpg" alt="100% Wagyu ramen" loading="lazy">
+      <img class="hero-slide" src="image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg" alt="Wagyu cheese burger and steak rice bowl combo" loading="lazy">
+      <img class="hero-slide" src="image/pasture/cow2.jpg" alt="Our own wagyu cattle, raised from birth" loading="lazy">
+    </div>
   </div>
   <div class="container hero-content">
     <div class="eyebrow hero-eyebrow">MUSLIM-FRIENDLY · 100% JAPANESE WAGYU · SINCE 1962</div>
@@ -1833,7 +1874,7 @@ footer {
         <span>Three tastes of </span><span class="accent">real Wagyu.</span>
       </h2>
       <p>
-        <span>From our signature steak to wagyu ramen and a combo of everything — all from a family of wagyu farmers, all pork-free and alcohol-free.</span>
+        <span>From our signature steak to wagyu ramen and a combo of everything — all raised and prepared by us, all pork-free and alcohol-free.</span>
       </p>
     </div>
 
@@ -1846,12 +1887,11 @@ footer {
           <span>100% Wagyu Steak — Platinum / Gold (300g)</span>
         </h3>
         <p>
-          <span>Hand-selected by our 5th-generation owner, seasoned only with salt and pepper. Choose from</span>
+          <span>Hand-selected and seasoned only with salt and pepper. Choose from</span>
           <strong style="color:#cfcfcf;">Platinum 300g</strong>
-          <span>(tenderloin, sirloin, ribeye)</span>
           <span>or</span>
           <strong style="color:#c4a06a;">Gold 300g</strong>
-          <span>(rump, sirloin cap, shoulder loin).</span>
+          <span>.</span>
         </p>
       </div>
     </div>
@@ -1938,8 +1978,6 @@ footer {
               100% Japanese Wagyu Steak — Platinum / Gold (300g)
             </div>
             <div class="fm-card-meta">
-              <strong>Platinum</strong>: tenderloin, sirloin, ribeye<br>
-              <strong>Gold</strong>: rump, sirloin cap, shoulder loin
             </div>
           </div>
         </div>
@@ -2082,20 +2120,20 @@ footer {
         <span>From our pasture, to your plate.</span>
       </h2>
       <p>
-        <span>Five generations of Wagyu farmers, in one family. Since 1962, we've raised our own cattle in Miyazaki. Today, we cook them ourselves — here, in Tokyo. Most "wagyu" outside Japan isn't really ours. This is.</span>
+        <span>Since 1962, we've raised our own cattle in Miyazaki and prepared every cut ourselves — here, in Tokyo. Fully vertically integrated, with no middlemen. Most "wagyu" outside Japan isn't really ours. This is.</span>
       </p>
     </div>
 
     <div class="promise-gallery">
       <div class="promise-photo reveal">
-        <img src="image/steak/Wagyu%20Steak.jpg" alt="100% Japanese Wagyu Steak hand-selected by our 5th-generation owner" loading="lazy">
+        <img src="image/steak/Wagyu%20Steak.jpg" alt="100% Japanese Wagyu Steak, raised and prepared in-house">
         <div class="caption">100% Japanese Wagyu Steak</div>
       </div>
       <div class="promise-photo is-video reveal">
         <video
           src="movie/burger.mp4"
           poster="image/burger/Wagyu%20Cheese%20Burger.jpg"
-          autoplay muted loop playsinline preload="metadata"
+          muted loop playsinline preload="none"
           aria-label="Muslim-friendly wagyu burger with cheese and house-made sauce">
         </video>
         <div class="caption">Muslim-Friendly Wagyu Burger</div>
@@ -2104,7 +2142,7 @@ footer {
         <video
           src="movie/ramen.mp4"
           poster="image/ramen/ramen.jpg"
-          autoplay muted loop playsinline preload="metadata"
+          muted loop playsinline preload="none"
           aria-label="Steaming bowl of wagyu ramen">
         </video>
         <div class="caption">Wagyu Ramen</div>
@@ -2121,21 +2159,21 @@ footer {
     <div class="farm-header reveal">
       <div class="eyebrow">OUR ROOTS</div>
       <h2>
-        <span>One family. </span>
-        <span class="accent">Five generations.</span>
+        <span>One source. </span>
+        <span class="accent">Every step our own.</span>
       </h2>
     </div>
 
     <div class="farm-visual reveal">
-      <img src="image/pasture/cow2.jpg" alt="Our 5th-generation owner at the family farm in Miyazaki" loading="lazy">
-      <div class="caption"><strong>OUR FARM</strong>Miyazaki — where our 5th generation still walks the pasture</div>
+      <img src="image/pasture/cow2.jpg" alt="Our own wagyu farm in Miyazaki" loading="lazy">
+      <div class="caption"><strong>OUR FARM</strong>Miyazaki — our own cattle, raised from birth</div>
     </div>
 
     <div class="farm-points reveal">
       <div class="farm-point">
         <div class="farm-point-num en-place">Miyazaki</div>
         <div class="farm-point-label">OWN FARM</div>
-        <div class="farm-point-desc">Raised on our family farm in Miyazaki, the heart of wagyu country.</div>
+        <div class="farm-point-desc">Raised on our own farm in Miyazaki, the heart of wagyu country.</div>
       </div>
       <div class="farm-point">
         <div class="farm-point-num">1<span style="font-size:0.5em; letter-spacing:0; margin-left:4px;">cow</span></div>
@@ -2145,13 +2183,13 @@ footer {
       <div class="farm-point">
         <div class="farm-point-num jp">0</div>
         <div class="farm-point-label">MIDDLEMEN</div>
-        <div class="farm-point-desc">No middlemen — our own family, from farm to kitchen.</div>
+        <div class="farm-point-desc">No middlemen — we control every step, from farm to kitchen.</div>
       </div>
     </div>
 
     <div class="farm-body reveal">
       <p>The taste of wagyu, they say, <strong>is decided the moment a calf is born.</strong></p>
-      <p>Our 5th-generation owner walks the pasture himself, judges the bloodlines, and raises every cow with care. Because we control every step — from birth, to butcher, to plate — we serve "real wagyu" with quiet confidence.</p>
+      <p>We raise our own cattle, judge the bloodlines, and prepare every cut with care. Because we control every step — from birth, to butcher, to plate — we serve "real wagyu" with quiet confidence.</p>
     </div>
   </div>
 </section>
@@ -2190,7 +2228,7 @@ footer {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
         </div>
         <h3>Farm to Table</h3>
-        <p>Five generations of wagyu farming — every step, our own.</p>
+        <p>Fully integrated wagyu — every step, our own.</p>
       </div>
       <div class="halal-item reveal">
         <div class="halal-icon">
@@ -2211,7 +2249,7 @@ footer {
     <details class="halal-details">
       <summary>Learn more about our Muslim-friendly practice</summary>
       <div class="halal-details-content">
-        Since 1962, our family has handled wagyu — from the pasture to the plate. Welcoming Muslim guests is no exception: we built our practice from the source, generation by generation.<br><br>
+        Since 1962, we've handled wagyu ourselves — from the pasture to the plate. Welcoming Muslim guests is no exception: we built our practice from the source, every step our own.<br><br>
         Our kitchen was designed pork-free and alcohol-free from day one. <strong style="color:var(--ink);">Every item on our menu is prepared the same way</strong>. Alcohol is not used, even in sauces.<br><br>
         Our staff are trained to answer any question about ingredients or preparation. Whether you're dining with family, observing religious practice, or simply seeking clean and trusted food — we're here for you.<br><br>
         <em style="color: var(--gold-pale);">Please note: We are not officially halal-certified. We invite you to ask any questions about our ingredients and kitchen practices.</em>
@@ -2226,7 +2264,7 @@ footer {
     <video
       src="movie/shinjuku_interior_exterior.mp4"
       poster="image/interior-exterior-poster.jpg"
-      autoplay muted loop playsinline preload="metadata"
+      muted loop playsinline preload="none"
       aria-hidden="true"></video>
   </div>
   <div class="why-overlay"></div>
@@ -2241,7 +2279,7 @@ footer {
       <div class="why-item reveal">
         <div class="why-num">1962</div>
         <div class="why-label">SINCE</div>
-        <div class="why-desc">Five generations of family-run Wagyu farming.</div>
+        <div class="why-desc">Vertically integrated Wagyu — every step our own.</div>
       </div>
       <div class="why-item reveal">
         <div class="why-num">100<span class="small">%</span></div>
@@ -2302,7 +2340,7 @@ footer {
         <div class="review-author">
           <div class="review-flag">IN</div>
           <div>
-            <div class="review-name">The Patel Family</div>
+            <div class="review-name">Priya P.</div>
             <div class="review-loc">Mumbai</div>
           </div>
         </div>
@@ -2345,6 +2383,22 @@ footer {
           <div class="access-block-label">Hours</div>
           <p>11:00 – 22:00 · Open daily</p>
         </div>
+
+        <div class="access-block">
+          <div class="access-block-label">Seats</div>
+          <p>16 seats (no private rooms)</p>
+        </div>
+
+        <div class="access-block">
+          <div class="access-block-label">Good to Know</div>
+          <ul class="access-amenities">
+            <li>Halal-friendly menu available</li>
+            <li>Takeout available</li>
+            <li>Child-friendly / Stroller accessible</li>
+            <li>Free Wi-Fi available</li>
+            <li>Non-smoking</li>
+          </ul>
+        </div>
       </div>
 
       <div class="access-map reveal">
@@ -2371,7 +2425,7 @@ footer {
       <div class="faq-list">
         <div class="faq-item reveal">
           <div class="faq-q">Is everything pork-free and alcohol-free?</div>
-          <div class="faq-a">Yes — every dish, every ingredient, every step. As <strong style="color:var(--ink);font-weight:600;">5 generations of wagyu farmers</strong>, we control the practice from the source: cattle in Miyazaki, processing, and our pork-free, alcohol-free kitchen in Tokyo. <strong style="color:var(--ink);font-weight:600;">Every item on our menu is Muslim-friendly.</strong> Alcohol is never used, even in sauces. <em style="color:var(--ink-soft);">Please note: we are not officially halal-certified.</em></div>
+          <div class="faq-a">Yes — every dish, every ingredient, every step. As a <strong style="color:var(--ink);font-weight:600;">fully vertically integrated wagyu operation</strong>, we control the practice from the source: cattle in Miyazaki, processing, and our pork-free, alcohol-free kitchen in Tokyo. <strong style="color:var(--ink);font-weight:600;">Every item on our menu is Muslim-friendly.</strong> Alcohol is never used, even in sauces. <em style="color:var(--ink-soft);">Please note: we are not officially halal-certified.</em></div>
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Do you have English-speaking staff?</div>
@@ -2432,7 +2486,7 @@ footer {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         <span>Email us</span>
       </a>
-      <a href="#" target="_blank" class="final-channel">
+      <a href="https://www.instagram.com/5w_tokyo_official/" target="_blank" rel="noopener" class="final-channel">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         <span>Instagram DM</span>
       </a>
@@ -2471,7 +2525,7 @@ footer {
       <span>Save your seat </span><span class="accent">for tonight.</span>
     </div>
     <div class="exit-modal-body">
-      <span>Five generations. One precious meal. Five minutes from Skytree.</span>
+      <span>Our own wagyu, every step. One precious meal. Five minutes from Skytree.</span>
     </div>
     <a href="https://www.tablecheck.com/shops/halal-ramen-skytree-5w-tokyo/reserve" target="_blank" rel="noopener" class="exit-modal-cta" onclick="closeExitModal()">Reserve Now →</a>
     <button type="button" class="exit-modal-skip" onclick="closeExitModal()">Maybe later</button>
@@ -2495,6 +2549,20 @@ footer {
 /* ============================================================
  * Wagyu Beef (Halal) Steak Hamburger & Ramen ... 5W-Tokyo 1962 - JavaScript
  * ============================================================ */
+
+// ============================================================
+// Hero slideshow (5 images, cross-fade)
+// ============================================================
+(function initHeroSlideshow() {
+  const slides = document.querySelectorAll('.hero-slide');
+  if (slides.length < 2) return;
+  let idx = 0;
+  setInterval(() => {
+    slides[idx].classList.remove('is-active');
+    idx = (idx + 1) % slides.length;
+    slides[idx].classList.add('is-active');
+  }, 4500);
+})();
 
 // ============================================================
 // Fade-in on scroll

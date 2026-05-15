@@ -1,0 +1,48 @@
+{
+  "stores": [
+    {
+      "permalink": "tokyo/oshiage",
+      "slug": "oshiage",
+      "region": "tokyo",
+      "category": "all",
+
+      "fullName": "Wagyu Beef (Halal) Steak Hamburger & Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962",
+      "landmark": "Tokyo Skytree",
+      "landmarkWalk": "5 min",
+
+      "title": "Wagyu Beef (Halal) Steak Hamburger & Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962 | Muslim-Friendly, 5 min from Tokyo Skytree",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. Five minutes from Tokyo Skytree. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+
+      "reserveUrl": "https://www.tablecheck.com/shops/halal-ramen-skytree-5w-tokyo/reserve",
+      "phone": "03-6658-5855",
+      "phoneHref": "tel:+81-3-6658-5855",
+
+      "hoursFull": "11:00 – 22:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 22:00",
+      "hoursOpenPillShort": "OPEN · 11–22",
+
+      "addressHtml": "1-13-1 Narihira, Sumida-ku<br>Tokyo 130-0002, Japan<br>Jukken Dai-8 High Place",
+
+      "seats": "16 seats (no private rooms)",
+
+      "storyBgImage": "",
+
+      "hideGoogleLinks": true,
+
+      "mapEmbedUrl": "https://www.google.com/maps?q=1-13-1+Narihira,+Sumida+City,+Tokyo&output=embed",
+      "mapPlaceUrl": "https://www.google.com/maps/place/Wagyu+Beef+(Halal)+Steak+Hamburger+%26+Ramen+(Japanese+food)+Skytree+Restaurant+5W-Tokyo+1962/@40.6653356,131.9685883,2069963m/data=!3m1!1e3!4m6!3m5!1s0x60188fc341bec67b:0xadef478a8a7aa949!8m2!3d35.7085313!4d139.8087789!16s%2Fg%2F11ygv71mg4!5m1!1e3",
+
+      "stations": [
+        { "name": "Tokyo Skytree Station", "line": "Tobu Skytree Line", "walk": "5 min walk" },
+        { "name": "Honjo-Azumabashi Station", "line": "Toei Asakusa Line, Exit A4", "walk": "7 min walk" },
+        { "name": "Oshiage Station", "line": "Hanzomon / Asakusa / Keisei / Tobu", "walk": "10 min walk" },
+        { "name": "Asakusa Station", "line": "Tsukuba Express", "walk": "15 min walk" },
+        { "name": "Kinshicho Station", "line": "JR Sobu / Hanzomon", "walk": "15–20 min walk" }
+      ]
+    }
+  ],
+
+  "defaults": {
+    "instagramUrl": "https://www.instagram.com/5w_tokyo_official/"
+  }
+}

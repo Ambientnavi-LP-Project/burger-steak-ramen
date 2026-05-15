@@ -10,10 +10,12 @@
 
 const STORES = {
 
-  /* ===================== 押上店 ===================== */
-  "oshiage": {
+  /* ===================== 押上店（東京・全業態） ===================== */
+  "tokyo/oshiage": {
     /* --- 基本情報 --- */
     slug: "oshiage",
+    region: "tokyo",          // 地域（東京 / 京都 / 大阪）。一覧ページや絞り込みで使用。
+    category: "all",          // 業態。全業態店は "all"、専門店は "burger" / "ramen" / "steak"
     // 正式店名（nav / promise mark / footer / コピーライトで使用）
     fullName: "Wagyu Beef (Halal) Steak Hamburger & Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962",
     // ランドマーク（旧「Tokyo Skytree」。各店ごとに変える変数）
@@ -44,8 +46,15 @@ const STORES = {
 
     /* --- why セクション背景画像 ---
        空文字 = 単色背景のまま。
-       店舗別の内装写真を使うときは "../image/oshiage/interior.jpg" のように指定する。 */
+       店舗別の内装写真を使うときは "/image/oshiage/interior.jpg" のように指定する。 */
     storyBgImage: "",
+
+    /* --- 表示制御フラグ ---
+       hideGoogleLinks: true にすると「Read more on Google」リンクと
+       ACCESS の地図(iframe)を非表示にする。
+       ※ 押上店は Google 側リンクが後で変わるため、今は一時的に非表示。
+         リンク確定後に false に戻せば（または行を消せば）再表示される。 */
+    hideGoogleLinks: true,
 
     /* --- Google マップ --- */
     // access セクションの埋め込み iframe 用
@@ -64,11 +73,21 @@ const STORES = {
   }
 
   /* ===================== 次の店舗はここに追記 =====================
-  ,"akihabara": {
+     キーは「地域/店名」（全業態店）または「地域/業態/店名」（専門店）のフルパス。
+     例:
+  ,"tokyo/akihabara": {
     slug: "akihabara",
+    region: "tokyo",
+    category: "all",
     fullName: "...",
     landmark: "Akihabara Electric Town",
     landmarkWalk: "3 min",
+    ...
+  }
+  ,"tokyo/burger/asakusa-shoutengai": {
+    slug: "asakusa-shoutengai",
+    region: "tokyo",
+    category: "burger",
     ...
   }
   ================================================================ */
@@ -77,12 +96,16 @@ const STORES = {
 
 /* ------------------------------------------------------------
  * 現在ページのスラッグ → 該当店舗データを返す
- * URL が /oshiage/ または /oshiage/index.html の形を想定。
+ * URL の例:
+ *   /tokyo/oshiage/                      → キー "tokyo/oshiage"
+ *   /tokyo/oshiage/index.html            → キー "tokyo/oshiage"
+ *   /kyoto/ramen/kawaramachi/            → キー "kyoto/ramen/kawaramachi"
+ * フォルダ構成（= URL のパス）をそのまま stores.js のキーとして照合する。
  * ------------------------------------------------------------ */
 function getCurrentStore() {
   const parts = window.location.pathname.split("/").filter(Boolean);
-  // 末尾が index.html ならその手前、そうでなければ末尾をスラッグとみなす
-  let slug = parts[parts.length - 1];
-  if (slug === "index.html") slug = parts[parts.length - 2];
-  return STORES[slug] || null;
+  // 末尾が index.html なら取り除く
+  if (parts[parts.length - 1] === "index.html") parts.pop();
+  const key = parts.join("/");
+  return STORES[key] || null;
 }

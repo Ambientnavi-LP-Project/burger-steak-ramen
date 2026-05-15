@@ -11,9 +11,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
 <!-- Preload key above-the-fold images (hero first slide + signature menu backgrounds) -->
-<link rel="preload" as="image" href="../image/steak/Wagyu%20Steak.jpg">
-<link rel="preload" as="image" href="../image/ramen/ramen.jpg">
-<link rel="preload" as="image" href="../image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg">
+<link rel="preload" as="image" href="/image/steak/Wagyu%20Steak.jpg">
+<link rel="preload" as="image" href="/image/ramen/ramen.jpg">
+<link rel="preload" as="image" href="/image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg">
 
 <!-- Stylesheet -->
 <style>
@@ -433,7 +433,7 @@ nav {
 .menu-hero-img {
   position: absolute;
   inset: 0;
-  background-image: url('../image/steak/Wagyu%20Steak.jpg');
+  background-image: url('/image/steak/Wagyu%20Steak.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -495,8 +495,8 @@ nav {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 .menu-card-img { height: 260px; background-size: cover; background-position: center; position: relative; }
-.menu-card-img.ramen  { background-image: url('../image/ramen/ramen.jpg'); }
-.menu-card-img.combo  { background-image: url('../image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg'); }
+.menu-card-img.ramen  { background-image: url('/image/ramen/ramen.jpg'); }
+.menu-card-img.combo  { background-image: url('/image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg'); }
 .menu-tag {
   position: absolute;
   top: 14px;
@@ -1263,6 +1263,9 @@ section.halal { padding: 130px 0; background: var(--paper-warm); position: relat
   top: 100px;
 }
 .access-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+/* 地図を隠したとき（hideGoogleLinks）はグリッドを1カラムにして左情報が間延びしないようにする */
+.access-grid.is-map-hidden { grid-template-columns: 1fr; max-width: 640px; }
+.access-grid.is-map-hidden .access-map { display: none; }
 
 /* ============ FAQ ============ */
 .faq { padding: 110px 0; background: var(--paper); }
@@ -1321,7 +1324,7 @@ section.halal { padding: 130px 0; background: var(--paper-warm); position: relat
   background-color: var(--paper);
   background-image:
     linear-gradient(180deg, rgba(10, 8, 7, 0.55) 0%, rgba(20, 8, 8, 0.4) 50%, rgba(10, 8, 7, 0.7) 100%),
-    url('../image/skytree-sakura.jpg');
+    url('/image/skytree-sakura.jpg');
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;
@@ -1809,11 +1812,11 @@ footer {
 <section class="hero">
   <div class="hero-media">
     <div class="hero-slideshow">
-      <img class="hero-slide is-active" src="../image/steak/Wagyu%20Steak.jpg" alt="Halal Japanese Wagyu steak" fetchpriority="high">
-      <img class="hero-slide" src="../image/burger/Wagyu%20Big%20Cheese%20Burger.jpg" alt="Wagyu big cheese burger" loading="lazy">
-      <img class="hero-slide" src="../image/ramen/ramen.jpg" alt="100% Wagyu ramen" loading="lazy">
-      <img class="hero-slide" src="../image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg" alt="Wagyu cheese burger and steak rice bowl combo" loading="lazy">
-      <img class="hero-slide" src="../image/steak/steak%20rice%20bowl.jpg" alt="Wagyu steak rice bowl" loading="lazy">
+      <img class="hero-slide is-active" src="/image/steak/Wagyu%20Steak.jpg" alt="Halal Japanese Wagyu steak" fetchpriority="high">
+      <img class="hero-slide" src="/image/burger/Wagyu%20Big%20Cheese%20Burger.jpg" alt="Wagyu big cheese burger" loading="lazy">
+      <img class="hero-slide" src="/image/ramen/ramen.jpg" alt="100% Wagyu ramen" loading="lazy">
+      <img class="hero-slide" src="/image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg" alt="Wagyu cheese burger and steak rice bowl combo" loading="lazy">
+      <img class="hero-slide" src="/image/steak/steak%20rice%20bowl.jpg" alt="Wagyu steak rice bowl" loading="lazy">
     </div>
   </div>
   <div class="container hero-content">
@@ -1886,11 +1889,11 @@ footer {
       <div class="menu-hero-content">
         <span class="menu-hero-tag">SIGNATURE</span>
         <h3>
-          <span>100% Wagyu Steak — Platinum / Gold (300g)</span>
+          <span>100% Wagyu Steak — Platinum 200g / Gold 300g</span>
         </h3>
         <p>
           <span>Hand-selected and seasoned only with salt and pepper. Choose from</span>
-          <strong style="color:#cfcfcf;">Platinum 300g</strong>
+          <strong style="color:#cfcfcf;">Platinum 200g</strong>
           <span>or</span>
           <strong style="color:#c4a06a;">Gold 300g</strong>
           <span>.</span>
@@ -1970,21 +1973,21 @@ footer {
     <div class="fm-panel is-active" data-panel="steak">
       <div class="fm-grid">
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('../image/steak/Wagyu%20Steak.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('/image/steak/Wagyu%20Steak.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-tier">
               <span class="tier platinum">PLATINUM</span>
               <span class="tier gold">GOLD</span>
             </div>
             <div class="fm-card-name">
-              100% Japanese Wagyu Steak — Platinum / Gold (300g)
+              100% Japanese Wagyu Steak — Platinum 200g / Gold 300g
             </div>
             <div class="fm-card-meta">
             </div>
           </div>
         </div>
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('../image/steak/steak%20rice%20bowl.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('/image/steak/steak%20rice%20bowl.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               100% Japanese Wagyu Steak Rice Bowl
@@ -2001,7 +2004,7 @@ footer {
     <div class="fm-panel" data-panel="burger">
       <div class="fm-grid">
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('../image/burger/Wagyu%20Big%20Cheese%20Burger.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('/image/burger/Wagyu%20Big%20Cheese%20Burger.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               100% Japanese Wagyu Big Cheese Burger
@@ -2012,7 +2015,7 @@ footer {
           </div>
         </div>
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('../image/burger/Wagyu%20Cheese%20Burger.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('/image/burger/Wagyu%20Cheese%20Burger.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               100% Japanese Wagyu Cheese Burger
@@ -2029,7 +2032,7 @@ footer {
     <div class="fm-panel" data-panel="ramen">
       <div class="fm-grid cols-1">
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('../image/ramen/ramen.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('/image/ramen/ramen.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-tier">
               <span class="tier platinum">PLATINUM</span>
@@ -2051,7 +2054,7 @@ footer {
     <div class="fm-panel" data-panel="combo">
       <div class="fm-grid cols-1">
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('../image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('/image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               Wagyu Cheese Burger + Steak Rice Bowl Combo
@@ -2062,7 +2065,7 @@ footer {
           </div>
         </div>
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('../image/combo/Truffle%20Cheese%20Burger%20%2B%20Platinum%20Steak%20combo.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('/image/combo/Truffle%20Cheese%20Burger%20%2B%20Platinum%20Steak%20combo.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               100% Japanese Wagyu Truffle Cheese Burger + Platinum Steak Combo
@@ -2073,7 +2076,7 @@ footer {
           </div>
         </div>
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('../image/combo/Ramen%20Gold%20%2B%20Steak%20Rice%20Bowl%20combo.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('/image/combo/Ramen%20Gold%20%2B%20Steak%20Rice%20Bowl%20combo.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               100% Japanese Wagyu Ramen Gold + Steak Rice Bowl Combo
@@ -2085,7 +2088,7 @@ footer {
           </div>
         </div>
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('../image/ramen/ramen%26shimofuri.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('/image/ramen/ramen%26shimofuri.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-tier">
               <span class="tier platinum">PLATINUM</span>
@@ -2128,13 +2131,13 @@ footer {
 
     <div class="promise-gallery">
       <div class="promise-photo reveal">
-        <img src="../image/steak/Wagyu%20Steak.jpg" alt="100% Japanese Wagyu Steak, raised and prepared in-house">
+        <img src="/image/steak/Wagyu%20Steak.jpg" alt="100% Japanese Wagyu Steak, raised and prepared in-house">
         <div class="caption">100% Japanese Wagyu Steak</div>
       </div>
       <div class="promise-photo is-video reveal">
         <video
-          src="../movie/burger.mp4"
-          poster="../image/burger/Wagyu%20Cheese%20Burger.jpg"
+          src="/movie/burger.mp4"
+          poster="/image/burger/Wagyu%20Cheese%20Burger.jpg"
           muted loop playsinline preload="none"
           aria-label="Muslim-friendly wagyu burger with cheese and house-made sauce">
         </video>
@@ -2142,8 +2145,8 @@ footer {
       </div>
       <div class="promise-photo is-video reveal">
         <video
-          src="../movie/ramen.mp4"
-          poster="../image/ramen/ramen.jpg"
+          src="/movie/ramen.mp4"
+          poster="/image/ramen/ramen.jpg"
           muted loop playsinline preload="none"
           aria-label="Steaming bowl of wagyu ramen">
         </video>
@@ -2152,6 +2155,58 @@ footer {
     </div>
 
     <span class="promise-mark" data-store="fullName">Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962</span>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews">
+  <div class="container">
+    <div class="reviews-header reveal">
+      <div class="eyebrow">GUEST REVIEWS</div>
+      <div class="reviews-score">4.8<span class="out">/ 5</span></div>
+      <div class="reviews-stars">★★★★★</div>
+      <div class="reviews-count"><span>Based on 1,000+ Google Reviews</span></div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <span class="quote-mark">"</span>
+        <div class="review-quote">Best Wagyu burger in Tokyo. Period.</div>
+        <div class="review-author">
+          <div class="review-flag">UK</div>
+          <div>
+            <div class="review-name">Sarah K.</div>
+            <div class="review-loc">London</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <span class="quote-mark">"</span>
+        <div class="review-quote">Finally, a Muslim-friendly place that actually feels special.</div>
+        <div class="review-author">
+          <div class="review-flag">MY</div>
+          <div>
+            <div class="review-name">Ahmad R.</div>
+            <div class="review-loc">Kuala Lumpur</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal">
+        <span class="quote-mark">"</span>
+        <div class="review-quote">We came for the Skytree, stayed for the steak.</div>
+        <div class="review-author">
+          <div class="review-flag">IN</div>
+          <div>
+            <div class="review-name">Priya P.</div>
+            <div class="review-loc">Mumbai</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-cta reveal" data-store-hide="hideGoogleLinks">
+      <a href="#" data-store-attr="mapPlaceUrl:href" target="_blank" rel="noopener noreferrer">Read more on Google →</a>
+    </div>
   </div>
 </section>
 
@@ -2167,7 +2222,7 @@ footer {
     </div>
 
     <div class="farm-visual reveal">
-      <img src="../image/pasture/cow2.jpg" alt="Our own wagyu farm in Miyazaki" loading="lazy">
+      <img src="/image/pasture/cow2.jpg" alt="Our own wagyu farm in Miyazaki" loading="lazy">
       <div class="caption"><strong>OUR FARM</strong>Miyazaki — our own cattle, raised from birth</div>
     </div>
 
@@ -2282,58 +2337,6 @@ footer {
   </div>
 </section>
 
-<!-- ============ REVIEWS ============ -->
-<section class="reviews">
-  <div class="container">
-    <div class="reviews-header reveal">
-      <div class="eyebrow">GUEST REVIEWS</div>
-      <div class="reviews-score">4.8<span class="out">/ 5</span></div>
-      <div class="reviews-stars">★★★★★</div>
-      <div class="reviews-count"><span>Based on 1,000+ Google Reviews</span></div>
-    </div>
-    <div class="reviews-grid">
-      <div class="review-card reveal">
-        <span class="quote-mark">"</span>
-        <div class="review-quote">Best Wagyu burger in Tokyo. Period.</div>
-        <div class="review-author">
-          <div class="review-flag">UK</div>
-          <div>
-            <div class="review-name">Sarah K.</div>
-            <div class="review-loc">London</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="review-card reveal">
-        <span class="quote-mark">"</span>
-        <div class="review-quote">Finally, a Muslim-friendly place that actually feels special.</div>
-        <div class="review-author">
-          <div class="review-flag">MY</div>
-          <div>
-            <div class="review-name">Ahmad R.</div>
-            <div class="review-loc">Kuala Lumpur</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="review-card reveal">
-        <span class="quote-mark">"</span>
-        <div class="review-quote">We came for the Skytree, stayed for the steak.</div>
-        <div class="review-author">
-          <div class="review-flag">IN</div>
-          <div>
-            <div class="review-name">Priya P.</div>
-            <div class="review-loc">Mumbai</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="reviews-cta reveal">
-      <a href="#" data-store-attr="mapPlaceUrl:href" target="_blank" rel="noopener noreferrer">Read more on Google →</a>
-    </div>
-  </div>
-</section>
-
 <!-- ============ ACCESS ============ -->
 <section class="access light-section">
   <div class="container">
@@ -2378,7 +2381,7 @@ footer {
         </div>
       </div>
 
-      <div class="access-map reveal">
+      <div class="access-map reveal" data-store-hide="hideGoogleLinks">
         <iframe
           data-store-attr="mapEmbedUrl:src"
           src="https://www.google.com/maps?q=1-13-1+Narihira,+Sumida+City,+Tokyo&output=embed"
@@ -2484,7 +2487,7 @@ footer {
 <div class="exit-modal" id="exitModal" role="dialog" aria-modal="true" aria-labelledby="exitModalTitle">
   <div class="exit-modal-card">
     <div class="exit-modal-media">
-      <img src="../image/steak/Wagyu%20Steak.jpg" alt="" loading="lazy">
+      <img src="/image/steak/Wagyu%20Steak.jpg" alt="" loading="lazy">
     </div>
     <div class="exit-modal-eyebrow">Before You Go</div>
     <div class="exit-modal-title" id="exitModalTitle">
@@ -2511,8 +2514,8 @@ footer {
 </footer>
 
 <!-- ============ 店舗データ ============ -->
-<script src="../stores.js"></script>
-<script src="../store-render.js"></script>
+<script src="/stores.js"></script>
+<script src="/store-render.js"></script>
 
 <!-- Scripts -->
 <script>
@@ -2617,9 +2620,10 @@ footer {
   if (!modal) return;
   if (sessionStorage.getItem('exitShown')) return;
   if (window.matchMedia('(hover: none)').matches) return;
+  // 開いてから 20 秒間は exit-intent を無効化（誤発火防止＋閲覧時間の確保）
   const startTime = Date.now();
   function onLeave(e) {
-    if (Date.now() - startTime < 3000) return;
+    if (Date.now() - startTime < 20000) return;
     if (e.clientY > 0) return;
     if (sessionStorage.getItem('exitShown')) return;
     sessionStorage.setItem('exitShown', '1');

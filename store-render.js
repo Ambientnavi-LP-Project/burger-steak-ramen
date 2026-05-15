@@ -69,4 +69,20 @@
       why.classList.add("why--has-image");
     }
   }
+
+  /* --- 7. 表示/非表示フラグ: data-store-hide="フラグ名" ---
+     stores.js のフラグが true の要素を隠す。
+     例: hideGoogleLinks が true → Google 系リンク・地図を非表示。
+     リンク先が未確定の店舗で一時的に隠す用途。後で false に戻すだけで再表示。 */
+  document.querySelectorAll("[data-store-hide]").forEach((el) => {
+    const flag = el.getAttribute("data-store-hide");
+    if (store[flag] === true) {
+      el.style.display = "none";
+      // ACCESS の地図を隠す場合はグリッドを1カラムに切り替える
+      if (el.classList.contains("access-map")) {
+        const grid = el.closest(".access-grid");
+        if (grid) grid.classList.add("is-map-hidden");
+      }
+    }
+  });
 })();

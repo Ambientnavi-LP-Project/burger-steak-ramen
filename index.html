@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962 | Muslim-Friendly, 5 min from Tokyo Skytree</title>
-<meta name="description" content="Real Japanese Wagyu, prepared the Muslim-friendly way. Five minutes from Tokyo Skytree. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.">
+<title data-store="title">Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962</title>
+<meta name="description" data-store-attr="description:content" content="Real Japanese Wagyu, prepared the Muslim-friendly way.">
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
 <!-- Preload key above-the-fold images (hero first slide + signature menu backgrounds) -->
-<link rel="preload" as="image" href="image/steak/Wagyu%20Steak.jpg">
-<link rel="preload" as="image" href="image/ramen/ramen.jpg">
-<link rel="preload" as="image" href="image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg">
+<link rel="preload" as="image" href="../image/steak/Wagyu%20Steak.jpg">
+<link rel="preload" as="image" href="../image/ramen/ramen.jpg">
+<link rel="preload" as="image" href="../image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg">
 
 <!-- Stylesheet -->
 <style>
@@ -433,7 +433,7 @@ nav {
 .menu-hero-img {
   position: absolute;
   inset: 0;
-  background-image: url('image/steak/Wagyu%20Steak.jpg');
+  background-image: url('../image/steak/Wagyu%20Steak.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -495,8 +495,8 @@ nav {
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 .menu-card-img { height: 260px; background-size: cover; background-position: center; position: relative; }
-.menu-card-img.ramen  { background-image: url('image/ramen/ramen.jpg'); }
-.menu-card-img.combo  { background-image: url('image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg'); }
+.menu-card-img.ramen  { background-image: url('../image/ramen/ramen.jpg'); }
+.menu-card-img.combo  { background-image: url('../image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg'); }
 .menu-tag {
   position: absolute;
   top: 14px;
@@ -1057,25 +1057,25 @@ section.halal { padding: 130px 0; background: var(--paper-warm); position: relat
 }
 
 /* ============ WHY HERE (stats) ============ */
+/* 改修: 背景動画を削除し、単色背景に。storyBgImage 指定時のみ JS が画像を当てる */
 .why {
   padding: 110px 0;
   position: relative;
   overflow: hidden;
   color: var(--cream);
-}
-.why-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
-.why-bg video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  filter: brightness(0.65) saturate(0.9);
+  background: var(--paper-warm);
 }
 .why-overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
   pointer-events: none;
+  background:
+    radial-gradient(ellipse at 80% 30%, rgba(185, 28, 28, 0.12), transparent 60%),
+    radial-gradient(ellipse at 20% 70%, rgba(201, 163, 90, 0.06), transparent 60%);
+}
+/* storyBgImage が入った時だけ暗いオーバーレイを強める */
+.why--has-image .why-overlay {
   background:
     linear-gradient(180deg, rgba(10, 8, 7, 0.55) 0%, rgba(10, 8, 7, 0.4) 50%, rgba(10, 8, 7, 0.7) 100%);
 }
@@ -1197,7 +1197,7 @@ section.halal { padding: 130px 0; background: var(--paper-warm); position: relat
 
 /* ============ ACCESS ============ */
 .access { padding: 130px 0; background: var(--light-paper); color: var(--light-ink); }
-.access-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; }
+.access-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: start; }
 .access-info .eyebrow { color: var(--light-ink-soft); }
 .access-info .eyebrow::before { background: var(--vermilion); }
 .access-info h2 {
@@ -1252,12 +1252,15 @@ section.halal { padding: 130px 0; background: var(--paper-warm); position: relat
   border-radius: 50%;
   background: var(--light-gold);
 }
+/* 改修: マップを正方形に。縦長になりすぎないよう aspect-ratio で固定し、sticky で上に追従 */
 .access-map {
   background: var(--light-paper-warm);
-  min-height: 480px;
+  aspect-ratio: 1 / 1;
   position: relative;
   overflow: hidden;
   border: 1px solid var(--light-line);
+  position: sticky;
+  top: 100px;
 }
 .access-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
@@ -1318,7 +1321,7 @@ section.halal { padding: 130px 0; background: var(--paper-warm); position: relat
   background-color: var(--paper);
   background-image:
     linear-gradient(180deg, rgba(10, 8, 7, 0.55) 0%, rgba(20, 8, 8, 0.4) 50%, rgba(10, 8, 7, 0.7) 100%),
-    url('image/skytree-sakura.jpg');
+    url('../image/skytree-sakura.jpg');
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;
@@ -1756,9 +1759,9 @@ footer {
   .why-item {
     border-right: none;
     padding: 26px 14px;
-    border-bottom: 1px solid var(--light-line);
+    border-bottom: 1px solid var(--line);
   }
-  .why-item:nth-child(odd) { border-right: 1px solid var(--light-line); }
+  .why-item:nth-child(odd) { border-right: 1px solid var(--line); }
   .why-item:nth-last-child(-n+2) { border-bottom: none; }
 
   .reviews { padding: 70px 0; }
@@ -1766,7 +1769,7 @@ footer {
 
   .access { padding: 70px 0; }
   .access-grid { grid-template-columns: 1fr; gap: 36px; }
-  .access-map { min-height: 320px; }
+  .access-map { aspect-ratio: 1 / 1; position: relative; top: auto; }
 
   .faq { padding: 70px 0; }
   .faq-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -1795,10 +1798,10 @@ footer {
 <!-- ============ NAV ============ -->
 <nav>
   <a href="#" class="nav-brand">
-    <span class="brand-full">Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962</span>
+    <span class="brand-full" data-store="fullName">Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962</span>
   </a>
   <div class="nav-right">
-    <a href="https://www.tablecheck.com/shops/halal-ramen-skytree-5w-tokyo/reserve" target="_blank" rel="noopener" class="nav-cta">Reserve</a>
+    <a href="#" data-store-attr="reserveUrl:href" target="_blank" rel="noopener" class="nav-cta">Reserve</a>
   </div>
 </nav>
 
@@ -1806,11 +1809,11 @@ footer {
 <section class="hero">
   <div class="hero-media">
     <div class="hero-slideshow">
-      <img class="hero-slide is-active" src="image/steak/Wagyu%20Steak.jpg" alt="Halal Japanese Wagyu steak at Wagyu Beef (Halal) Steak Hamburger &amp; Ramen Skytree Restaurant 5W-Tokyo" fetchpriority="high">
-      <img class="hero-slide" src="image/burger/Wagyu%20Big%20Cheese%20Burger.jpg" alt="Wagyu big cheese burger" loading="lazy">
-      <img class="hero-slide" src="image/ramen/ramen.jpg" alt="100% Wagyu ramen" loading="lazy">
-      <img class="hero-slide" src="image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg" alt="Wagyu cheese burger and steak rice bowl combo" loading="lazy">
-      <img class="hero-slide" src="image/steak/steak%20rice%20bowl.jpg" alt="Wagyu steak rice bowl" loading="lazy">
+      <img class="hero-slide is-active" src="../image/steak/Wagyu%20Steak.jpg" alt="Halal Japanese Wagyu steak" fetchpriority="high">
+      <img class="hero-slide" src="../image/burger/Wagyu%20Big%20Cheese%20Burger.jpg" alt="Wagyu big cheese burger" loading="lazy">
+      <img class="hero-slide" src="../image/ramen/ramen.jpg" alt="100% Wagyu ramen" loading="lazy">
+      <img class="hero-slide" src="../image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg" alt="Wagyu cheese burger and steak rice bowl combo" loading="lazy">
+      <img class="hero-slide" src="../image/steak/steak%20rice%20bowl.jpg" alt="Wagyu steak rice bowl" loading="lazy">
     </div>
   </div>
   <div class="container hero-content">
@@ -1820,8 +1823,8 @@ footer {
     <div class="hero-info">
       <div class="info-pill">
         <span class="dot-live"></span>
-        <span class="hide-mobile">OPEN NOW · 11:00 – 21:00</span>
-        <span class="show-mobile">OPEN · 11–21</span>
+        <span class="hide-mobile" data-store="hoursOpenPill">OPEN NOW · 11:00 – 22:00</span>
+        <span class="show-mobile" data-store="hoursOpenPillShort">OPEN · 11–22</span>
       </div>
       <div class="info-pill halal">
         <span class="hide-mobile">MUSLIM-FRIENDLY</span>
@@ -1830,7 +1833,7 @@ footer {
       </div>
     </div>
 
-    <div class="info-station">STEPS FROM TOKYO SKYTREE</div>
+    <div class="info-station">STEPS FROM <span data-store="landmark">TOKYO SKYTREE</span></div>
 
     <h1>
       <span class="hero-h1-main">
@@ -1840,10 +1843,10 @@ footer {
       </span>
     </h1>
     <p class="hero-sub">
-      Real Japanese Wagyu, prepared the Muslim-friendly way — moments from Tokyo Skytree.
+      Real Japanese Wagyu, prepared the Muslim-friendly way — moments from <span data-store="landmark">Tokyo Skytree</span>.
     </p>
     <div class="hero-ctas">
-      <a href="https://www.tablecheck.com/shops/halal-ramen-skytree-5w-tokyo/reserve" target="_blank" rel="noopener" class="btn-primary">Reserve a Table</a>
+      <a href="#" data-store-attr="reserveUrl:href" target="_blank" rel="noopener" class="btn-primary">Reserve a Table</a>
       <a href="#menu" class="btn-secondary">View Menu</a>
     </div>
     <div class="hero-trust">
@@ -1861,7 +1864,7 @@ footer {
   <span class="sp-item"><span class="sp-dot"></span><strong>8</strong> <span class="sp-label-long">viewing now</span><span class="sp-label-short">viewing</span></span>
   <span class="sp-divider"></span>
   <span class="sp-item"><span class="sp-check">✓</span><strong>13</strong> <span class="sp-label-long">booked today</span><span class="sp-label-short">booked</span></span>
-  <a href="https://www.tablecheck.com/shops/halal-ramen-skytree-5w-tokyo/reserve" target="_blank" rel="noopener" class="sp-cta">RESERVE →</a>
+  <a href="#" data-store-attr="reserveUrl:href" target="_blank" rel="noopener" class="sp-cta">RESERVE →</a>
 </div>
 
 <!-- ============ MENU (right after hero) ============ -->
@@ -1967,7 +1970,7 @@ footer {
     <div class="fm-panel is-active" data-panel="steak">
       <div class="fm-grid">
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('image/steak/Wagyu%20Steak.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('../image/steak/Wagyu%20Steak.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-tier">
               <span class="tier platinum">PLATINUM</span>
@@ -1981,7 +1984,7 @@ footer {
           </div>
         </div>
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('image/steak/steak%20rice%20bowl.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('../image/steak/steak%20rice%20bowl.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               100% Japanese Wagyu Steak Rice Bowl
@@ -1998,7 +2001,7 @@ footer {
     <div class="fm-panel" data-panel="burger">
       <div class="fm-grid">
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('image/burger/Wagyu%20Big%20Cheese%20Burger.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('../image/burger/Wagyu%20Big%20Cheese%20Burger.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               100% Japanese Wagyu Big Cheese Burger
@@ -2009,7 +2012,7 @@ footer {
           </div>
         </div>
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('image/burger/Wagyu%20Cheese%20Burger.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('../image/burger/Wagyu%20Cheese%20Burger.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               100% Japanese Wagyu Cheese Burger
@@ -2026,7 +2029,7 @@ footer {
     <div class="fm-panel" data-panel="ramen">
       <div class="fm-grid cols-1">
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('image/ramen/ramen.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('../image/ramen/ramen.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-tier">
               <span class="tier platinum">PLATINUM</span>
@@ -2048,7 +2051,7 @@ footer {
     <div class="fm-panel" data-panel="combo">
       <div class="fm-grid cols-1">
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('../image/combo/Cheese%20Burger%20%2B%20Steak%20Rice%20Bowl%20Combo.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               Wagyu Cheese Burger + Steak Rice Bowl Combo
@@ -2059,7 +2062,7 @@ footer {
           </div>
         </div>
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('image/combo/Truffle%20Cheese%20Burger%20%2B%20Platinum%20Steak%20combo.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('../image/combo/Truffle%20Cheese%20Burger%20%2B%20Platinum%20Steak%20combo.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               100% Japanese Wagyu Truffle Cheese Burger + Platinum Steak Combo
@@ -2070,7 +2073,7 @@ footer {
           </div>
         </div>
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('image/combo/Ramen%20Gold%20%2B%20Steak%20Rice%20Bowl%20combo.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('../image/combo/Ramen%20Gold%20%2B%20Steak%20Rice%20Bowl%20combo.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-name">
               100% Japanese Wagyu Ramen Gold + Steak Rice Bowl Combo
@@ -2082,7 +2085,7 @@ footer {
           </div>
         </div>
         <div class="fm-card">
-          <div class="fm-card-img" style="background-image: url('image/ramen/ramen%26shimofuri.jpg');"></div>
+          <div class="fm-card-img" style="background-image: url('../image/ramen/ramen%26shimofuri.jpg');"></div>
           <div class="fm-card-body">
             <div class="fm-card-tier">
               <span class="tier platinum">PLATINUM</span>
@@ -2105,7 +2108,7 @@ footer {
         ※ All items above are <strong style="color: var(--light-ink);">100% Japanese Wagyu, pork-free and alcohol-free</strong>.<br>
         ※ See in-store menu for full pricing.
       </p>
-      <a href="https://www.tablecheck.com/shops/halal-ramen-skytree-5w-tokyo/reserve" target="_blank" rel="noopener" class="fm-cta">Reserve a Table →</a>
+      <a href="#" data-store-attr="reserveUrl:href" target="_blank" rel="noopener" class="fm-cta">Reserve a Table →</a>
     </div>
   </div>
 </section>
@@ -2125,13 +2128,13 @@ footer {
 
     <div class="promise-gallery">
       <div class="promise-photo reveal">
-        <img src="image/steak/Wagyu%20Steak.jpg" alt="100% Japanese Wagyu Steak, raised and prepared in-house">
+        <img src="../image/steak/Wagyu%20Steak.jpg" alt="100% Japanese Wagyu Steak, raised and prepared in-house">
         <div class="caption">100% Japanese Wagyu Steak</div>
       </div>
       <div class="promise-photo is-video reveal">
         <video
-          src="movie/burger.mp4"
-          poster="image/burger/Wagyu%20Cheese%20Burger.jpg"
+          src="../movie/burger.mp4"
+          poster="../image/burger/Wagyu%20Cheese%20Burger.jpg"
           muted loop playsinline preload="none"
           aria-label="Muslim-friendly wagyu burger with cheese and house-made sauce">
         </video>
@@ -2139,8 +2142,8 @@ footer {
       </div>
       <div class="promise-photo is-video reveal">
         <video
-          src="movie/ramen.mp4"
-          poster="image/ramen/ramen.jpg"
+          src="../movie/ramen.mp4"
+          poster="../image/ramen/ramen.jpg"
           muted loop playsinline preload="none"
           aria-label="Steaming bowl of wagyu ramen">
         </video>
@@ -2148,7 +2151,7 @@ footer {
       </div>
     </div>
 
-    <span class="promise-mark">Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962</span>
+    <span class="promise-mark" data-store="fullName">Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962</span>
   </div>
 </section>
 
@@ -2164,7 +2167,7 @@ footer {
     </div>
 
     <div class="farm-visual reveal">
-      <img src="image/pasture/cow2.jpg" alt="Our own wagyu farm in Miyazaki" loading="lazy">
+      <img src="../image/pasture/cow2.jpg" alt="Our own wagyu farm in Miyazaki" loading="lazy">
       <div class="caption"><strong>OUR FARM</strong>Miyazaki — our own cattle, raised from birth</div>
     </div>
 
@@ -2244,14 +2247,8 @@ footer {
 </section>
 
 <!-- ============ WHY HERE ============ -->
+<!-- 改修: 背景動画を削除。単色背景（CSS）。storyBgImage 指定時のみ JS が画像を当てる -->
 <section class="why">
-  <div class="why-bg">
-    <video
-      src="movie/shinjuku_interior_exterior.mp4"
-      poster="image/interior-exterior-poster.jpg"
-      muted loop playsinline preload="none"
-      aria-hidden="true"></video>
-  </div>
   <div class="why-overlay"></div>
   <div class="container">
     <div class="why-header reveal">
@@ -2332,7 +2329,7 @@ footer {
       </div>
     </div>
     <div class="reviews-cta reveal">
-      <a href="https://www.google.com/maps/place/Wagyu+Beef+(Halal)+Steak+Hamburger+%26+Ramen+(Japanese+food)+Skytree+Restaurant+5W-Tokyo+1962/@40.6653356,131.9685883,2069963m/data=!3m1!1e3!4m6!3m5!1s0x60188fc341bec67b:0xadef478a8a7aa949!8m2!3d35.7085313!4d139.8087789!16s%2Fg%2F11ygv71mg4!5m1!1e3" target="_blank" rel="noopener noreferrer">Read more on Google →</a>
+      <a href="#" data-store-attr="mapPlaceUrl:href" target="_blank" rel="noopener noreferrer">Read more on Google →</a>
     </div>
   </div>
 </section>
@@ -2344,34 +2341,29 @@ footer {
       <div class="access-info reveal">
         <div class="eyebrow">FIND US</div>
         <h2>
-          <span>Five minutes from </span><span class="accent">Tokyo Skytree.</span>
+          <span>Five minutes from </span><span class="accent" data-store="landmark">Tokyo Skytree.</span>
         </h2>
 
         <div class="access-block">
           <div class="access-block-label">Address</div>
-          <p>1-13-1 Narihira, Sumida-ku<br>Tokyo 130-0002, Japan<br>Jukken Dai-8 High Place
-          </p>
+          <p data-store-html="addressHtml">1-13-1 Narihira, Sumida-ku<br>Tokyo 130-0002, Japan<br>Jukken Dai-8 High Place</p>
         </div>
 
         <div class="access-block">
           <div class="access-block-label">Stations</div>
-          <ul class="access-stations">
-            <li><span>Tokyo Skytree Station<small style="display:block;color:var(--light-muted);font-size:11px;letter-spacing:0.05em;margin-top:2px;">Tobu Skytree Line</small></span><span class="walk">5 min walk</span></li>
-            <li><span>Honjo-Azumabashi Station<small style="display:block;color:var(--light-muted);font-size:11px;letter-spacing:0.05em;margin-top:2px;">Toei Asakusa Line, Exit A4</small></span><span class="walk">7 min walk</span></li>
-            <li><span>Oshiage Station<small style="display:block;color:var(--light-muted);font-size:11px;letter-spacing:0.05em;margin-top:2px;">Hanzomon / Asakusa / Keisei / Tobu</small></span><span class="walk">10 min walk</span></li>
-            <li><span>Asakusa Station<small style="display:block;color:var(--light-muted);font-size:11px;letter-spacing:0.05em;margin-top:2px;">Tsukuba Express</small></span><span class="walk">15 min walk</span></li>
-            <li><span>Kinshicho Station<small style="display:block;color:var(--light-muted);font-size:11px;letter-spacing:0.05em;margin-top:2px;">JR Sobu / Hanzomon</small></span><span class="walk">15–20 min walk</span></li>
+          <ul class="access-stations" data-store-list="stations">
+            <!-- stores.js の stations 配列から JS が生成 -->
           </ul>
         </div>
 
         <div class="access-block">
           <div class="access-block-label">Hours</div>
-          <p>11:00 – 22:00 · Open daily</p>
+          <p><span data-store="hoursFull">11:00 – 22:00</span> · Open daily</p>
         </div>
 
         <div class="access-block">
           <div class="access-block-label">Seats</div>
-          <p>16 seats (no private rooms)</p>
+          <p data-store="seats">16 seats (no private rooms)</p>
         </div>
 
         <div class="access-block">
@@ -2388,6 +2380,7 @@ footer {
 
       <div class="access-map reveal">
         <iframe
+          data-store-attr="mapEmbedUrl:src"
           src="https://www.google.com/maps?q=1-13-1+Narihira,+Sumida+City,+Tokyo&output=embed"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -2454,7 +2447,7 @@ footer {
     </p>
     <div class="final-urgent">Lunch and dinner seats filling fast</div>
     <div>
-      <a href="https://www.tablecheck.com/shops/halal-ramen-skytree-5w-tokyo/reserve" target="_blank" rel="noopener" class="final-primary">Reserve via TableCheck</a>
+      <a href="#" data-store-attr="reserveUrl:href" target="_blank" rel="noopener" class="final-primary">Reserve via TableCheck</a>
     </div>
 
     <p style="font-size: 13px; color: rgba(245, 241, 234, 0.6); margin-top: 28px; letter-spacing: 0.05em;">
@@ -2463,15 +2456,15 @@ footer {
     </p>
 
     <div class="final-channels">
-      <a href="tel:+81-3-6658-5855" class="final-channel">
+      <a href="#" data-store-attr="phoneHref:href" class="final-channel">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <span>03-6658-5855</span>
+        <span data-store="phone">03-6658-5855</span>
       </a>
       <a href="mailto:" class="final-channel">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         <span>Email us</span>
       </a>
-      <a href="https://www.instagram.com/5w_tokyo_official/" target="_blank" rel="noopener" class="final-channel">
+      <a href="#" data-store-attr="instagramUrl:href" target="_blank" rel="noopener" class="final-channel">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         <span>Instagram DM</span>
       </a>
@@ -2490,29 +2483,17 @@ footer {
 <!-- ============ EXIT INTENT MODAL ============ -->
 <div class="exit-modal" id="exitModal" role="dialog" aria-modal="true" aria-labelledby="exitModalTitle">
   <div class="exit-modal-card">
-    <!--
-      Background media (image -> video swap steps)
-      When you have a video file (e.g. image/exit-modal.mp4):
-      1) Delete the <img> line below
-      2) Uncomment the <video>...</video> block below it
-      Recommended: under 5MB / 1080p / 10-20s loop / mp4 (H.264) / no audio
-    -->
     <div class="exit-modal-media">
-      <img src="image/steak/Wagyu%20Steak.jpg" alt="" loading="lazy">
-      <!--
-      <video autoplay muted loop playsinline poster="image/steak/Wagyu%20Steak.jpg">
-        <source src="image/exit-modal.mp4" type="video/mp4">
-      </video>
-      -->
+      <img src="../image/steak/Wagyu%20Steak.jpg" alt="" loading="lazy">
     </div>
     <div class="exit-modal-eyebrow">Before You Go</div>
     <div class="exit-modal-title" id="exitModalTitle">
       <span>Save your seat </span><span class="accent">for tonight.</span>
     </div>
     <div class="exit-modal-body">
-      <span>Our own wagyu, every step. One precious meal. Five minutes from Skytree.</span>
+      <span>Our own wagyu, every step. One precious meal. Five minutes from <span data-store="landmark">Skytree</span>.</span>
     </div>
-    <a href="https://www.tablecheck.com/shops/halal-ramen-skytree-5w-tokyo/reserve" target="_blank" rel="noopener" class="exit-modal-cta" onclick="closeExitModal()">Reserve Now →</a>
+    <a href="#" data-store-attr="reserveUrl:href" target="_blank" rel="noopener" class="exit-modal-cta" onclick="closeExitModal()">Reserve Now →</a>
     <button type="button" class="exit-modal-skip" onclick="closeExitModal()">Maybe later</button>
   </div>
 </div>
@@ -2522,12 +2503,16 @@ footer {
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <span class="footer-brand-name">Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962</span>
+        <span class="footer-brand-name" data-store="fullName">Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962</span>
       </div>
-      <div>© 2026 Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962</div>
+      <div>© 2026 <span data-store="fullName">Wagyu Beef (Halal) Steak Hamburger &amp; Ramen (Japanese food) Skytree Restaurant 5W-Tokyo 1962</span></div>
     </div>
   </div>
 </footer>
+
+<!-- ============ 店舗データ ============ -->
+<script src="../stores.js"></script>
+<script src="../store-render.js"></script>
 
 <!-- Scripts -->
 <script>
@@ -2610,7 +2595,6 @@ footer {
   if (sessionStorage.getItem('nudgeShown')) return;
   let shown = false;
   setTimeout(() => {
-    // Do not show if FINAL CTA is already in view
     const reserve = document.getElementById('reserve');
     if (reserve) {
       const rect = reserve.getBoundingClientRect();
@@ -2619,7 +2603,6 @@ footer {
     toast.classList.add('is-shown');
     shown = true;
     sessionStorage.setItem('nudgeShown', '1');
-    // Auto-hide after 12s
     setTimeout(() => {
       if (shown) toast.classList.add('is-hidden');
     }, 12000);
@@ -2633,13 +2616,11 @@ footer {
   const modal = document.getElementById('exitModal');
   if (!modal) return;
   if (sessionStorage.getItem('exitShown')) return;
-  // Do not trigger on mobile (touch devices)
   if (window.matchMedia('(hover: none)').matches) return;
-  // Do not trigger within 3s of load (prevent misfire)
   const startTime = Date.now();
   function onLeave(e) {
     if (Date.now() - startTime < 3000) return;
-    if (e.clientY > 0) return;  // only when leaving from the top edge
+    if (e.clientY > 0) return;
     if (sessionStorage.getItem('exitShown')) return;
     sessionStorage.setItem('exitShown', '1');
     modal.classList.add('is-shown');
@@ -2658,7 +2639,7 @@ window.closeExitModal = closeExitModal;
 // VIDEO: play only when in view (saves power & bandwidth)
 // ============================================================
 (function initLazyVideo() {
-  const videos = document.querySelectorAll('.promise-photo video, .why-bg video');
+  const videos = document.querySelectorAll('.promise-photo video');
   if (!videos.length || !('IntersectionObserver' in window)) return;
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e) => {

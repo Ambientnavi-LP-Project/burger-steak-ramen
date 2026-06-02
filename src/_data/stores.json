@@ -19,9 +19,9 @@
       "addressHtml": "1-13-2 Narihira, Sumida-ku<br>Tokyo 130-0002, Japan",
       "seats": "16 seats (no private rooms)",
       "storyBgImage": "",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "https://www.google.com/maps?q=1-13-2+Narihira,+Sumida+City,+Tokyo&output=embed",
-      "mapPlaceUrl": "https://www.google.com/maps/place/1-13-2+Narihira,+Sumida+City,+Tokyo+130-0002",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7956332.37488466!2d132.3809798!3d35.1867375!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188fc341bec67b%3A0xadef478a8a7aa949!2sWagyu%20Beef%20(Halal)%20Steak%20Hamburger%20%26%20Ramen%20(Japanese%20food)%20Skytree%20Restaurant%205W-Tokyo%201962!5e1!3m2!1sja!2sjp!4v1780406688625!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://www.google.com/maps/search/?api=1&query=1-13-2+Narihira+Sumida+Tokyo",
       "stations": [
         {
           "name": "Tokyo Skytree Station",
@@ -69,9 +69,9 @@
       "addressHtml": "2-5-3 Taito, Taito-ku 2F<br>Tokyo 110-0016, Japan",
       "seats": "",
       "storyBgImage": "",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "https://www.google.com/maps?q=2-5-3+Taito,+Taito+City,+Tokyo+110-0016&output=embed",
-      "mapPlaceUrl": "https://www.google.com/maps/place/2-5-3+Taito,+Taito+City,+Tokyo+110-0016",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d241.25685407836147!2d139.7780453!3d35.7025798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ff5ca09c157%3A0xa6a651266867621d!2sJapanese%20food%20Wagyu%20Restaurant%20(Halal)%20Steak%26Burger-Ramen%205W-Tokyo%20AkihabaraUeno%20Beef%20Dining!5e1!3m2!1sja!2sjp!4v1780403325476!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://www.google.com/maps/search/?api=1&query=35.7025798,139.7780453",
       "stations": [
         {
           "name": "Okachimachi Station",
@@ -114,9 +114,9 @@
       "addressHtml": "1-8-25 Jingumae, Shibuya-ku<br>BU1825 Harajuku 202<br>Tokyo 150-0001, Japan",
       "seats": "",
       "storyBgImage": "",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "https://www.google.com/maps?q=1-8-25+Jingumae,+Shibuya+City,+Tokyo+150-0001&output=embed",
-      "mapPlaceUrl": "https://www.google.com/maps/place/1-8-25+Jingumae,+Shibuya+City,+Tokyo+150-0001",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.6702091657253!2d139.705805!3d35.67033519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d41f194b95d%3A0x98bdc1f9e1417e5d!2sWagyu%20(Halal)%20Steak%20HamBurger%20%26%20Ramen%20(Japanese%20food)%20Harajuku%20Shibuya%20Restaurant%205W-Tokyo%201962!5e1!3m2!1sja!2sjp!4v1780403579936!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://www.google.com/maps/search/?api=1&query=35.6703352,139.705805",
       "stations": [
         {
           "name": "Harajuku Station",
@@ -154,9 +154,9 @@
       "addressHtml": "5-8-7 Shinjuku, Shinjuku-ku<br>Tokyo 160-0022, Japan",
       "seats": "",
       "storyBgImage": "",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "https://www.google.com/maps?q=5-8-7+Shinjuku,+Shinjuku+City,+Tokyo+160-0022&output=embed",
-      "mapPlaceUrl": "https://www.google.com/maps/place/5-8-7+Shinjuku,+Shinjuku+City,+Tokyo+160-0022",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7721.20781469701!2d139.7089894!3d35.6923703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd091546ea5%3A0x74c84df97be6a9ff!2sWagyu%20Halal%20Japanese%20Food%20(Steak%20Hamburger%20%26%20Ramen%20Sukiyaki)%20Shinjuku%20Restaurant!5e1!3m2!1sja!2sjp!4v1780403672782!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://www.google.com/maps/search/?api=1&query=35.6923703,139.7089894",
       "stations": [
         {
           "name": "Shinjuku-sanchome Station",
@@ -194,9 +194,9 @@
       "addressHtml": "7-11-2 Nishi-Shinjuku, Shinjuku-ku<br>Asp Nishi-Shinjuku Bldg. 2F<br>Tokyo 160-0023, Japan",
       "seats": "",
       "storyBgImage": "",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "https://www.google.com/maps?q=7-11-2+Nishishinjuku,+Shinjuku+City,+Tokyo+160-0023&output=embed",
-      "mapPlaceUrl": "https://www.google.com/maps/place/7-11-2+Nishishinjuku,+Shinjuku+City,+Tokyo+160-0023",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.541547478011!2d139.6972599!3d35.6936586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d0c0928ee9f%3A0x9c3d641e3f981830!2zV2FneXUgU3RlYWsgSGFtYnVyZ2VyICYgUmFtZW4g5paw5a6_!5e1!3m2!1sja!2sjp!4v1780403841469!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://www.google.com/maps/search/?api=1&query=35.6936586,139.6972599",
       "stations": [
         {
           "name": "Shinjuku Station (West Exit)",
@@ -234,9 +234,9 @@
       "addressHtml": "1-12-2 Kabukicho, Shinjuku-ku<br>Dai-58 Tokyo Bldg. B2F<br>Tokyo 160-0021, Japan",
       "seats": "",
       "storyBgImage": "",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "https://www.google.com/maps?q=1-12-2+Kabukicho,+Shinjuku+City,+Tokyo+160-0021&output=embed",
-      "mapPlaceUrl": "https://www.google.com/maps/place/1-12-2+Kabukicho,+Shinjuku+City,+Tokyo+160-0021",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.486562875961!2d139.70240569999999!3d35.69479449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dc949e8cfe9%3A0x742f08cd3c21a6ec!2sWagyu%20(Halal%20Vegan)%20Hamburger%20Steak%20%26%20Ramen%20Shinjuku%20Kabukicho%20Restaurant%20Beef%20Tei!5e1!3m2!1sja!2sjp!4v1780403915554!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://www.google.com/maps/search/?api=1&query=35.6947945,139.7024057",
       "stations": [
         {
           "name": "Seibu-Shinjuku Station",
@@ -274,9 +274,9 @@
       "addressHtml": "7-5 Soemoncho, Chuo-ku<br>Ogura-ya Bldg. 2F<br>Osaka 542-0084, Japan",
       "seats": "",
       "storyBgImage": "",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "https://www.google.com/maps?q=7-5+Soemoncho,+Chuo+Ward,+Osaka+542-0084&output=embed",
-      "mapPlaceUrl": "https://www.google.com/maps/place/7-5+Soemoncho,+Chuo+Ward,+Osaka+542-0084",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2001667.3110885425!2d133.2604985!3d34.6693019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e760995c75b9%3A0xfe380802ede4b37!2sWagyu(Halal)%20Japanese%20food%20Steak-Burger%26Ramen%20Dotonbori%20Restaurant%20Namba-Tei!5e1!3m2!1sja!2sjp!4v1780404008320!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://www.google.com/maps/search/?api=1&query=34.6693019,135.5018",
       "stations": [
         {
           "name": "Namba Station",
@@ -314,9 +314,9 @@
       "addressHtml": "3-11-3 Minamisemba, Chuo-ku<br>Yamashita Bldg. 2F<br>Osaka 542-0081, Japan",
       "seats": "",
       "storyBgImage": "",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "https://www.google.com/maps?q=3-11-3+Minamisemba,+Chuo+Ward,+Osaka+542-0081&output=embed",
-      "mapPlaceUrl": "https://www.google.com/maps/place/3-11-3+Minamisemba,+Chuo+Ward,+Osaka+542-0081",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1000747.2302235547!2d134.2817295!3d34.6764548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e748acdda465%3A0x5ba35e828f397ef6!2sWagyu%20Ramen%20%26%20Steak%20Burger%20(Halal%20Vegan%20Gluten%20Free)%20Shinsaibashi%20Restaurant!5e1!3m2!1sja!2sjp!4v1780404085738!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://www.google.com/maps/search/?api=1&query=34.6764548,135.5006",
       "stations": [
         {
           "name": "Shinsaibashi Station",
@@ -354,9 +354,9 @@
       "addressHtml": "6-26-7 Tsukiji, Chuo-ku<br>Miyazaki Bldg. 3F<br>Tokyo 104-0045, Japan",
       "seats": "",
       "storyBgImage": "",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "https://www.google.com/maps?q=6-26-7+Tsukiji,+Chuo+City,+Tokyo+104-0045&output=embed",
-      "mapPlaceUrl": "https://www.google.com/maps/place/6-26-7+Tsukiji,+Chuo+City,+Tokyo+104-0045",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3861.9483783030078!2d139.7711641!3d35.6645849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b109feb491f%3A0x533a1e0f18b27ab1!2zV2FneXUgU3RlYWsgSGFtYnVyZ2VyICYgUmFtZW4gKEhhbGFsIFZlZ2FuIEdsdXRlbiBGcmVlKSBUc3VraWppIEZpc2ggTWFya2V0IFJlc3RhdXJhbnQg562R5ZywIOaLiemdoiDppJDljoU!5e1!3m2!1sja!2sjp!4v1780404139995!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://www.google.com/maps/search/?api=1&query=35.6645849,139.7711641",
       "stations": [
         {
           "name": "Tsukiji Station",
@@ -372,6 +372,86 @@
           "name": "Higashi-ginza Station",
           "line": "Tokyo Metro Hibiya / Toei Asakusa",
           "walk": "8 min walk"
+        }
+      ]
+    },
+    {
+      "permalink": "osaka/tsutenkaku",
+      "slug": "tsutenkaku",
+      "region": "osaka",
+      "category": "all",
+      "fullName": "Wagyu Hamburger & Ramen (Halal Vegan Gluten Free) Tsutenkaku Restaurant",
+      "landmark": "Tsutenkaku Tower",
+      "landmarkWalk": "3 min",
+      "title": "Wagyu Hamburger & Ramen (Halal Vegan Gluten Free) Tsutenkaku Restaurant | Muslim-Friendly, 3 min from Tsutenkaku Tower",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 3 min from Tsutenkaku Tower. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "https://www.tablecheck.com/shops/tsutenkaku-5w-osaka/reserve",
+      "phone": "09031349847",
+      "phoneHref": "tel:+81-9031349847",
+      "hoursFull": "11:00 – 23:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 23:00",
+      "hoursOpenPillShort": "OPEN · 11–23",
+      "addressHtml": "2-1-11 Ebisu-nishi, Naniwa-ku<br>Osaka 556-0003, Japan",
+      "seats": "",
+      "storyBgImage": "",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3910.26273177431!2d135.5000839!3d34.6532738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e77c4bf3bda3%3A0x1715c98cf34d0850!2sWagyu%20Hamburger%20%26%20Ramen%20(Halal%20Vegan%20Gluten%20Free)Tsutenkaku%20Restaurant!5e1!3m2!1sja!2sjp!4v1780406234208!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://www.google.com/maps/search/?api=1&query=34.6532738,135.5000839",
+      "stations": [
+        {
+          "name": "Ebisucho Station",
+          "line": "Osaka Metro Sakaisuji Line",
+          "walk": "3 min walk"
+        },
+        {
+          "name": "Dobutsuen-mae Station",
+          "line": "Osaka Metro Midosuji / Sakaisuji",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Shin-Imamiya Station",
+          "line": "JR / Nankai Line",
+          "walk": "7 min walk"
+        }
+      ]
+    },
+    {
+      "permalink": "osaka/nipponbashi",
+      "slug": "nipponbashi",
+      "region": "osaka",
+      "category": "all",
+      "fullName": "Wagyu Ramen & Hamburger (Halal Vegan Gluten Free) Dotonbori Restaurant 道顿堀 和牛 拉面",
+      "landmark": "Nipponbashi Station",
+      "landmarkWalk": "4 min",
+      "title": "Wagyu Ramen & Hamburger (Halal Vegan Gluten Free) Dotonbori Restaurant 道顿堀 和牛 拉面 | Muslim-Friendly, 4 min from Nipponbashi Station",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 4 min from Nipponbashi Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "https://www.tablecheck.com/shops/5wnipponbashi/reserve",
+      "phone": "08082219371",
+      "phoneHref": "tel:+81-8082219371",
+      "hoursFull": "11:00 – 23:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 23:00",
+      "hoursOpenPillShort": "OPEN · 11–23",
+      "addressHtml": "3-5 Soemoncho, Chuo-ku<br>Kaneda Bldg. 2F<br>Osaka 542-0084, Japan",
+      "seats": "",
+      "storyBgImage": "",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7819.007799312833!2d135.5046435!3d34.6693563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e746318a64f9%3A0x8c73e9b636abd5e7!2zV2FneXUgUmFtZW4gJiBIYW1idXJnZXIgKEhhbGFsIFZlZ2FuIEdsdXRlbiBGcmVlKSBEb3RvbmJvcmkgUmVzdGF1cmFudCDpgZPpob_loIAg5ZKM54mbIOaLiemdog!5e1!3m2!1sja!2sjp!4v1780406395634!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://www.google.com/maps/search/?api=1&query=34.6693563,135.5046435",
+      "stations": [
+        {
+          "name": "Nipponbashi Station",
+          "line": "Osaka Metro Sakaisuji / Sennichimae / Kintetsu",
+          "walk": "4 min walk"
+        },
+        {
+          "name": "Namba Station",
+          "line": "Osaka Metro Midosuji / Sennichimae / Yotsubashi",
+          "walk": "6 min walk"
+        },
+        {
+          "name": "Osaka-Namba Station",
+          "line": "Kintetsu / Hanshin",
+          "walk": "7 min walk"
         }
       ]
     }

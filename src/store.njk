@@ -1273,6 +1273,24 @@ section.halal { padding: 130px 0; background: var(--paper-warm); position: relat
   top: 100px;
 }
 .access-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.access-map-wrap { position: sticky; top: 100px; }
+.access-map-wrap .access-map { position: relative; top: auto; }
+.access-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 12px 22px;
+  background: var(--vermilion);
+  color: var(--cream);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+.access-map-link:hover { background: var(--vermilion-deep); }
 /* 地図を隠したとき（hideGoogleLinks）はグリッドを1カラムにして左情報が間延びしないようにする */
 .access-grid.is-map-hidden { grid-template-columns: 1fr; max-width: 640px; }
 .access-grid.is-map-hidden .access-map { display: none; }
@@ -2385,10 +2403,11 @@ footer {
           <p><span>{{ store.hoursFull | safe }}</span> · Open daily</p>
         </div>
 
-        <div class="access-block">
+{% if store.seats %}        <div class="access-block">
           <div class="access-block-label">Seats</div>
           <p>{{ store.seats | safe }}</p>
         </div>
+{% endif %}
 
         <div class="access-block">
           <div class="access-block-label">Good to Know</div>
@@ -2402,12 +2421,15 @@ footer {
         </div>
       </div>
 
-      {% if not store.hideGoogleLinks %}<div class="access-map reveal">
-        <iframe
-          src="{{ store.mapEmbedUrl }}"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen></iframe>
+      {% if not store.hideGoogleLinks %}<div class="access-map-wrap reveal">
+        <div class="access-map">
+          <iframe
+            src="{{ store.mapEmbedUrl }}"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+        <a href="{{ store.mapPlaceUrl }}" target="_blank" rel="noopener noreferrer" class="access-map-link">Open in Google Maps →</a>
       </div>{% endif %}
     </div>
   </div>

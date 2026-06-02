@@ -1,0 +1,382 @@
+{
+  "stores": [
+    {
+      "permalink": "tokyo/oshiage",
+      "slug": "oshiage",
+      "region": "tokyo",
+      "category": "all",
+      "fullName": "Wagyu Steak Hamburger & Ramen Halal Skytree Restaurant 和牛 拉面 餐厅",
+      "landmark": "Tokyo Skytree",
+      "landmarkWalk": "5 min",
+      "title": "Wagyu Steak Hamburger & Ramen Halal Skytree Restaurant 和牛 拉面 餐厅 | Muslim-Friendly, 5 min from Tokyo Skytree",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. Five minutes from Tokyo Skytree. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "https://www.tablecheck.com/shops/halal-ramen-skytree-5w-tokyo/reserve",
+      "phone": "03-6658-5855",
+      "phoneHref": "tel:+81-3-6658-5855",
+      "hoursFull": "11:00 – 22:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 22:00",
+      "hoursOpenPillShort": "OPEN · 11–22",
+      "addressHtml": "1-13-2 Narihira, Sumida-ku<br>Tokyo 130-0002, Japan",
+      "seats": "16 seats (no private rooms)",
+      "storyBgImage": "",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "https://www.google.com/maps?q=1-13-2+Narihira,+Sumida+City,+Tokyo&output=embed",
+      "mapPlaceUrl": "https://www.google.com/maps/place/1-13-2+Narihira,+Sumida+City,+Tokyo+130-0002",
+      "stations": [
+        {
+          "name": "Tokyo Skytree Station",
+          "line": "Tobu Skytree Line",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Honjo-Azumabashi Station",
+          "line": "Toei Asakusa Line, Exit A4",
+          "walk": "7 min walk"
+        },
+        {
+          "name": "Oshiage Station",
+          "line": "Hanzomon / Asakusa / Keisei / Tobu",
+          "walk": "10 min walk"
+        },
+        {
+          "name": "Asakusa Station",
+          "line": "Tsukuba Express",
+          "walk": "15 min walk"
+        },
+        {
+          "name": "Kinshicho Station",
+          "line": "JR Sobu / Hanzomon",
+          "walk": "15–20 min walk"
+        }
+      ]
+    },
+    {
+      "permalink": "tokyo/akihabara",
+      "slug": "akihabara",
+      "region": "tokyo",
+      "category": "all",
+      "fullName": "Japanese food Wagyu Restaurant (Halal) Steak&Burger-Ramen 5W-Tokyo AkihabaraUeno Beef Dining",
+      "landmark": "Okachimachi Station",
+      "landmarkWalk": "3 min",
+      "title": "Japanese food Wagyu Restaurant (Halal) Steak&Burger-Ramen 5W-Tokyo AkihabaraUeno Beef Dining | Muslim-Friendly, 3 min from Okachimachi Station",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 3 min from Okachimachi Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "https://www.tablecheck.com/shops/halal-burger-akihabaraueno-5w-tokyo/reserve",
+      "phone": "08062655933",
+      "phoneHref": "tel:+81-8062655933",
+      "hoursFull": "11:00 – 23:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 23:00",
+      "hoursOpenPillShort": "OPEN · 11–23",
+      "addressHtml": "2-5-3 Taito, Taito-ku 2F<br>Tokyo 110-0016, Japan",
+      "seats": "",
+      "storyBgImage": "",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "https://www.google.com/maps?q=2-5-3+Taito,+Taito+City,+Tokyo+110-0016&output=embed",
+      "mapPlaceUrl": "https://www.google.com/maps/place/2-5-3+Taito,+Taito+City,+Tokyo+110-0016",
+      "stations": [
+        {
+          "name": "Okachimachi Station",
+          "line": "JR Yamanote / Keihin-Tohoku Line",
+          "walk": "3 min walk"
+        },
+        {
+          "name": "Naka-Okachimachi Station",
+          "line": "Tokyo Metro Hibiya Line",
+          "walk": "3 min walk"
+        },
+        {
+          "name": "Ueno-Hirokoji Station",
+          "line": "Tokyo Metro Ginza Line",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Akihabara Station",
+          "line": "JR / Tsukuba Express",
+          "walk": "10 min walk"
+        }
+      ]
+    },
+    {
+      "permalink": "tokyo/harajuku",
+      "slug": "harajuku",
+      "region": "tokyo",
+      "category": "all",
+      "fullName": "Wagyu (Halal) Steak HamBurger & Ramen (Japanese food) Harajuku Shibuya Restaurant 5W-Tokyo 1962",
+      "landmark": "Harajuku Station",
+      "landmarkWalk": "5 min",
+      "title": "Wagyu (Halal) Steak HamBurger & Ramen (Japanese food) Harajuku Shibuya Restaurant 5W-Tokyo 1962 | Muslim-Friendly, 5 min from Harajuku Station",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 5 min from Harajuku Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "https://www.tablecheck.com/shops/halal-burger-harajuku-5w-tokyo/reserve",
+      "phone": "0358606764",
+      "phoneHref": "tel:+81-358606764",
+      "hoursFull": "11:00 – 23:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 23:00",
+      "hoursOpenPillShort": "OPEN · 11–23",
+      "addressHtml": "1-8-25 Jingumae, Shibuya-ku<br>BU1825 Harajuku 202<br>Tokyo 150-0001, Japan",
+      "seats": "",
+      "storyBgImage": "",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "https://www.google.com/maps?q=1-8-25+Jingumae,+Shibuya+City,+Tokyo+150-0001&output=embed",
+      "mapPlaceUrl": "https://www.google.com/maps/place/1-8-25+Jingumae,+Shibuya+City,+Tokyo+150-0001",
+      "stations": [
+        {
+          "name": "Harajuku Station",
+          "line": "JR Yamanote Line",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Meiji-jingumae Station",
+          "line": "Tokyo Metro Chiyoda / Fukutoshin Line",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Shibuya Station",
+          "line": "JR / Metro / Tokyu",
+          "walk": "12 min walk"
+        }
+      ]
+    },
+    {
+      "permalink": "tokyo/shinjuku",
+      "slug": "shinjuku",
+      "region": "tokyo",
+      "category": "all",
+      "fullName": "Wagyu Halal Japanese Food (Steak Hamburger & Ramen Sukiyaki) Shinjuku Restaurant",
+      "landmark": "Shinjuku-sanchome Station",
+      "landmarkWalk": "5 min",
+      "title": "Wagyu Halal Japanese Food (Steak Hamburger & Ramen Sukiyaki) Shinjuku Restaurant | Muslim-Friendly, 5 min from Shinjuku-sanchome Station",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 5 min from Shinjuku-sanchome Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "https://www.tablecheck.com/shops/halal-burger-shinjuku-5w-tokyo/reserve",
+      "phone": "08026245348",
+      "phoneHref": "tel:+81-8026245348",
+      "hoursFull": "11:00 – 1:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 1:00",
+      "hoursOpenPillShort": "OPEN · 11–1",
+      "addressHtml": "5-8-7 Shinjuku, Shinjuku-ku<br>Tokyo 160-0022, Japan",
+      "seats": "",
+      "storyBgImage": "",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "https://www.google.com/maps?q=5-8-7+Shinjuku,+Shinjuku+City,+Tokyo+160-0022&output=embed",
+      "mapPlaceUrl": "https://www.google.com/maps/place/5-8-7+Shinjuku,+Shinjuku+City,+Tokyo+160-0022",
+      "stations": [
+        {
+          "name": "Shinjuku-sanchome Station",
+          "line": "Tokyo Metro Marunouchi / Fukutoshin / Toei Shinjuku",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Higashi-Shinjuku Station",
+          "line": "Toei Oedo / Fukutoshin Line",
+          "walk": "7 min walk"
+        },
+        {
+          "name": "Shinjuku Station",
+          "line": "JR / Private lines",
+          "walk": "12 min walk"
+        }
+      ]
+    },
+    {
+      "permalink": "tokyo/shinjuku-west",
+      "slug": "shinjuku-west",
+      "region": "tokyo",
+      "category": "all",
+      "fullName": "Wagyu Steak Hamburger & Ramen Shinjuku Restaurant",
+      "landmark": "Shinjuku Station (West Exit)",
+      "landmarkWalk": "7 min",
+      "title": "Wagyu Steak Hamburger & Ramen Shinjuku Restaurant | Muslim-Friendly, 7 min from Shinjuku Station (West Exit)",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 7 min from Shinjuku Station (West Exit). Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "https://www.tablecheck.com/shops/halal-wagyu-shinjuku-nishiguchi-5w-tokyo/reserve",
+      "phone": "09062179042",
+      "phoneHref": "tel:+81-9062179042",
+      "hoursFull": "11:00 – 23:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 23:00",
+      "hoursOpenPillShort": "OPEN · 11–23",
+      "addressHtml": "7-11-2 Nishi-Shinjuku, Shinjuku-ku<br>Asp Nishi-Shinjuku Bldg. 2F<br>Tokyo 160-0023, Japan",
+      "seats": "",
+      "storyBgImage": "",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "https://www.google.com/maps?q=7-11-2+Nishishinjuku,+Shinjuku+City,+Tokyo+160-0023&output=embed",
+      "mapPlaceUrl": "https://www.google.com/maps/place/7-11-2+Nishishinjuku,+Shinjuku+City,+Tokyo+160-0023",
+      "stations": [
+        {
+          "name": "Shinjuku Station (West Exit)",
+          "line": "JR / Odakyu / Keio / Metro",
+          "walk": "7 min walk"
+        },
+        {
+          "name": "Shinjuku-nishiguchi Station",
+          "line": "Toei Oedo Line",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Nishi-Shinjuku Station",
+          "line": "Tokyo Metro Marunouchi Line",
+          "walk": "6 min walk"
+        }
+      ]
+    },
+    {
+      "permalink": "tokyo/kabuki-cho",
+      "slug": "kabuki-cho",
+      "region": "tokyo",
+      "category": "all",
+      "fullName": "Wagyu (Halal Vegan) Hamburger Steak & Ramen Shinjuku Kabukicho Restaurant Beef Tei",
+      "landmark": "Seibu-Shinjuku Station",
+      "landmarkWalk": "4 min",
+      "title": "Wagyu (Halal Vegan) Hamburger Steak & Ramen Shinjuku Kabukicho Restaurant Beef Tei | Muslim-Friendly, 4 min from Seibu-Shinjuku Station",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 4 min from Seibu-Shinjuku Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "https://www.tablecheck.com/shops/halal-wagyu-shinjuku-kabukicho-5w-tokyo/reserve",
+      "phone": "0364573353",
+      "phoneHref": "tel:+81-364573353",
+      "hoursFull": "11:00 – 1:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 1:00",
+      "hoursOpenPillShort": "OPEN · 11–1",
+      "addressHtml": "1-12-2 Kabukicho, Shinjuku-ku<br>Dai-58 Tokyo Bldg. B2F<br>Tokyo 160-0021, Japan",
+      "seats": "",
+      "storyBgImage": "",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "https://www.google.com/maps?q=1-12-2+Kabukicho,+Shinjuku+City,+Tokyo+160-0021&output=embed",
+      "mapPlaceUrl": "https://www.google.com/maps/place/1-12-2+Kabukicho,+Shinjuku+City,+Tokyo+160-0021",
+      "stations": [
+        {
+          "name": "Seibu-Shinjuku Station",
+          "line": "Seibu Shinjuku Line",
+          "walk": "4 min walk"
+        },
+        {
+          "name": "Shinjuku Station (East Exit)",
+          "line": "JR / Metro",
+          "walk": "8 min walk"
+        },
+        {
+          "name": "Shinjuku-sanchome Station",
+          "line": "Tokyo Metro / Toei",
+          "walk": "8 min walk"
+        }
+      ]
+    },
+    {
+      "permalink": "osaka/dotonbori",
+      "slug": "dotonbori",
+      "region": "osaka",
+      "category": "all",
+      "fullName": "Wagyu (Halal) Japanese food Steak-Burger&Ramen Dotonbori Restaurant Namba-Tei",
+      "landmark": "Namba Station",
+      "landmarkWalk": "6 min",
+      "title": "Wagyu (Halal) Japanese food Steak-Burger&Ramen Dotonbori Restaurant Namba-Tei | Muslim-Friendly, 6 min from Namba Station",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 6 min from Namba Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "https://www.tablecheck.com/shops/dotonbori-namnatei/reserve",
+      "phone": "09062886709",
+      "phoneHref": "tel:+81-9062886709",
+      "hoursFull": "11:00 – 1:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 1:00",
+      "hoursOpenPillShort": "OPEN · 11–1",
+      "addressHtml": "7-5 Soemoncho, Chuo-ku<br>Ogura-ya Bldg. 2F<br>Osaka 542-0084, Japan",
+      "seats": "",
+      "storyBgImage": "",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "https://www.google.com/maps?q=7-5+Soemoncho,+Chuo+Ward,+Osaka+542-0084&output=embed",
+      "mapPlaceUrl": "https://www.google.com/maps/place/7-5+Soemoncho,+Chuo+Ward,+Osaka+542-0084",
+      "stations": [
+        {
+          "name": "Namba Station",
+          "line": "Osaka Metro Midosuji / Sennichimae / Yotsubashi",
+          "walk": "6 min walk"
+        },
+        {
+          "name": "Nipponbashi Station",
+          "line": "Osaka Metro Sakaisuji / Sennichimae / Kintetsu",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Osaka-Namba Station",
+          "line": "Kintetsu / Hanshin",
+          "walk": "7 min walk"
+        }
+      ]
+    },
+    {
+      "permalink": "osaka/shinsaibashi",
+      "slug": "shinsaibashi",
+      "region": "osaka",
+      "category": "all",
+      "fullName": "Wagyu Ramen & Steak Burger (Halal Vegan Gluten Free) Shinsaibashi Restaurant",
+      "landmark": "Shinsaibashi Station",
+      "landmarkWalk": "5 min",
+      "title": "Wagyu Ramen & Steak Burger (Halal Vegan Gluten Free) Shinsaibashi Restaurant | Muslim-Friendly, 5 min from Shinsaibashi Station",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 5 min from Shinsaibashi Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "https://www.tablecheck.com/shops/halal-wagyu-shinsaibashi/reserve",
+      "phone": "09077728314",
+      "phoneHref": "tel:+81-9077728314",
+      "hoursFull": "11:00 – 1:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 1:00",
+      "hoursOpenPillShort": "OPEN · 11–1",
+      "addressHtml": "3-11-3 Minamisemba, Chuo-ku<br>Yamashita Bldg. 2F<br>Osaka 542-0081, Japan",
+      "seats": "",
+      "storyBgImage": "",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "https://www.google.com/maps?q=3-11-3+Minamisemba,+Chuo+Ward,+Osaka+542-0081&output=embed",
+      "mapPlaceUrl": "https://www.google.com/maps/place/3-11-3+Minamisemba,+Chuo+Ward,+Osaka+542-0081",
+      "stations": [
+        {
+          "name": "Shinsaibashi Station",
+          "line": "Osaka Metro Midosuji / Nagahori Tsurumi-ryokuchi",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Yotsubashi Station",
+          "line": "Osaka Metro Yotsubashi Line",
+          "walk": "7 min walk"
+        },
+        {
+          "name": "Honmachi Station",
+          "line": "Osaka Metro Midosuji / Chuo / Yotsubashi",
+          "walk": "8 min walk"
+        }
+      ]
+    },
+    {
+      "permalink": "tokyo/tsukiji",
+      "slug": "tsukiji",
+      "region": "tokyo",
+      "category": "all",
+      "fullName": "Wagyu Steak Hamburger & Ramen (Halal Vegan Gluten Free) Tsukiji Fish Market Restaurant 筑地 拉面 餐厅",
+      "landmark": "Tsukiji Station",
+      "landmarkWalk": "6 min",
+      "title": "Wagyu Steak Hamburger & Ramen (Halal Vegan Gluten Free) Tsukiji Fish Market Restaurant 筑地 拉面 餐厅 | Muslim-Friendly, 6 min from Tsukiji Station",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 6 min from Tsukiji Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "https://www.tablecheck.com/shops/yakiniku-burger-ramen-zen/reserve",
+      "phone": "0362606222",
+      "phoneHref": "tel:+81-362606222",
+      "hoursFull": "11:00 – 23:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 23:00",
+      "hoursOpenPillShort": "OPEN · 11–23",
+      "addressHtml": "6-26-7 Tsukiji, Chuo-ku<br>Miyazaki Bldg. 3F<br>Tokyo 104-0045, Japan",
+      "seats": "",
+      "storyBgImage": "",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "https://www.google.com/maps?q=6-26-7+Tsukiji,+Chuo+City,+Tokyo+104-0045&output=embed",
+      "mapPlaceUrl": "https://www.google.com/maps/place/6-26-7+Tsukiji,+Chuo+City,+Tokyo+104-0045",
+      "stations": [
+        {
+          "name": "Tsukiji Station",
+          "line": "Tokyo Metro Hibiya Line",
+          "walk": "6 min walk"
+        },
+        {
+          "name": "Tsukijishijo Station",
+          "line": "Toei Oedo Line",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Higashi-ginza Station",
+          "line": "Tokyo Metro Hibiya / Toei Asakusa",
+          "walk": "8 min walk"
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "instagramUrl": "https://www.instagram.com/5w_tokyo_official/"
+  }
+}

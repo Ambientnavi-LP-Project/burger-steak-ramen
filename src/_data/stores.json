@@ -114,7 +114,7 @@
       "addressHtml": "6-16-7 Ueno, Taito-ku<br>D-B 5F<br>Tokyo 110-0005, Japan",
       "seats": "54 seats",
       "storyBgImage": "",
-      "hideGoogleLinks": false,
+      "hideGoogleLinks": true,
       "mapEmbedUrl": "",
       "mapPlaceUrl": "",
       "stations": [

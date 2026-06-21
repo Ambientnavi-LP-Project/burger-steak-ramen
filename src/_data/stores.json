@@ -96,6 +96,51 @@
       ]
     },
     {
+      "permalink": "tokyo/ueno",
+      "slug": "ueno",
+      "region": "tokyo",
+      "category": "all",
+      "fullName": "Wagyu Steak Hamburger & Ramen Halal Vegan Gluten Free Ueno Restaurant 上野和牛拉面餐厅",
+      "landmark": "Ueno Station",
+      "landmarkWalk": "6 min",
+      "title": "Wagyu Steak Hamburger & Ramen Halal Vegan Gluten Free Ueno Restaurant 上野和牛拉面餐厅 | Muslim-Friendly, 6 min from Ueno Station",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 6 min from Ueno Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserveUrl": "",
+      "phone": "090-5616-1151",
+      "phoneHref": "tel:+81-90-5616-1151",
+      "hoursFull": "11:00 – 23:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 23:00",
+      "hoursOpenPillShort": "OPEN · 11–23",
+      "addressHtml": "6-16-7 Ueno, Taito-ku<br>D-B 5F<br>Tokyo 110-0005, Japan",
+      "seats": "54 seats",
+      "storyBgImage": "",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "",
+      "mapPlaceUrl": "",
+      "stations": [
+        {
+          "name": "Ueno-okachimachi Station",
+          "line": "Toei Oedo Line",
+          "walk": "4 min walk"
+        },
+        {
+          "name": "Okachimachi Station",
+          "line": "JR Yamanote / Keihin-Tohoku Line",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Naka-Okachimachi Station",
+          "line": "Tokyo Metro Hibiya Line",
+          "walk": "5 min walk"
+        },
+        {
+          "name": "Ueno Station",
+          "line": "JR / Tokyo Metro Ginza / Hibiya / Keisei",
+          "walk": "6 min walk"
+        }
+      ]
+    },
+    {
       "permalink": "tokyo/harajuku",
       "slug": "harajuku",
       "region": "tokyo",

@@ -115,6 +115,7 @@
       "seats": "54 seats",
       "storyBgImage": "",
       "hideGoogleLinks": true,
+      "hideReviews": true,
       "mapEmbedUrl": "",
       "mapPlaceUrl": "",
       "stations": [

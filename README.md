@@ -1,5 +1,6 @@
 # Wagyu Steak Hamburger & Ramen (Halal) — 店舗ページ
 
+業態：全業態対応。ドメイン：halal-food-wagyu.com 
 Eleventy(11ty)製の静的サイト。テンプレート1枚 + 店舗データから、全店舗ページを自動生成する。
 
 GTMコンテナID: `GTM-5DGT9H6L`（GA4への送信はGTM側で設定）

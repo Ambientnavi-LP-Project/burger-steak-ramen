@@ -1856,7 +1856,7 @@ footer {
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DGT9H6L"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-{% set reserveHref = (store.reserveUrl ~ "?utm_source=lp&utm_medium=referral") if store.reserveUrl else store.phoneHref %}
+{% set reserveHref = (store.reserveUrl ~ "?utm_content=lp_cta") if store.reserveUrl else store.phoneHref %}
 {% set reserveAttrs = 'target="_blank" rel="noopener"' if store.reserveUrl else '' %}
 {# 予約CTAの計測イベント名。外部予約サイトなら reserve_click、電話フォールバックなら tel_click #}
 {% set reserveEvent = "reserve_click" if store.reserveUrl else "tel_click" %}

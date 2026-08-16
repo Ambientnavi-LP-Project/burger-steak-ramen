@@ -1867,7 +1867,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="brand-full">{{ store.fullName | safe }}</span>
   </a>
   <div class="nav-right">
-    <a href="{{ reserveHref }}" {{ reserveAttrs | safe }} class="nav-cta">Reserve</a>
+   <a href="{{ reserveHref }}" {{ reserveAttrs | safe }} class="nav-cta" data-ga-event="{{ reserveEvent }}" data-ga-location="nav">Reserve</a>
   </div>
 </nav>
 

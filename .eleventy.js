@@ -9,6 +9,7 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/image": "image" });
   eleventyConfig.addPassthroughCopy({ "src/movie": "movie" });
   eleventyConfig.addPassthroughCopy({ "src/store-render.js": "store-render.js" });
+  eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
 
   return {
     dir: {

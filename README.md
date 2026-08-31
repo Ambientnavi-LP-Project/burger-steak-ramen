@@ -102,3 +102,10 @@ GTM 側で URL（ホスト名／パス）から解決する。
 `ueno` のみ `reserveUrl` / `mapPlaceUrl` / `mapEmbedUrl` が空で `hideGoogleLinks: true`。
 そのため上野店だけ `reserve_click` と `map_click` が発火しない。
 値を入れればテンプレート側は変更不要で計測されるようになる。
+
+## 計測要件
+
+LPの作成・デザイン変更・テンプレート追加を行う際は、必ず以下を参照すること。
+CTAの書き方やTableCheckのURL指定を誤ると、広告のコンバージョン計測が停止する。
+
+https://github.com/Ambientnavi-LP-Project/omakase/blob/main/docs/LP%E4%BD%9C%E6%88%90%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88.md

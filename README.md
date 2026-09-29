@@ -99,8 +99,12 @@ GTM 側で URL（ホスト名／パス）から解決する。
 
 ### 現状
 
-`ueno` のみ `reserveUrl` / `mapPlaceUrl` / `mapEmbedUrl` が空で `hideGoogleLinks: true`。
-そのため上野店だけ `reserve_click` と `map_click` が発火しない。
+`ueno` は `reserveUrl` / `mapPlaceUrl` / `mapEmbedUrl` が空で `hideGoogleLinks: true`（`reserve_click` と `map_click` が発火しない）。
+`oshiage` / `nipponbashi` / `meiji-jingu` は `reserveUrl` が空（予約CTAは電話リンク・`tel_click`）。
+`oshiage` と `nipponbashi` は旧URL（`/shops/.../reserve`）が TableCheck で not-found になっていたため 2026-09-29 に空にした。
+
+`reserveUrl` には **リダイレクト後の最終URL**（`https://www.tablecheck.com/en/<shop>/reserve/message` または `/reserve/landing`）を入れる。
+`/shops/.../reserve` やUTM付きのURLはクロスドメイン計測が切れるので使わない。
 値を入れればテンプレート側は変更不要で計測されるようになる。
 
 ## 計測要件

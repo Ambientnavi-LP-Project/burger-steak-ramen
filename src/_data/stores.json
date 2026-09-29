@@ -512,6 +512,48 @@
           "walk": "7 min walk"
         }
       ]
+    },
+    {
+      "permalink": "tokyo/meiji-jingu",
+      "slug": "meiji-jingu",
+      "region": "tokyo",
+      "category": "all",
+      "fullName": "Wagyu Halal Kobe Beef Steak Hamburger Ramen Vegan 涩谷美食 Meiji Jingu Restaurant",
+      "landmark": "Meiji-jingumae Station",
+      "landmarkWalk": "3 min",
+      "title": "Wagyu Halal Kobe Beef Steak Hamburger Ramen Vegan 涩谷美食 Meiji Jingu Restaurant | Muslim-Friendly, 3 min from Meiji-jingumae Station",
+      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 3 min from Meiji-jingumae Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "reserve_system": "tablecheck",
+      "reserveUrl": "",
+      "phone": "080-2891-5195",
+      "phoneHref": "tel:+81-80-2891-5195",
+      "hoursFull": "10:00 – 23:00",
+      "hoursOpenPill": "OPEN NOW · 10:00 – 23:00",
+      "hoursOpenPillShort": "OPEN · 10–23",
+      "addressHtml": "6-6-6 Jingumae, Shibuya-ku<br>Onden 1st. Bldg. 2F<br>Tokyo 150-0001, Japan",
+      "seats": "",
+      "storyBgImage": "",
+      "hideGoogleLinks": false,
+      "hideReviews": true,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.3460550394275!2d139.70488550720106!3d35.66754025812859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188db12d336ca7%3A0xc543e4b5c5d4d4c8!2sWagyu%20Halal%20Kobe%20Beef%20Steak%20Hamburger%20Ramen%20Vegan%20%E6%B6%A9%E8%B0%B7%E7%BE%8E%E9%A3%9F%20Meiji%20Jingu%20Restaurant!5e0!3m2!1sja!2sjp!4v1790662528972!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://maps.app.goo.gl/XZT94quQLbgB694RA",
+      "stations": [
+        {
+          "name": "Meiji-jingumae Station",
+          "line": "Tokyo Metro Chiyoda / Fukutoshin Line",
+          "walk": "3 min walk"
+        },
+        {
+          "name": "Harajuku Station",
+          "line": "JR Yamanote Line",
+          "walk": "7 min walk"
+        },
+        {
+          "name": "Omotesando Station",
+          "line": "Tokyo Metro Ginza / Hanzomon / Chiyoda Line",
+          "walk": "10 min walk"
+        }
+      ]
     }
   ],
   "defaults": {

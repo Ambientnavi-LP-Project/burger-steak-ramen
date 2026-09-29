@@ -11,7 +11,7 @@ GTMコンテナID: `GTM-5DGT9H6L`（GA4への送信はGTM側で設定）
 
 | ファイル / フォルダ | 役割 |
 |---|---|
-| `src/_data/stores.json` | **店舗データ。基本ここだけ編集すればOK**（12店舗） |
+| `src/_data/stores.json` | **店舗データ。基本ここだけ編集すればOK**（13店舗） |
 | `src/store.njk` | 店舗ページのひな型（全店舗で共通） |
 | `src/store-render.js` | 背景画像など、ビルド時に埋められない一部の処理だけを担当 |
 | `src/image/` `src/movie/` | 写真・動画。そのまま `_site/` にコピーされる |

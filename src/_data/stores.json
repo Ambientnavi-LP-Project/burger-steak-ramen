@@ -98,53 +98,6 @@
       ]
     },
     {
-      "permalink": "tokyo/ueno",
-      "slug": "ueno",
-      "region": "tokyo",
-      "category": "all",
-      "fullName": "Wagyu Steak Hamburger & Ramen Halal Vegan Gluten Free Ueno Restaurant 上野和牛拉面餐厅",
-      "landmark": "Ueno Station",
-      "landmarkWalk": "6 min",
-      "title": "Wagyu Steak Hamburger & Ramen Halal Vegan Gluten Free Ueno Restaurant 上野和牛拉面餐厅 | Muslim-Friendly, 6 min from Ueno Station",
-      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 6 min from Ueno Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
-      "reserve_system": "tablecheck",
-      "reserveUrl": "",
-      "phone": "090-5616-1151",
-      "phoneHref": "tel:+81-90-5616-1151",
-      "hoursFull": "11:00 – 23:00",
-      "hoursOpenPill": "OPEN NOW · 11:00 – 23:00",
-      "hoursOpenPillShort": "OPEN · 11–23",
-      "addressHtml": "6-16-7 Ueno, Taito-ku<br>D-B UenoⅡ 5F<br>Tokyo 110-0005, Japan",
-      "seats": "54 seats",
-      "storyBgImage": "",
-      "hideGoogleLinks": true,
-      "hideReviews": true,
-      "mapEmbedUrl": "",
-      "mapPlaceUrl": "",
-      "stations": [
-        {
-          "name": "Ueno-okachimachi Station",
-          "line": "Toei Oedo Line",
-          "walk": "4 min walk"
-        },
-        {
-          "name": "Okachimachi Station",
-          "line": "JR Yamanote / Keihin-Tohoku Line",
-          "walk": "5 min walk"
-        },
-        {
-          "name": "Naka-Okachimachi Station",
-          "line": "Tokyo Metro Hibiya Line",
-          "walk": "5 min walk"
-        },
-        {
-          "name": "Ueno Station",
-          "line": "JR / Tokyo Metro Ginza / Hibiya / Keisei",
-          "walk": "6 min walk"
-        }
-      ]
-    },
-    {
       "permalink": "tokyo/harajuku",
       "slug": "harajuku",
       "region": "tokyo",
@@ -322,9 +275,9 @@
       "reserveUrl": "https://www.tablecheck.com/en/dotonbori-namnatei/reserve/message",
       "phone": "09062886709",
       "phoneHref": "tel:+81-9062886709",
-      "hoursFull": "10:00 – 1:00",
-      "hoursOpenPill": "OPEN NOW · 10:00 – 1:00",
-      "hoursOpenPillShort": "OPEN · 10–1",
+      "hoursFull": "11:00 – 1:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 1:00",
+      "hoursOpenPillShort": "OPEN · 11–1",
       "addressHtml": "7-5 Soemoncho, Chuo-ku<br>Ogura-ya Bldg. 2F<br>Osaka 542-0084, Japan",
       "seats": "",
       "storyBgImage": "",
@@ -363,9 +316,9 @@
       "reserveUrl": "https://www.tablecheck.com/en/halal-wagyu-shinsaibashi/reserve/message",
       "phone": "09077728314",
       "phoneHref": "tel:+81-9077728314",
-      "hoursFull": "8:00 – 1:00",
-      "hoursOpenPill": "OPEN NOW · 8:00 – 1:00",
-      "hoursOpenPillShort": "OPEN · 8–1",
+      "hoursFull": "10:00 – 1:00",
+      "hoursOpenPill": "OPEN NOW · 10:00 – 1:00",
+      "hoursOpenPillShort": "OPEN · 10–1",
       "addressHtml": "3-11-3 Minamisemba, Chuo-ku<br>Yamashita Bldg. 2F<br>Osaka 542-0081, Japan",
       "seats": "",
       "storyBgImage": "",
@@ -527,9 +480,9 @@
       "reserveUrl": "",
       "phone": "080-2891-5195",
       "phoneHref": "tel:+81-80-2891-5195",
-      "hoursFull": "10:00 – 23:00",
-      "hoursOpenPill": "OPEN NOW · 10:00 – 23:00",
-      "hoursOpenPillShort": "OPEN · 10–23",
+      "hoursFull": "11:00 – 23:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 23:00",
+      "hoursOpenPillShort": "OPEN · 11–23",
       "addressHtml": "6-6-6 Jingumae, Shibuya-ku<br>Onden 1st. Bldg. 2F<br>Tokyo 150-0001, Japan",
       "seats": "",
       "storyBgImage": "",

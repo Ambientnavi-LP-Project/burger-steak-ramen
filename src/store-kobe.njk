@@ -81,12 +81,18 @@ img{display:block;max-width:100%}
 .kb-section--alt{background:var(--surface)}
 /* header */
 .kb-header{position:sticky;top:0;z-index:20;background:var(--bg-deep);border-bottom:1px solid var(--line)}
-.kb-header__bar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px}
-.kb-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.kb-brand__name{display:block;font-family:'Oswald',sans-serif;font-weight:600;font-size:19px;letter-spacing:.08em;color:var(--gold-light);line-height:1.1}
-.kb-brand__sub{display:block;font-size:11px;color:var(--muted);line-height:1.2}
-.kb-header__store{margin:-2px 0 0;padding:0 14px 8px;font-size:12px;font-weight:500;line-height:1.35;color:var(--gold-light);word-break:keep-all;overflow-wrap:anywhere}
-.kb-header__actions{display:flex;align-items:center;gap:8px}
+/* ヘッダー：狭い画面は「KOBE BEEF＋ボタン」の下に店名を全幅。広い画面は KOBE BEEF と店名を左に縦積み、ボタンは2行の中央 */
+.kb-header__bar{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"brand actions" "store store";column-gap:12px;row-gap:6px;padding:8px 14px 10px}
+.kb-brand{grid-area:brand;align-self:center;display:flex;align-items:center;gap:10px;text-decoration:none}
+.kb-brand__name{display:block;font-family:'Oswald',sans-serif;font-weight:600;font-size:18px;letter-spacing:.1em;color:var(--gold);line-height:1}
+.kb-header__store{grid-area:store;margin:0;font-size:12px;font-weight:500;line-height:1.4;color:var(--text);word-break:keep-all;overflow-wrap:anywhere}
+.kb-header__actions{grid-area:actions;display:flex;align-items:center;gap:8px}
+@media (min-width:480px){
+  .kb-header__bar{grid-template-areas:"brand actions" "store actions";row-gap:4px;padding:10px 16px}
+  .kb-brand{align-self:end}
+  .kb-header__actions{align-self:center}
+  .kb-header__store{align-self:start;font-size:13px}
+}
 .kb-lang{position:relative}
 .kb-lang summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 10px;border:1px solid var(--line);border-radius:4px;color:var(--gold-light);font:500 14px 'Oswald',sans-serif;letter-spacing:.06em;cursor:pointer;list-style:none}
 .kb-lang summary::-webkit-details-marker{display:none}
@@ -175,8 +181,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </details>
       <a class="kb-cta kb-cta--sm" href="{{ p.reserve.href }}" {{ reserveAttrs | safe }} data-ga-event="{{ p.reserve.event }}" data-ga-location="header">{{ p.reserve.short }}</a>
     </div>
+    <p class="kb-header__store">{{ store.fullName }}</p>
   </div>
-  <p class="kb-header__store">{{ store.fullName }}</p>
   <nav class="kb-nav" aria-label="Page sections">
     <a href="#menu">{{ t.navMenu }}</a>
     <a href="#halal">{{ t.navHalal }}</a>

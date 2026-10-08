@@ -12,6 +12,26 @@
       "source": "/tokyo/kabuki-cho/",
       "destination": "/tokyo/kabukicho/",
       "permanent": true
+    },
+    {
+      "source": "/kyoto/gots-burger",
+      "destination": "/kyoto/gots-gojozaka-burger/",
+      "permanent": true
+    },
+    {
+      "source": "/kyoto/gots-burger/",
+      "destination": "/kyoto/gots-gojozaka-burger/",
+      "permanent": true
+    },
+    {
+      "source": "/kyoto/gots-ramen",
+      "destination": "/kyoto/gots-gojozaka-ramen/",
+      "permanent": true
+    },
+    {
+      "source": "/kyoto/gots-ramen/",
+      "destination": "/kyoto/gots-gojozaka-ramen/",
+      "permanent": true
     }
   ]
 }

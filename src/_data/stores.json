@@ -568,27 +568,27 @@
       ]
     },
     {
-      "permalink": "kyoto/gots-burger",
-      "slug": "gots-burger",
+      "permalink": "kyoto/gots-gojozaka-burger",
+      "slug": "gots-gojozaka-burger",
       "region": "kyoto",
       "category": "gots",
       "gaStoreName": "gots-gojozaka-burger",
       "gotsType": "burger",
       "fullName": "Wagyu Hamburger GOTS Halal Kiyomizu Restaurant",
       "title": "GOTS | Halal Wagyu Burger near Kiyomizu-dera, Gojozaka Kyoto",
-      "description": "Halal-certified Japanese Wagyu burgers and steak on Gojozaka, the slope to Kiyomizu-dera. From a butcher family working since 1962. Open daily 11:00–23:00.",
+      "description": "Halal-certified Japanese Wagyu burgers and steak on Gojozaka, the slope to Kiyomizu-dera. From a butcher family working since 1962. Open daily 10:00–23:00.",
       "h1": "Halal Wagyu Burgers on the Slope to Kiyomizu-dera",
       "lead": "Japanese Wagyu burgers from WAGYU GOTS, a butcher family working with meat since 1962. Halal-certified beef and no pork on the menu.",
       "phone": "090-8994-4593",
       "phoneHref": "tel:+81-90-8994-4593",
-      "addressHtml": "559-1 Yugyomaecho, Higashiyama-ku<br>Kyoto 605-0864, Japan",
-      "addressPlain": "559-1 Yugyomaecho, Higashiyama-ku, Kyoto 605-0864, Japan",
-      "addressJa": "京都府京都市東山区遊行前町559-1",
-      "streetAddress": "559-1 Yugyomaecho, Higashiyama-ku",
+      "addressHtml": "1F, 559-1 Yugyomaecho, Higashiyama-ku<br>Kyoto 605-0864, Japan",
+      "addressPlain": "1F, 559-1 Yugyomaecho, Higashiyama-ku, Kyoto 605-0864, Japan",
+      "addressJa": "京都府京都市東山区遊行前町559-1 1F",
+      "streetAddress": "1F, 559-1 Yugyomaecho, Higashiyama-ku",
       "payment": "",
       "facts": [
         [
-          "11:00–23:00",
+          "10:00–23:00",
           "Open daily"
         ],
         [
@@ -642,28 +642,30 @@
       "landmarkWalk": "",
       "reserve_system": "",
       "reserveUrl": "",
-      "hoursFull": "11:00 – 23:00",
+      "hoursFull": "10:00 – 23:00",
       "hoursNote": "Open daily",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "",
-      "mapPlaceUrl": "",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1183.8839443991349!2d135.77619444903846!3d34.994574191158975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600109127a619cc9%3A0xad3311dfc3d9c703!2sWagyu%20Hamburger!5e0!3m2!1sja!2sjp!4v1790660684693!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://maps.app.goo.gl/EFBNfkuAxWFrKpPH7",
       "stations": [],
       "languages": [
         "en"
       ],
       "seats": "",
-      "featureAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands"
+      "featureAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands",
+      "opens": "10:00",
+      "closes": "23:00"
     },
     {
-      "permalink": "kyoto/gots-ramen",
-      "slug": "gots-ramen",
+      "permalink": "kyoto/gots-gojozaka-ramen",
+      "slug": "gots-gojozaka-ramen",
       "region": "kyoto",
       "category": "gots",
       "gaStoreName": "gots-gojozaka-ramen",
       "gotsType": "ramen",
       "fullName": "Wagyu Halal Ramen 轟津 GOTS Kiyomizudera",
       "title": "轟津 GOTS | Halal Wagyu Ramen near Kiyomizu-dera, Gojozaka Kyoto",
-      "description": "Miso, shoyu and spicy ramen topped with halal-certified Japanese Wagyu, on Gojozaka near Kiyomizu-dera. From a butcher family working since 1962. Open daily 11:00–23:00.",
+      "description": "Miso, shoyu and spicy ramen topped with halal-certified Japanese Wagyu, on Gojozaka near Kiyomizu-dera. From a butcher family working since 1962. Open daily 10:00–23:00.",
       "h1": "Halal Wagyu Ramen Steps from Kiyomizu-dera",
       "lead": "Miso, shoyu and spicy broths topped with sliced Japanese Wagyu, from WAGYU GOTS, a butcher family working with meat since 1962. Halal-certified beef.",
       "phone": "090-5486-7090",
@@ -681,7 +683,7 @@
       ],
       "facts": [
         [
-          "11:00–23:00",
+          "10:00–23:00",
           "Open daily"
         ],
         [
@@ -741,17 +743,19 @@
       "landmarkWalk": "",
       "reserve_system": "",
       "reserveUrl": "",
-      "hoursFull": "11:00 – 23:00",
+      "hoursFull": "10:00 – 23:00",
       "hoursNote": "Open daily",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "",
-      "mapPlaceUrl": "",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.1203382730442!2d135.77631208265063!3d34.994653802719526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001097236dd4b79%3A0x8da1625c8f984633!2zS29iZSBCZWVmIFdhZ3l1IFJhbWVuIE5vb2RsZSBIYWxhbCBHb2pvemFrYSBSZXN0YXVyYW50IOS6rOmDvee-jumjnw!5e0!3m2!1sja!2sjp!4v1790660739560!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://maps.app.goo.gl/VV1ExapCw32pFzJX9",
       "stations": [],
       "languages": [
         "en"
       ],
       "seats": "",
-      "featureAlt": "Wagyu ramen with a large sheet of seared marbled Wagyu, green onion and bamboo shoots, steaming"
+      "featureAlt": "Wagyu ramen with a large sheet of seared marbled Wagyu, green onion and bamboo shoots, steaming",
+      "opens": "10:00",
+      "closes": "23:00"
     }
   ],
   "defaults": {

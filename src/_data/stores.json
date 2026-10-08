@@ -566,6 +566,190 @@
           "walk": "10 min walk"
         }
       ]
+    },
+    {
+      "permalink": "kyoto/gots-burger",
+      "slug": "gots-burger",
+      "region": "kyoto",
+      "category": "gots",
+      "gaStoreName": "gots-gojozaka-burger",
+      "gotsType": "burger",
+      "fullName": "Wagyu Hamburger GOTS Halal Kiyomizu Restaurant",
+      "title": "GOTS | Halal Wagyu Burger near Kiyomizu-dera, Gojozaka Kyoto",
+      "description": "Halal-certified Japanese Wagyu burgers and steak on Gojozaka, the slope to Kiyomizu-dera. From a butcher family working since 1962. Open daily 11:00–23:00.",
+      "h1": "Halal Wagyu Burgers on the Slope to Kiyomizu-dera",
+      "lead": "Japanese Wagyu burgers from WAGYU GOTS, a butcher family working with meat since 1962. Halal-certified beef and no pork on the menu.",
+      "phone": "090-8994-4593",
+      "phoneHref": "tel:+81-90-8994-4593",
+      "addressHtml": "559-1 Yugyomaecho, Higashiyama-ku<br>Kyoto 605-0864, Japan",
+      "addressPlain": "559-1 Yugyomaecho, Higashiyama-ku, Kyoto 605-0864, Japan",
+      "addressJa": "京都府京都市東山区遊行前町559-1",
+      "streetAddress": "559-1 Yugyomaecho, Higashiyama-ku",
+      "payment": "",
+      "facts": [
+        [
+          "11:00–23:00",
+          "Open daily"
+        ],
+        [
+          "Gojozaka",
+          "Toward Kiyomizu-dera"
+        ],
+        [
+          "Since 1962",
+          "Butcher family"
+        ]
+      ],
+      "menuTitle": "Wagyu, three ways",
+      "menuIntro": "Every patty and steak is Japanese Wagyu, cut and seasoned in-house.",
+      "featureImage": "",
+      "menuItems": [
+        {
+          "ja": "和牛バーガー",
+          "name": "Wagyu Burger",
+          "tag": "Signature",
+          "desc": "Japanese Wagyu patty, signature house sauce, brioche bun."
+        },
+        {
+          "ja": "和牛ステーキ",
+          "name": "Wagyu Steak",
+          "tag": "",
+          "desc": "Premium cut, teppanyaki-style, finished with the chef's seasoning."
+        },
+        {
+          "ja": "バーガー＆ステーキ",
+          "name": "Burger & Steak Combo",
+          "tag": "",
+          "desc": "Wagyu patty and grilled Wagyu steak together. Value set available."
+        }
+      ],
+      "faq": [
+        [
+          "Do I need a reservation?",
+          "Walk-ins are welcome. Call ahead for groups or busy hours around Kiyomizu-dera."
+        ],
+        [
+          "Is the beef halal?",
+          "Yes. All beef is halal-certified Japanese Wagyu, and no pork is served."
+        ],
+        [
+          "How far is Kiyomizu-dera?",
+          "We are on Gojozaka, the slope that leads up to Kiyomizu-dera."
+        ]
+      ],
+      "areaLabel": "Gojozaka · Kiyomizu-dera",
+      "landmark": "Kiyomizu-dera",
+      "landmarkWalk": "",
+      "reserve_system": "",
+      "reserveUrl": "",
+      "hoursFull": "11:00 – 23:00",
+      "hoursNote": "Open daily",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "",
+      "mapPlaceUrl": "",
+      "stations": [],
+      "languages": [
+        "en"
+      ],
+      "seats": ""
+    },
+    {
+      "permalink": "kyoto/gots-ramen",
+      "slug": "gots-ramen",
+      "region": "kyoto",
+      "category": "gots",
+      "gaStoreName": "gots-gojozaka-ramen",
+      "gotsType": "ramen",
+      "fullName": "Wagyu Halal Ramen 轟津 GOTS Kiyomizudera",
+      "title": "轟津 GOTS | Halal Wagyu Ramen near Kiyomizu-dera, Gojozaka Kyoto",
+      "description": "Miso, shoyu and spicy ramen topped with halal-certified Japanese Wagyu, on Gojozaka near Kiyomizu-dera. From a butcher family working since 1962. Open daily 11:00–23:00.",
+      "h1": "Halal Wagyu Ramen Steps from Kiyomizu-dera",
+      "lead": "Miso, shoyu and spicy broths topped with sliced Japanese Wagyu, from WAGYU GOTS, a butcher family working with meat since 1962. Halal-certified beef.",
+      "phone": "090-5486-7090",
+      "phoneHref": "tel:+81-90-5486-7090",
+      "addressHtml": "2F, 559-8 Yugyomaecho, Higashiyama-ku<br>Kyoto 605-0864, Japan",
+      "addressPlain": "2F, 559-8 Yugyomaecho, Higashiyama-ku, Kyoto 605-0864, Japan",
+      "addressJa": "京都府京都市東山区遊行前町559-8 2F",
+      "streetAddress": "2F, 559-8 Yugyomaecho, Higashiyama-ku",
+      "payment": "Cashless only",
+      "facilities": [
+        "Wi-Fi",
+        "Non-smoking",
+        "Takeout",
+        "Child-friendly"
+      ],
+      "facts": [
+        [
+          "11:00–23:00",
+          "Open daily"
+        ],
+        [
+          "2F",
+          "On Gojozaka"
+        ],
+        [
+          "Cashless",
+          "No cash"
+        ]
+      ],
+      "menuTitle": "Three broths, one Wagyu",
+      "menuIntro": "Choose your broth. Every bowl is topped with sliced halal-certified Japanese Wagyu.",
+      "featureImage": "",
+      "menuItems": [
+        {
+          "kanji": "味噌",
+          "name": "Wagyu Miso Ramen",
+          "tag": "",
+          "desc": "A rich, deep miso broth layered with the umami of the Wagyu slices."
+        },
+        {
+          "kanji": "醤油",
+          "name": "Wagyu Shoyu Ramen",
+          "tag": "",
+          "desc": "A traditional shoyu broth that lets the Wagyu speak first."
+        },
+        {
+          "kanji": "辛",
+          "name": "Wagyu Spicy Ramen",
+          "tag": "",
+          "desc": "Signature spicy broth with house chili oil and chili threads."
+        },
+        {
+          "kanji": "丼",
+          "name": "Marbled Wagyu Donburi Set",
+          "tag": "Most popular",
+          "desc": "Any ramen with sliced marbled Wagyu over rice, finished at the table."
+        }
+      ],
+      "faq": [
+        [
+          "Do I need a reservation?",
+          "Walk-ins are welcome. Call ahead for groups or busy hours around Kiyomizu-dera."
+        ],
+        [
+          "Is the ramen halal?",
+          "The Wagyu is halal-certified and no pork is used. Ask staff for details on each broth."
+        ],
+        [
+          "Can I pay in cash?",
+          "No. We accept credit cards and electronic payment only."
+        ]
+      ],
+      "areaLabel": "Gojozaka · Kiyomizu-dera",
+      "landmark": "Kiyomizu-dera",
+      "landmarkWalk": "",
+      "reserve_system": "",
+      "reserveUrl": "",
+      "hoursFull": "11:00 – 23:00",
+      "hoursNote": "Open daily",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "",
+      "mapPlaceUrl": "",
+      "stations": [],
+      "languages": [
+        "en"
+      ],
+      "seats": ""
     }
   ],
   "defaults": {

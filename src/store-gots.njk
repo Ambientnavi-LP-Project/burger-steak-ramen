@@ -1,0 +1,352 @@
+---
+# GOTS 業態LP（五条坂：バーガー／ラーメン）
+# - stores.json の category: "gots" の店舗を1店舗1ページで生成（データは _data/gotsStores.js）
+# - gotsType: "burger" はえんじ×白、"ramen" は黒×白。アクセントはロゴの落款の赤
+# - 計測要件（docs: LP作成プロンプト.md）
+#   ・予約CTAは必ず <a href>。TableCheck URL は stores.json の reserveUrl をそのまま（UTMを付けない／/reserve/landing|message の最終URL）
+#   ・reserveUrl が空の店舗は全CTAが tel: + tel_click に切り替わる
+#   ・dataLayer.push は head の店舗情報と [data-ga-event] ハンドラの2か所だけ
+#   ・ACQ-FORWARD（partials/acq-forward.njk）と GTM（head / body 直後）を消さない
+# - ミシュランの記述は Our story の年表1か所＋注記のみ（承継前の GOTS の話として書く。誤認防止）
+pagination:
+  data: gotsStores
+  size: 1
+  alias: p
+permalink: "{{ p.url }}index.html"
+eleventyExcludeFromCollections: true
+---
+{%- set store = p.store -%}
+{%- set isRamen = store.gotsType == 'ramen' -%}
+{%- set reserveAttrs = 'target="_blank" rel="noopener"' if p.reserve.external else '' -%}
+{%- set ig = store.instagramUrl or stores.defaults.instagramUrl -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ store.title }}</title>
+<meta name="description" content="{{ store.description }}">
+<link rel="canonical" href="{{ p.canonical }}">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="{{ store.title }}">
+<meta property="og:description" content="{{ store.description }}">
+<meta property="og:image" content="https://halal-food-wagyu.com/image/gots/logo-{{ store.gotsType }}.png">
+
+<!-- Google Tag Manager -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    store_name: '{{ store.gaStoreName }}',
+    store_area: '{{ store.region }}',
+    brand: 'gots',
+    channel: 'map'
+  });
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5DGT9H6L');</script>
+<!-- End Google Tag Manager -->
+
+<script type="application/ld+json">{{ p.jsonld | dump | safe }}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+{%- if isRamen %}
+  --bg:#0A0A0A; --deep:#141211; --card:#1C1917; --fg:#F5F2EE; --mute:#B7AEA6; --seal:#C42A1D; --line:rgba(245,242,238,.14);
+  --hero-glow:#231D19;
+{%- else %}
+  --bg:#5E0F0F; --deep:#460A0A; --card:#6B1616; --fg:#F8F1EA; --mute:#E2C9C2; --seal:#D2402B; --line:rgba(248,241,234,.18);
+  --hero-glow:#7A1717;
+{%- endif %}
+  --display:"Jost","Futura","Century Gothic",system-ui,sans-serif;
+  --body:"Libre Franklin","Helvetica Neue",Arial,sans-serif;
+  --jp:"Noto Sans JP","Hiragino Sans",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.6;padding-bottom:84px}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.gt-wrap{max-width:1040px;margin:0 auto;padding-inline:16px}
+.gt-eyebrow{font:500 12px var(--display);letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+.gt-dot{display:inline-block;width:10px;height:10px;background:var(--seal);margin-right:8px;vertical-align:1px}
+.gt-h2{font:600 clamp(22px,4vw,30px)/1.2 var(--display);margin:6px 0 8px;text-wrap:balance}
+.gt-intro{color:var(--mute);max-width:56ch;margin:0 0 28px}
+.gt-sec{padding-block:56px}
+.gt-narrow{max-width:760px}
+/* CTA（タグ名ではなくクラスで指定） */
+.gt-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:14px 22px;border-radius:4px;border:1.5px solid var(--fg);background:var(--fg);color:var(--bg);text-decoration:none;font:600 15px var(--display);letter-spacing:.06em;text-transform:uppercase}
+.gt-cta--primary{background:{{ 'var(--seal)' if isRamen else 'var(--fg)' }};border-color:{{ 'var(--seal)' if isRamen else 'var(--fg)' }};color:{{ '#FFFFFF' if isRamen else 'var(--bg)' }}}
+.gt-cta--ghost{background:transparent;color:var(--fg);border-color:var(--line)}
+.gt-cta--sm{min-height:36px;padding:8px 14px;font-size:13px}
+.gt-ctas{display:flex;flex-wrap:wrap;gap:10px}
+/* header */
+.gt-hdr{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.gt-hdr .gt-wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.gt-hdr__mark{height:{{ '34px' if isRamen else '26px' }};width:auto}
+.gt-hdr nav{display:flex;gap:18px;font:500 13px var(--display);letter-spacing:.08em;text-transform:uppercase}
+.gt-hdr nav a{text-decoration:none;color:var(--mute)}
+.gt-hdr nav a:hover{color:var(--fg)}
+@media (max-width:760px){.gt-hdr nav{display:none}}
+/* hero */
+.gt-hero{padding-block:48px 40px;text-align:center;background:radial-gradient(110% 75% at 50% 5%,var(--hero-glow) 0%,var(--bg) 62%)}
+.gt-hero__logo{width:min({{ '480px,82%' if isRamen else '560px,88%' }});margin:0 auto 28px}
+.gt-hero h1{font:600 clamp(26px,5vw,40px)/1.15 var(--display);margin:10px auto 12px;max-width:20ch;text-wrap:balance}
+.gt-lead{max-width:52ch;margin:0 auto 22px;color:var(--mute)}
+.gt-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 26px;padding:0;list-style:none}
+.gt-badges li{font:500 13px var(--display);letter-spacing:.04em;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+.gt-badges .gt-halal{border-color:var(--seal);background:color-mix(in srgb,var(--seal) 22%,transparent)}
+.gt-hero .gt-ctas{justify-content:center}
+/* facts */
+.gt-facts{background:var(--deep);border-block:1px solid var(--line)}
+.gt-facts .gt-wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.gt-fact{padding:18px 8px;text-align:center;border-left:1px solid var(--line)}
+.gt-fact:first-child{border-left:0}
+.gt-fact b{display:block;font:600 18px var(--display);font-variant-numeric:tabular-nums}
+.gt-fact span{font-size:12px;color:var(--mute)}
+@media (max-width:520px){.gt-fact b{font-size:15px}.gt-fact{padding:14px 6px}}
+/* menu（写真が無くても成立する一覧型。featureImage があれば横に1枚だけ表示） */
+.gt-mboard{display:grid;grid-template-columns:1fr;gap:28px}
+.gt-mboard--photo{grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:start}
+@media (max-width:760px){.gt-mboard--photo{grid-template-columns:1fr}}
+.gt-feat img{border-radius:6px;width:100%;aspect-ratio:4/5;object-fit:cover}
+@media (max-width:520px){.gt-feat img{aspect-ratio:4/3}}
+.gt-mlist{list-style:none;margin:0;padding:0}
+.gt-mlist li{display:grid;grid-template-columns:7.5em 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.gt-mlist li:first-child{border-top:1px solid var(--line)}
+.gt-mlist .gt-ja{font:500 13px var(--jp);color:var(--mute);letter-spacing:.04em}
+.gt-mlist h3{font:600 20px/1.25 var(--display);margin:0 0 4px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.gt-mlist p{margin:0;color:var(--mute);font-size:14px;max-width:52ch}
+.gt-tag{font:600 10px var(--display);letter-spacing:.12em;text-transform:uppercase;color:#FFFFFF;background:var(--seal);padding:3px 7px;border-radius:2px}
+.gt-mlist--kanji li{grid-template-columns:3.2em 1fr;align-items:center}
+.gt-kj{display:block;box-sizing:content-box;width:1em;font:900 28px/1.1 "Noto Serif JP",var(--jp);text-align:center;word-break:break-all;justify-self:center;border:1.5px solid var(--seal);padding:8px 7px;border-radius:2px}
+@media (max-width:520px){.gt-mlist li{grid-template-columns:1fr;gap:4px}.gt-mlist--kanji li{grid-template-columns:3em 1fr;gap:14px}.gt-kj{font-size:22px}}
+.gt-menu-cta{margin-top:24px;display:flex;justify-content:center}
+/* story */
+.gt-story{background:var(--deep);border-block:1px solid var(--line)}
+.gt-kicker{font:600 13px var(--display);letter-spacing:.3em;color:var(--seal);margin-bottom:6px}
+.gt-quote{font:500 clamp(18px,3vw,22px)/1.45 var(--display);border-left:3px solid var(--seal);padding-left:16px;margin:0 0 32px;max-width:40ch}
+.gt-tl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.gt-tl li{padding:18px 18px 4px 0;border-top:1px solid var(--line);position:relative}
+.gt-tl li::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;background:var(--seal)}
+.gt-tl .gt-when{display:block;font:600 22px var(--display);margin-top:6px}
+.gt-tl b{display:block;font:600 15px var(--display);margin:2px 0 6px}
+.gt-tl p{margin:0;color:var(--mute);font-size:14px}
+.gt-tl sup{color:var(--seal);font-size:.7em}
+@media (max-width:860px){.gt-tl{grid-template-columns:1fr 1fr;row-gap:20px}}
+@media (max-width:520px){.gt-tl{grid-template-columns:1fr}}
+.gt-qual-cap{font-size:13px;color:var(--mute);margin:36px 0 10px}
+.gt-qual{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.gt-qual div{background:var(--deep);padding:16px 12px;text-align:center}
+.gt-qual b{display:block;font:600 15px var(--display)}
+.gt-qual span{font-size:12px;color:var(--mute)}
+@media (max-width:520px){.gt-qual{grid-template-columns:1fr 1fr}}
+.gt-close{margin:32px 0 0;font:500 17px/1.5 var(--display);max-width:46ch}
+.gt-close em{font-style:normal;color:var(--seal)}
+.gt-fn{margin:14px 0 0;font-size:12px;color:var(--mute);max-width:70ch}
+/* halal */
+.gt-list{list-style:none;margin:0;padding:0}
+.gt-list li{display:grid;grid-template-columns:28px 1fr;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}
+.gt-list li:first-child{border-top:1px solid var(--line)}
+.gt-mk{width:22px;height:22px;border:1.5px solid var(--seal);border-radius:50%;display:grid;place-items:center;font:700 12px var(--display);color:var(--seal);margin-top:2px}
+.gt-list b{display:block;font:600 16px var(--display)}
+.gt-list span{color:var(--mute);font-size:14px}
+/* access */
+.gt-access{background:var(--deep)}
+.gt-split{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+@media (max-width:760px){.gt-split{grid-template-columns:1fr}}
+.gt-map{width:100%;aspect-ratio:16/10;border:0;border-radius:6px}
+.gt-info{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 18px}
+.gt-info dt{font:500 12px var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);padding-top:2px}
+.gt-info dd{margin:0;min-width:0}
+.gt-info .gt-ja{display:block;font:13px var(--jp);color:var(--mute)}
+.gt-tel{font:600 20px var(--display);font-variant-numeric:tabular-nums;text-decoration:none}
+.gt-chips{display:flex;flex-wrap:wrap;gap:6px}
+.gt-chips span{font-size:12px;border:1px solid var(--line);border-radius:999px;padding:2px 10px}
+.gt-access .gt-ctas{margin-top:22px}
+/* faq */
+.gt-faq details{border-bottom:1px solid var(--line)}
+.gt-faq details:first-of-type{border-top:1px solid var(--line)}
+.gt-faq summary{cursor:pointer;padding:16px 0;font:600 16px var(--display);list-style:none;display:flex;justify-content:space-between;gap:12px}
+.gt-faq summary::-webkit-details-marker{display:none}
+.gt-faq summary::after{content:"+";color:var(--seal);font-size:20px;line-height:1}
+.gt-faq details[open] summary::after{content:"–"}
+.gt-faq p{margin:0 0 16px;color:var(--mute);max-width:62ch}
+/* reserve / footer / float */
+.gt-reserve{text-align:center;padding-block:56px;border-top:1px solid var(--line)}
+.gt-reserve .gt-ctas{justify-content:center;margin-top:18px}
+.gt-ft{border-top:1px solid var(--line);padding-block:28px;text-align:center;color:var(--mute);font-size:12px}
+.gt-ft img{height:{{ '52px' if isRamen else '44px' }};width:auto;margin:0 auto 12px}
+.gt-float{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:10px;justify-content:center;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line)}
+.gt-float .gt-cta{flex:1;max-width:320px}
+@media (prefers-reduced-motion:no-preference){.gt-cta{transition:transform .15s ease}.gt-cta:active{transform:scale(.98)}}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DGT9H6L"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="gt-hdr"><div class="gt-wrap">
+  <a href="{{ p.url }}"><img class="gt-hdr__mark" src="/image/gots/mark-{{ store.gotsType }}.png" alt="{{ '轟津 GOTS' if isRamen else 'GOTS' }}" width="600" height="{{ 243 if isRamen else 123 }}"></a>
+  <nav aria-label="Page sections"><a href="#menu">Menu</a><a href="#story">Story</a><a href="#halal">Halal</a><a href="#access">Access</a><a href="#faq">FAQ</a></nav>
+  <a class="gt-cta gt-cta--sm gt-cta--primary" href="{{ p.reserve.href }}" {{ reserveAttrs | safe }} data-ga-event="{{ p.reserve.event }}" data-ga-location="header">{{ p.reserve.short }}</a>
+</div></header>
+
+<main>
+<section class="gt-hero"><div class="gt-wrap">
+  <img class="gt-hero__logo" src="/image/gots/logo-{{ store.gotsType }}.png" alt="{{ store.fullName }}" width="1100" height="{{ 877 if isRamen else 562 }}">
+  <div class="gt-eyebrow">Gojozaka · Kiyomizu-dera · Kyoto</div>
+  <h1>{{ store.h1 }}</h1>
+  <p class="gt-lead">{{ store.lead }}</p>
+  <ul class="gt-badges"><li class="gt-halal">Halal-certified beef</li><li>No pork</li><li>Muslim-friendly</li><li>Walk-ins welcome</li></ul>
+  <div class="gt-ctas">
+    <a class="gt-cta gt-cta--primary" href="{{ p.reserve.href }}" {{ reserveAttrs | safe }} data-ga-event="{{ p.reserve.event }}" data-ga-location="hero">{{ p.reserve.label }}</a>
+    <a class="gt-cta gt-cta--ghost" href="{{ p.directionsUrl }}" target="_blank" rel="noopener noreferrer" data-ga-event="directions_click" data-ga-location="hero">Directions</a>
+  </div>
+  {%- if p.hasReserveUrl %}
+  <p style="margin:14px 0 0;font-size:14px;color:var(--mute)">Prefer to call? <a href="{{ store.phoneHref }}" data-ga-event="tel_click" data-ga-location="hero">{{ store.phone }}</a></p>
+  {%- endif %}
+</div></section>
+
+<div class="gt-facts" aria-label="Store information"><div class="gt-wrap">
+  {%- for f in store.facts %}
+  <div class="gt-fact"><b>{{ f[0] }}</b><span>{{ f[1] }}</span></div>
+  {%- endfor %}
+</div></div>
+
+<section class="gt-sec" id="menu"><div class="gt-wrap">
+  <div class="gt-eyebrow"><span class="gt-dot"></span>Menu</div>
+  <h2 class="gt-h2">{{ store.menuTitle }}</h2>
+  <p class="gt-intro">{{ store.menuIntro }}</p>
+  <div class="gt-mboard{% if store.featureImage %} gt-mboard--photo{% endif %}">
+    {%- if store.featureImage %}
+    <figure class="gt-feat" style="margin:0"><img src="/image/gots/{{ store.featureImage }}" alt="{{ store.menuItems[0].name }}" width="1200" height="1500" loading="lazy"></figure>
+    {%- endif %}
+    <ol class="gt-mlist{% if isRamen %} gt-mlist--kanji{% endif %}">
+      {%- for m in store.menuItems %}
+      <li>
+        {%- if m.kanji %}<span class="gt-kj" aria-hidden="true">{{ m.kanji }}</span>{% else %}<span class="gt-ja" lang="ja">{{ m.ja }}</span>{% endif %}
+        <div><h3>{{ m.name }}{% if m.tag %} <span class="gt-tag">{{ m.tag }}</span>{% endif %}</h3><p>{{ m.desc }}</p></div>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+  <div class="gt-menu-cta"><a class="gt-cta gt-cta--ghost" href="{{ p.reserve.href }}" {{ reserveAttrs | safe }} data-ga-event="{{ p.reserve.event }}" data-ga-location="entry_menu">{{ p.reserve.label }}</a></div>
+</div></section>
+
+<section class="gt-sec gt-story" id="story"><div class="gt-wrap">
+  <div class="gt-kicker">WAGYU GOTS</div>
+  <div class="gt-eyebrow"><span class="gt-dot"></span>Our story</div>
+  <h2 class="gt-h2">From a 1962 butcher shop to the slopes of Kiyomizu-dera</h2>
+  <p class="gt-intro">It all began with a single butcher shop, founded in 1962.</p>
+  <p class="gt-quote">"Someday, we will raise the world's best Wagyu with our own hands."</p>
+  <ol class="gt-tl">
+    <li><span class="gt-when">1962</span><b>A butcher shop</b><p>For more than 60 years our family has worked with meat every day. Along the way, one big dream took shape.</p></li>
+    <li><span class="gt-when">Miyazaki</span><b>Raising our own Wagyu</b><p>Instead of only buying finished brand beef, we started from the cattle themselves, in Miyazaki.</p></li>
+    <li><span class="gt-when">GOTS</span><b>Inheriting a chef's craft</b><p>World-class beef deserves world-class cooking. That led us to the original GOTS, a restaurant listed in the MICHELIN Guide for six consecutive years<sup>*</sup>. We took over its name and the techniques its chefs had refined.</p></li>
+    <li><span class="gt-when">Today</span><b>Taking GOTS to the world</b><p>We took over GOTS with a promise: the name will not end in Japan. We will grow it into a brand loved around the world.</p></li>
+  </ol>
+  <p class="gt-qual-cap">What we look for, beyond grade and marbling</p>
+  <div class="gt-qual">
+    <div><b>Umami</b><span>of the lean meat</span></div>
+    <div><b>Sweetness</b><span>of the fat</span></div>
+    <div><b>Aroma</b><span>as it cooks</span></div>
+    <div><b>Melt</b><span>on the tongue</span></div>
+  </div>
+  <p class="gt-close">A butcher's spirit since 1962. Wagyu raised in Miyazaki. The craft we inherited with the GOTS name. <em>Now a new challenge begins, here on Gojozaka.</em></p>
+  {#- TODO: ミシュランの区分（星／ビブグルマン／掲載）と対象年が確定したら下の注記に入れる。区分に合わせて本文の "listed" も直す #}
+  <p class="gt-fn">* Refers to the original GOTS restaurant before it was taken over. This Gojozaka restaurant is a new location and is not itself listed in the MICHELIN Guide.</p>
+</div></section>
+
+<section class="gt-sec" id="halal"><div class="gt-wrap gt-narrow">
+  <div class="gt-eyebrow"><span class="gt-dot"></span>Halal &amp; dietary</div>
+  <h2 class="gt-h2">Made for Muslim travelers</h2>
+  <ul class="gt-list">
+    <li><span class="gt-mk">✓</span><div><b>Halal-certified Wagyu</b><span>{{ 'All beef in the bowls is halal-certified.' if isRamen else 'All beef on the menu is halal-certified.' }}</span></div></li>
+    <li><span class="gt-mk">✓</span><div><b>No pork</b><span>{{ 'No pork bones or pork fat in any broth.' if isRamen else 'Pork is not served or handled.' }}</span></div></li>
+  </ul>
+</div></section>
+
+<section class="gt-sec gt-access" id="access"><div class="gt-wrap{% if store.mapEmbedUrl and not store.hideGoogleLinks %} gt-split{% else %} gt-narrow{% endif %}">
+  {%- if store.mapEmbedUrl and not store.hideGoogleLinks %}
+  <iframe class="gt-map" src="{{ store.mapEmbedUrl }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="{{ store.fullName }}" allowfullscreen></iframe>
+  {%- endif %}
+  <div>
+    <div class="gt-eyebrow"><span class="gt-dot"></span>Hours &amp; Access</div>
+    <h2 class="gt-h2">{{ 'Upstairs on Gojozaka' if isRamen else 'Find us on Gojozaka' }}</h2>
+    <dl class="gt-info">
+      <dt>Address</dt><dd>{{ store.addressHtml | safe }}<span class="gt-ja" lang="ja">{{ store.addressJa }}</span></dd>
+      <dt>Hours</dt><dd>{{ store.hoursFull }} · {{ store.hoursNote }}</dd>
+      {%- for s in store.stations %}
+      <dt>Station</dt><dd>{{ s.name }} · {{ s.walk }}</dd>
+      {%- endfor %}
+      {%- if store.payment %}<dt>Payment</dt><dd>{{ store.payment }}</dd>{% endif %}
+      <dt>Phone</dt><dd><a class="gt-tel" href="{{ store.phoneHref }}" data-ga-event="tel_click" data-ga-location="reservation_section">{{ store.phone }}</a></dd>
+      {%- if store.facilities %}
+      <dt>Facilities</dt><dd><div class="gt-chips">{% for f in store.facilities %}<span>{{ f }}</span>{% endfor %}</div></dd>
+      {%- endif %}
+    </dl>
+    <div class="gt-ctas">
+      <a class="gt-cta gt-cta--ghost" href="{{ p.directionsUrl }}" target="_blank" rel="noopener noreferrer" data-ga-event="map_click" data-ga-location="entry_access">Open in Google Maps</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="gt-sec gt-faq" id="faq"><div class="gt-wrap gt-narrow">
+  <div class="gt-eyebrow"><span class="gt-dot"></span>FAQ</div>
+  <h2 class="gt-h2">Before you visit</h2>
+  {%- for q in store.faq %}
+  <details><summary>{{ q[0] }}</summary><p>{{ q[1] }}</p></details>
+  {%- endfor %}
+</div></section>
+
+<section class="gt-reserve" id="reserve"><div class="gt-wrap">
+  <div class="gt-eyebrow">Reservations</div>
+  <h2 class="gt-h2" style="margin-top:8px">Book a table at {{ '轟津 GOTS' if isRamen else 'GOTS' }}</h2>
+  <div class="gt-ctas">
+    <a class="gt-cta gt-cta--primary" href="{{ p.reserve.href }}" {{ reserveAttrs | safe }} data-ga-event="{{ p.reserve.event }}" data-ga-location="reservation_section">{{ p.reserve.label if p.hasReserveUrl else ('Call ' + store.phone) }}</a>
+  </div>
+</div></section>
+</main>
+
+<footer class="gt-ft"><div class="gt-wrap">
+  <img src="/image/gots/{{ 'mark' if isRamen else 'logo' }}-{{ store.gotsType }}.png" alt="" loading="lazy">
+  {{ store.fullName }}<br>
+  {{ store.addressHtml | safe }}<br>
+  <a href="{{ store.phoneHref }}" data-ga-event="tel_click" data-ga-location="footer">{{ store.phone }}</a>
+</div></footer>
+
+<div class="gt-float">
+  <a class="gt-cta gt-cta--primary" href="{{ p.reserve.href }}" {{ reserveAttrs | safe }} data-ga-event="{{ p.reserve.event }}" data-ga-location="float_cta">{{ p.reserve.label }}</a>
+</div>
+
+<script>
+/* === クリック計測（data-ga-event → dataLayer → GTM → GA4）===
+   計測したい要素に data-ga-event="イベント名" を付けるだけ。dataLayer.push はここと head の2か所のみ。 */
+window.dataLayer = window.dataLayer || [];
+document.addEventListener('click', function (e) {
+  var el = e.target.closest('[data-ga-event]');
+  if (!el) return;
+  window.dataLayer.push({
+      event: el.getAttribute('data-ga-event'),
+      event_label: (el.getAttribute('data-ga-location') || ''),
+      store_name: '{{ store.gaStoreName }}',
+      store_area: '{{ store.region }}',
+      brand: 'gots',
+      channel: 'map'
+    });
+}, true);
+</script>
+{% include "partials/acq-forward.njk" %}
+</body>
+</html>

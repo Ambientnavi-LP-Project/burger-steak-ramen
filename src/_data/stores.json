@@ -602,7 +602,7 @@
       ],
       "menuTitle": "Wagyu, three ways",
       "menuIntro": "Every patty and steak is Japanese Wagyu, cut and seasoned in-house.",
-      "featureImage": "",
+      "featureImage": "feature-burger.jpg",
       "menuItems": [
         {
           "ja": "和牛バーガー",
@@ -651,7 +651,8 @@
       "languages": [
         "en"
       ],
-      "seats": ""
+      "seats": "",
+      "featureAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands"
     },
     {
       "permalink": "kyoto/gots-ramen",
@@ -694,7 +695,7 @@
       ],
       "menuTitle": "Three broths, one Wagyu",
       "menuIntro": "Choose your broth. Every bowl is topped with sliced halal-certified Japanese Wagyu.",
-      "featureImage": "",
+      "featureImage": "feature-ramen.jpg",
       "menuItems": [
         {
           "kanji": "味噌",
@@ -749,7 +750,8 @@
       "languages": [
         "en"
       ],
-      "seats": ""
+      "seats": "",
+      "featureAlt": "Wagyu ramen with a large sheet of seared marbled Wagyu, green onion and bamboo shoots, steaming"
     }
   ],
   "defaults": {

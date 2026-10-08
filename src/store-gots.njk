@@ -30,7 +30,7 @@ eleventyExcludeFromCollections: true
 <meta property="og:type" content="restaurant">
 <meta property="og:title" content="{{ store.title }}">
 <meta property="og:description" content="{{ store.description }}">
-<meta property="og:image" content="https://halal-food-wagyu.com/image/gots/logo-{{ store.gotsType }}.png">
+<meta property="og:image" content="https://halal-food-wagyu.com/image/gots/{{ store.featureImage if store.featureImage else ('logo-' + store.gotsType + '.png') }}">
 
 <!-- Google Tag Manager -->
 <script>
@@ -115,10 +115,9 @@ img{display:block;max-width:100%;height:auto}
 @media (max-width:520px){.gt-fact b{font-size:15px}.gt-fact{padding:14px 6px}}
 /* menu（写真が無くても成立する一覧型。featureImage があれば横に1枚だけ表示） */
 .gt-mboard{display:grid;grid-template-columns:1fr;gap:28px}
-.gt-mboard--photo{grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:start}
+.gt-mboard--photo{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
 @media (max-width:760px){.gt-mboard--photo{grid-template-columns:1fr}}
-.gt-feat img{border-radius:6px;width:100%;aspect-ratio:4/5;object-fit:cover}
-@media (max-width:520px){.gt-feat img{aspect-ratio:4/3}}
+.gt-feat img{border-radius:6px;width:100%;aspect-ratio:4/3;object-fit:cover}
 .gt-mlist{list-style:none;margin:0;padding:0}
 .gt-mlist li{display:grid;grid-template-columns:7.5em 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .gt-mlist li:first-child{border-top:1px solid var(--line)}
@@ -230,7 +229,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p class="gt-intro">{{ store.menuIntro }}</p>
   <div class="gt-mboard{% if store.featureImage %} gt-mboard--photo{% endif %}">
     {%- if store.featureImage %}
-    <figure class="gt-feat" style="margin:0"><img src="/image/gots/{{ store.featureImage }}" alt="{{ store.menuItems[0].name }}" width="1200" height="1500" loading="lazy"></figure>
+    <figure class="gt-feat" style="margin:0"><img src="/image/gots/{{ store.featureImage }}" alt="{{ store.featureAlt or store.menuItems[0].name }}" width="1200" height="900" loading="lazy"></figure>
     {%- endif %}
     <ol class="gt-mlist{% if isRamen %} gt-mlist--kanji{% endif %}">
       {%- for m in store.menuItems %}

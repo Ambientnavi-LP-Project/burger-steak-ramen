@@ -72,12 +72,12 @@ export const T = {
     hours: "Hours", walk: "{n} min walk", dietary: "Dietary", dietaryValue: "Halal-certified option",
     menu: "Menu",
     comboNote: "Combo sets also available.",
-    halalNote: "Every Kobe beef dish can also be made with Halal-certified Kobe beef (priced separately). All regular menu items use Halal Wagyu.",
+    halalNote: "Halal-certified Kobe beef is available for our Kobe beef dishes (priced separately). Please ask our staff for details.",
     about: "Halal & dietary options",
-    aboutBody: "Enjoy genuine Kobe beef in {area}. Every Kobe beef dish can be ordered with Halal-certified Kobe beef (priced separately), and our regular menu uses Halal Wagyu. Please let our staff know about any dietary requirements.",
+    aboutBody: "Enjoy genuine Kobe beef in {area}. Halal-certified Kobe beef is available for our Kobe beef dishes (priced separately). Please let our staff know about any dietary requirements.",
     aboutCards: [
-      ["Halal-certified Kobe beef", "Available for every Kobe beef dish"],
-      ["Halal Wagyu", "Used across the regular menu"],
+      ["Halal-certified Kobe beef", "Available, priced separately"],
+      ["Ask our staff", "We'll explain which dishes can be halal"],
       ["Multilingual menu", "English, Korean, Chinese and Arabic"],
       ["Dietary requests", "Tell us when you book"]
     ],
@@ -88,7 +88,7 @@ export const T = {
     preferCall: "Prefer to call?",
     faq: [
       ["Do I need a reservation?", "Walk-ins are welcome subject to availability. To be sure of a table, please reserve online."],
-      ["Is the food halal?", "Our regular menu uses Halal Wagyu. Every Kobe beef dish can also be made with Halal-certified Kobe beef (priced separately). Please choose the Halal-certified option when you order. If you are unsure, please ask our staff."],
+      ["Is the food halal?", "Halal-certified Kobe beef is available for our Kobe beef dishes (priced separately). Please choose the Halal-certified option when you order, and ask our staff if you are unsure."],
       ["Can I change or cancel my booking?", "Please see the TableCheck booking page for how to change or cancel your booking and for the cancellation policy."]
     ]
   },
@@ -106,12 +106,12 @@ export const T = {
     hours: "영업시간", walk: "도보 {n}분", dietary: "식단", dietaryValue: "할랄 인증 옵션",
     menu: "메뉴",
     comboNote: "콤보 세트도 있습니다.",
-    halalNote: "모든 고베규 메뉴는 할랄 인증 고베규로도 주문할 수 있습니다(별도 요금). 일반 메뉴는 모두 할랄 와규를 사용합니다.",
+    halalNote: "고베규 메뉴는 할랄 인증 고베규로 주문하실 수 있습니다(별도 요금). 자세한 내용은 직원에게 문의해 주세요.",
     about: "할랄 · 식단 옵션",
-    aboutBody: "{area}에서 정통 고베규를 즐겨 보세요. 모든 고베규 메뉴는 할랄 인증 고베규로도 주문할 수 있으며(별도 요금), 일반 메뉴는 할랄 와규를 사용합니다. 식단 관련 요청이 있으시면 직원에게 말씀해 주세요.",
+    aboutBody: "{area}에서 정통 고베규를 즐겨 보세요. 고베규 메뉴는 할랄 인증 고베규로 주문하실 수 있습니다(별도 요금). 식단 관련 요청이 있으시면 직원에게 말씀해 주세요.",
     aboutCards: [
-      ["할랄 인증 고베규", "모든 고베규 메뉴에서 선택 가능"],
-      ["할랄 와규", "일반 메뉴 전체에 사용"],
+      ["할랄 인증 고베규", "선택 가능 (별도 요금)"],
+      ["직원에게 문의", "할랄 대응 메뉴를 안내해 드립니다"],
       ["다국어 메뉴", "영어 · 한국어 · 중국어 · 아랍어"],
       ["식단 요청", "예약 시 알려 주세요"]
     ],
@@ -122,7 +122,7 @@ export const T = {
     preferCall: "전화 예약을 원하시나요?",
     faq: [
       ["예약이 꼭 필요한가요?", "자리가 있으면 예약 없이도 이용하실 수 있습니다. 확실하게 자리를 잡으시려면 온라인으로 예약해 주세요."],
-      ["음식은 할랄인가요?", "일반 메뉴는 할랄 와규를 사용합니다. 모든 고베규 메뉴는 할랄 인증 고베규로도 주문할 수 있습니다(별도 요금). 주문 시 할랄 인증 옵션을 선택해 주세요. 궁금한 점은 직원에게 문의해 주세요."],
+      ["음식은 할랄인가요?", "고베규 메뉴는 할랄 인증 고베규로 주문하실 수 있습니다(별도 요금). 주문 시 할랄 인증 옵션을 선택해 주시고, 궁금한 점은 직원에게 문의해 주세요."],
       ["예약을 변경하거나 취소할 수 있나요?", "예약 변경 · 취소 방법과 취소 규정은 TableCheck 예약 페이지에서 확인해 주세요."]
     ]
   },
@@ -140,12 +140,12 @@ export const T = {
     hours: "營業時間", walk: "步行{n}分鐘", dietary: "飲食", dietaryValue: "可選清真認證",
     menu: "菜單",
     comboNote: "另有套餐組合。",
-    halalNote: "所有神戶牛餐點皆可改用清真認證神戶牛（另行計價）。一般菜單均使用清真和牛。",
+    halalNote: "神戶牛餐點可選用清真認證神戶牛（另行計價）。詳情請洽詢店員。",
     about: "清真與飲食需求",
-    aboutBody: "在{area}品嚐正宗神戶牛。所有神戶牛餐點皆可改用清真認證神戶牛（另行計價），一般菜單均使用清真和牛。如有飲食需求，請告知店員。",
+    aboutBody: "在{area}品嚐正宗神戶牛。神戶牛餐點可選用清真認證神戶牛（另行計價）。如有飲食需求，請告知店員。",
     aboutCards: [
-      ["清真認證神戶牛", "所有神戶牛餐點皆可選擇"],
-      ["清真和牛", "一般菜單全面使用"],
+      ["清真認證神戶牛", "可選（另行計價）"],
+      ["歡迎洽詢店員", "為您說明可提供清真的餐點"],
       ["多語言菜單", "英文、韓文、中文、阿拉伯文"],
       ["飲食需求", "訂位時請告知"]
     ],
@@ -156,7 +156,7 @@ export const T = {
     preferCall: "想用電話訂位？",
     faq: [
       ["需要訂位嗎？", "有空位時歡迎直接入店。若想確保座位，請線上訂位。"],
-      ["餐點是清真的嗎？", "一般菜單使用清真和牛。所有神戶牛餐點皆可改用清真認證神戶牛（另行計價），點餐時請選擇清真認證選項。如有疑問，請洽詢店員。"],
+      ["餐點是清真的嗎？", "神戶牛餐點可選用清真認證神戶牛（另行計價）。點餐時請選擇清真認證選項，如有疑問請洽詢店員。"],
       ["可以變更或取消訂位嗎？", "變更或取消訂位的方式及取消規定，請參閱 TableCheck 訂位頁面。"]
     ]
   },
@@ -174,12 +174,12 @@ export const T = {
     hours: "营业时间", walk: "步行{n}分钟", dietary: "饮食", dietaryValue: "可选清真认证",
     menu: "菜单",
     comboNote: "另有套餐组合。",
-    halalNote: "所有神户牛餐点均可改用清真认证神户牛（另行计价）。常规菜单均使用清真和牛。",
+    halalNote: "神户牛餐点可选用清真认证神户牛（另行计价）。详情请咨询店员。",
     about: "清真与饮食需求",
-    aboutBody: "在{area}品尝正宗神户牛。所有神户牛餐点均可改用清真认证神户牛（另行计价），常规菜单均使用清真和牛。如有饮食需求，请告知店员。",
+    aboutBody: "在{area}品尝正宗神户牛。神户牛餐点可选用清真认证神户牛（另行计价）。如有饮食需求，请告知店员。",
     aboutCards: [
-      ["清真认证神户牛", "所有神户牛餐点均可选择"],
-      ["清真和牛", "常规菜单全面使用"],
+      ["清真认证神户牛", "可选（另行计价）"],
+      ["欢迎咨询店员", "为您说明可提供清真的餐点"],
       ["多语言菜单", "英文、韩文、中文、阿拉伯文"],
       ["饮食需求", "预订时请告知"]
     ],
@@ -190,7 +190,7 @@ export const T = {
     preferCall: "想电话预订？",
     faq: [
       ["需要预订吗？", "有空位时欢迎直接到店。如想确保座位，请在线预订。"],
-      ["餐点是清真的吗？", "常规菜单使用清真和牛。所有神户牛餐点均可改用清真认证神户牛（另行计价），点餐时请选择清真认证选项。如有疑问，请咨询店员。"],
+      ["餐点是清真的吗？", "神户牛餐点可选用清真认证神户牛（另行计价）。点餐时请选择清真认证选项，如有疑问请咨询店员。"],
       ["可以更改或取消预订吗？", "更改或取消预订的方法及取消规定，请参阅 TableCheck 预订页面。"]
     ]
   },
@@ -208,12 +208,12 @@ export const T = {
     hours: "Horaires", walk: "{n} min à pied", dietary: "Régime", dietaryValue: "Option halal certifiée",
     menu: "Menu",
     comboNote: "Formules combinées également disponibles.",
-    halalNote: "Tous les plats au bœuf de Kobe existent aussi avec du bœuf de Kobe certifié halal (avec supplément). Le reste de la carte utilise du wagyu halal.",
+    halalNote: "Nos plats au bœuf de Kobe peuvent être préparés avec du bœuf de Kobe certifié halal (avec supplément). Renseignez-vous auprès de notre équipe.",
     about: "Halal et régimes alimentaires",
-    aboutBody: "Savourez un authentique bœuf de Kobe à {area}. Tous les plats au bœuf de Kobe peuvent être commandés avec du bœuf de Kobe certifié halal (avec supplément), et notre carte habituelle utilise du wagyu halal. N'hésitez pas à informer notre équipe de vos besoins alimentaires.",
+    aboutBody: "Savourez un authentique bœuf de Kobe à {area}. Nos plats au bœuf de Kobe peuvent être préparés avec du bœuf de Kobe certifié halal (avec supplément). N'hésitez pas à informer notre équipe de vos besoins alimentaires.",
     aboutCards: [
-      ["Bœuf de Kobe certifié halal", "Disponible pour tous les plats au bœuf de Kobe"],
-      ["Wagyu halal", "Utilisé dans toute la carte habituelle"],
+      ["Bœuf de Kobe certifié halal", "Disponible, avec supplément"],
+      ["Demandez à notre équipe", "Nous vous indiquerons les plats halal"],
       ["Menu multilingue", "Anglais, coréen, chinois et arabe"],
       ["Demandes alimentaires", "Précisez-les lors de la réservation"]
     ],
@@ -224,7 +224,7 @@ export const T = {
     preferCall: "Vous préférez appeler ?",
     faq: [
       ["Faut-il réserver ?", "Vous êtes les bienvenus sans réservation dans la limite des places disponibles. Pour être sûr d'avoir une table, réservez en ligne."],
-      ["La cuisine est-elle halal ?", "Notre carte habituelle utilise du wagyu halal. Tous les plats au bœuf de Kobe peuvent aussi être préparés avec du bœuf de Kobe certifié halal (avec supplément). Choisissez l'option certifiée halal lors de la commande. En cas de doute, demandez à notre équipe."],
+      ["La cuisine est-elle halal ?", "Nos plats au bœuf de Kobe peuvent être préparés avec du bœuf de Kobe certifié halal (avec supplément). Choisissez l'option certifiée halal lors de la commande et, en cas de doute, demandez à notre équipe."],
       ["Puis-je modifier ou annuler ma réservation ?", "Consultez la page de réservation TableCheck pour savoir comment modifier ou annuler votre réservation et connaître les conditions d'annulation."]
     ]
   }

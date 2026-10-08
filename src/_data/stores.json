@@ -568,8 +568,8 @@
       ]
     },
     {
-      "permalink": "kyoto/gots-burger",
-      "slug": "gots-burger",
+      "permalink": "kyoto/gots-gojozaka-burger",
+      "slug": "gots-gojozaka-burger",
       "region": "kyoto",
       "category": "gots",
       "gaStoreName": "gots-gojozaka-burger",
@@ -655,8 +655,8 @@
       "featureAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands"
     },
     {
-      "permalink": "kyoto/gots-ramen",
-      "slug": "gots-ramen",
+      "permalink": "kyoto/gots-gojozaka-ramen",
+      "slug": "gots-gojozaka-ramen",
       "region": "kyoto",
       "category": "gots",
       "gaStoreName": "gots-gojozaka-ramen",

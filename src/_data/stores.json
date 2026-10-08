@@ -221,15 +221,15 @@
       ]
     },
     {
-      "permalink": "tokyo/kabuki-cho",
-      "slug": "kabuki-cho",
+      "permalink": "tokyo/kabukicho",
+      "slug": "kabukicho",
       "region": "tokyo",
-      "category": "all",
-      "fullName": "Wagyu (Halal Vegan) Hamburger Steak & Ramen Shinjuku Kabukicho Restaurant Beef Tei",
+      "category": "kobe",
+      "fullName": "Wagyu Hamburger Steak & Ramen (Halal Vegan) Shinjuku Kabukicho Restaurant",
       "landmark": "Seibu-Shinjuku Station",
       "landmarkWalk": "4 min",
-      "title": "Wagyu (Halal Vegan) Hamburger Steak & Ramen Shinjuku Kabukicho Restaurant Beef Tei | Muslim-Friendly, 4 min from Seibu-Shinjuku Station",
-      "description": "Real Japanese Wagyu, prepared the Muslim-friendly way. 4 min from Seibu-Shinjuku Station. Vertically integrated wagyu — our own cattle, raised and prepared by us since 1962. No pork, no alcohol — steak, burgers, ramen.",
+      "title": "Kobe Beef Burger, Steak & Ramen in Shinjuku Kabukicho | Halal-certified Kobe beef available",
+      "description": "Kobe beef burgers, 100% Kobe beef steak and Kobe beef ramen in Shinjuku Kabukicho, 4 min from Seibu-Shinjuku Station. Halal-certified Kobe beef available. Book your table online.",
       "reserve_system": "tablecheck",
       "reserveUrl": "https://www.tablecheck.com/en/halal-wagyu-shinjuku-kabukicho-5w-tokyo/reserve/message",
       "phone": "0364573353",
@@ -259,7 +259,66 @@
           "line": "Tokyo Metro / Toei",
           "walk": "8 min walk"
         }
-      ]
+      ],
+      "gaStoreName": "kabukicho",
+      "areaLabel": "Shinjuku Kabukicho",
+      "menus": [
+        "burger",
+        "steak",
+        "ramen"
+      ],
+      "languages": [
+        "en",
+        "ko",
+        "zh-hant",
+        "zh-hans",
+        "fr"
+      ],
+      "heroImage": "hero-burger.jpg"
+    },
+    {
+      "permalink": "tokyo/shinjuku-higashiguchi",
+      "slug": "shinjuku-higashiguchi",
+      "region": "tokyo",
+      "category": "kobe",
+      "fullName": "Wagyu Ramen Noodle Kobe Beef Halal Shinjuku Restaurant 東京美食",
+      "landmark": "Shinjuku Station (East Exit)",
+      "landmarkWalk": "",
+      "title": "Kobe Beef Ramen in Shinjuku | Halal-certified Kobe beef available",
+      "description": "Kobe beef ramen in miso, soy sauce or spicy broth, near Shinjuku Station (East Exit). Halal-certified Kobe beef available. Book your table online.",
+      "reserve_system": "tablecheck",
+      "reserveUrl": "https://www.tablecheck.com/en/halal-wagyu-shinjuku-higashi/reserve/message",
+      "phone": "090-4129-6646",
+      "phoneHref": "tel:+81-90-4129-6646",
+      "hoursFull": "11:00 – 23:00",
+      "hoursOpenPill": "OPEN NOW · 11:00 – 23:00",
+      "hoursOpenPillShort": "OPEN · 11–23",
+      "addressHtml": "Toshin Building 1F, 3-21-7 Shinjuku, Shinjuku-ku<br>Tokyo 160-0022, Japan",
+      "seats": "7 seats",
+      "storyBgImage": "",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.088157969093!2d139.7017737096774!3d35.69293904075302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d01e1f5b04f%3A0x8fe74faa3f388eb3!2sKing%20Wagyu%20Ramen%20Michelin%20Chef%20Supervised%20Kobe%20Beef%20Halal%20Shinjuku%20Restaurant%20%E5%92%8C%E7%89%9B%E6%8B%89%E9%9D%A2!5e0!3m2!1sja!2sjp!4v1788765986515!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://maps.app.goo.gl/Gx9ovQd58HT4o4kRA",
+      "stations": [
+        {
+          "name": "Shinjuku Station (East Exit)",
+          "line": "JR / Tokyo Metro",
+          "walk": ""
+        }
+      ],
+      "gaStoreName": "shinjuku-higashiguchi",
+      "areaLabel": "Shinjuku",
+      "menus": [
+        "ramen"
+      ],
+      "languages": [
+        "en",
+        "ko",
+        "zh-hant",
+        "zh-hans",
+        "fr"
+      ],
+      "heroImage": "hero-ramen.jpg"
     },
     {
       "permalink": "osaka/dotonbori",

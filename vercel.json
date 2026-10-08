@@ -1,5 +1,17 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "_site",
-  "framework": null
+  "framework": null,
+  "redirects": [
+    {
+      "source": "/tokyo/kabuki-cho",
+      "destination": "/tokyo/kabukicho/",
+      "permanent": true
+    },
+    {
+      "source": "/tokyo/kabuki-cho/",
+      "destination": "/tokyo/kabukicho/",
+      "permanent": true
+    }
+  ]
 }

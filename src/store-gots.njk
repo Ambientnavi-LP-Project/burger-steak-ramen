@@ -99,6 +99,7 @@ img{display:block;max-width:100%;height:auto}
 /* hero */
 .gt-hero{padding-block:48px 40px;text-align:center;background:radial-gradient(110% 75% at 50% 5%,var(--hero-glow) 0%,var(--bg) 62%)}
 .gt-hero__logo{width:min({{ '480px,82%' if isRamen else '560px,88%' }});margin:0 auto 28px}
+.gt-hero__caption{font:600 clamp(22px,4vw,32px)/1 var(--display);letter-spacing:.04em;margin:-12px 0 28px}
 .gt-hero h1{font:600 clamp(26px,5vw,40px)/1.15 var(--display);margin:10px auto 12px;max-width:20ch;text-wrap:balance}
 .gt-lead{max-width:52ch;margin:0 auto 22px;color:var(--mute)}
 .gt-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 26px;padding:0;list-style:none}
@@ -203,8 +204,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <main>
 <section class="gt-hero"><div class="gt-wrap">
+  {%- if store.heroLogo %}
+  <img class="gt-hero__logo" src="/image/gots/{{ store.heroLogo.file }}" alt="{{ store.fullName }}" width="{{ store.heroLogo.w }}" height="{{ store.heroLogo.h }}">
+  {%- if store.heroLogo.caption %}<p class="gt-hero__caption">{{ store.heroLogo.caption }}</p>{% endif %}
+  {%- else %}
   <img class="gt-hero__logo" src="/image/gots/logo-{{ store.gotsType }}.png" alt="{{ store.fullName }}" width="1100" height="{{ 877 if isRamen else 562 }}">
-  <div class="gt-eyebrow">Gojozaka · Kiyomizu-dera · Kyoto</div>
+  {%- endif %}
+  <div class="gt-eyebrow">{{ store.heroEyebrow }}</div>
   <h1>{{ store.h1 }}</h1>
   <p class="gt-lead">{{ store.lead }}</p>
   <ul class="gt-badges"><li class="gt-halal">Halal-certified beef</li><li>No pork</li><li>Muslim-friendly</li><li>Walk-ins welcome</li></ul>
@@ -246,7 +252,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="gt-sec gt-story" id="story"><div class="gt-wrap">
   <div class="gt-kicker">WAGYU GOTS</div>
   <div class="gt-eyebrow"><span class="gt-dot"></span>Our story</div>
-  <h2 class="gt-h2">From a 1962 butcher shop to the slopes of Kiyomizu-dera</h2>
+  <h2 class="gt-h2">{{ store.storyTitle }}</h2>
   <p class="gt-intro">It all began with a single butcher shop, founded in 1962.</p>
   <p class="gt-quote">"Someday, we will raise the world's best Wagyu with our own hands."</p>
   <ol class="gt-tl">
@@ -262,9 +268,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div><b>Aroma</b><span>as it cooks</span></div>
     <div><b>Melt</b><span>on the tongue</span></div>
   </div>
-  <p class="gt-close">A butcher's spirit since 1962. Wagyu raised in Miyazaki. The craft we inherited with the GOTS name. <em>Now a new challenge begins, here on Gojozaka.</em></p>
+  <p class="gt-close">A butcher's spirit since 1962. Wagyu raised in Miyazaki. The craft we inherited with the GOTS name. <em>Now a new challenge begins, {{ store.storyPlace }}.</em></p>
   {#- TODO: ミシュランの区分（星／ビブグルマン／掲載）と対象年が確定したら下の注記に入れる。区分に合わせて本文の "listed" も直す #}
-  <p class="gt-fn">* Refers to the original GOTS restaurant before it was taken over. This Gojozaka restaurant is a new location and is not itself listed in the MICHELIN Guide.</p>
+  <p class="gt-fn">* Refers to the original GOTS restaurant before it was taken over. This {{ store.placeName }} restaurant is a new location and is not itself listed in the MICHELIN Guide.</p>
 </div></section>
 
 <section class="gt-sec" id="halal"><div class="gt-wrap gt-narrow">
@@ -282,7 +288,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {%- endif %}
   <div>
     <div class="gt-eyebrow"><span class="gt-dot"></span>Hours &amp; Access</div>
-    <h2 class="gt-h2">{{ 'Upstairs on Gojozaka' if isRamen else 'Find us on Gojozaka' }}</h2>
+    <h2 class="gt-h2">{{ store.accessTitle }}</h2>
     <dl class="gt-info">
       <dt>Address</dt><dd>{{ store.addressHtml | safe }}<span class="gt-ja" lang="ja">{{ store.addressJa }}</span></dd>
       <dt>Hours</dt><dd>{{ store.hoursFull }} · {{ store.hoursNote }}</dd>

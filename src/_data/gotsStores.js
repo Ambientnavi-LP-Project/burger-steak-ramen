@@ -36,8 +36,8 @@ export default function () {
           address: {
             "@type": "PostalAddress",
             streetAddress: store.streetAddress,
-            addressLocality: "Kyoto",
-            postalCode: "605-0864",
+            addressLocality: store.addressLocality,
+            postalCode: store.postalCode,
             addressCountry: "JP"
           },
           openingHoursSpecification: [{

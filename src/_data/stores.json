@@ -654,7 +654,14 @@
       "seats": "",
       "featureAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands",
       "opens": "10:00",
-      "closes": "23:00"
+      "closes": "23:00",
+      "heroEyebrow": "Gojozaka · Kiyomizu-dera · Kyoto",
+      "storyTitle": "From a 1962 butcher shop to the slopes of Kiyomizu-dera",
+      "storyPlace": "here on Gojozaka",
+      "placeName": "Gojozaka",
+      "accessTitle": "Find us on Gojozaka",
+      "addressLocality": "Kyoto",
+      "postalCode": "605-0864"
     },
     {
       "permalink": "kyoto/gots-gojozaka-ramen",
@@ -755,7 +762,138 @@
       "seats": "",
       "featureAlt": "Wagyu ramen with a large sheet of seared marbled Wagyu, green onion and bamboo shoots, steaming",
       "opens": "10:00",
-      "closes": "23:00"
+      "closes": "23:00",
+      "heroEyebrow": "Gojozaka · Kiyomizu-dera · Kyoto",
+      "storyTitle": "From a 1962 butcher shop to the slopes of Kiyomizu-dera",
+      "storyPlace": "here on Gojozaka",
+      "placeName": "Gojozaka",
+      "accessTitle": "Upstairs on Gojozaka",
+      "addressLocality": "Kyoto",
+      "postalCode": "605-0864"
+    },
+    {
+      "permalink": "tokyo/gots-meiji-jingu-ramen",
+      "slug": "gots-meiji-jingu-ramen",
+      "region": "tokyo",
+      "category": "gots",
+      "gaStoreName": "gots-meiji-jingu-ramen",
+      "gotsType": "ramen",
+      "fullName": "Wagyu Halal Ramen 轟津 GOTS Harajuku",
+      "title": "轟津 GOTS Harajuku | Halal Wagyu Ramen near Meiji Jingu, Tokyo",
+      "description": "Miso, shoyu and spicy ramen topped with halal-certified Japanese Wagyu in Harajuku, 3 min from Meiji-jingumae Station. From a butcher family working since 1962. Open daily 11:00–23:00.",
+      "h1": "Halal Wagyu Ramen near Meiji Jingu, Harajuku",
+      "lead": "Miso, shoyu and spicy broths topped with sliced Japanese Wagyu, from WAGYU GOTS, a butcher family working with meat since 1962. Halal-certified beef.",
+      "phone": "090-5394-0136",
+      "phoneHref": "tel:+81-90-5394-0136",
+      "addressHtml": "Onden 1st. Bldg. 202, 6-6-11 Jingumae, Shibuya-ku<br>Tokyo 150-0001, Japan",
+      "addressPlain": "Onden 1st. Bldg. 202, 6-6-11 Jingumae, Shibuya-ku, Tokyo 150-0001, Japan",
+      "addressJa": "〒150-0001 東京都渋谷区神宮前6-6-11 穏田1st.ビル 202",
+      "streetAddress": "Onden 1st. Bldg. 202, 6-6-11 Jingumae, Shibuya-ku",
+      "payment": "",
+      "facts": [
+        [
+          "11:00–23:00",
+          "Open daily"
+        ],
+        [
+          "3 min",
+          "Meiji-jingumae Sta."
+        ],
+        [
+          "2F",
+          "Onden 1st. Bldg."
+        ]
+      ],
+      "menuTitle": "Three broths, one Wagyu",
+      "menuIntro": "Choose your broth. Every bowl is topped with sliced halal-certified Japanese Wagyu.",
+      "featureImage": "feature-ramen.jpg",
+      "menuItems": [
+        {
+          "kanji": "味噌",
+          "name": "Wagyu Miso Ramen",
+          "tag": "",
+          "desc": "A rich, deep miso broth layered with the umami of the Wagyu slices."
+        },
+        {
+          "kanji": "醤油",
+          "name": "Wagyu Shoyu Ramen",
+          "tag": "",
+          "desc": "A traditional shoyu broth that lets the Wagyu speak first."
+        },
+        {
+          "kanji": "辛",
+          "name": "Wagyu Spicy Ramen",
+          "tag": "",
+          "desc": "Signature spicy broth with house chili oil and chili threads."
+        },
+        {
+          "kanji": "丼",
+          "name": "Marbled Wagyu Donburi Set",
+          "tag": "Most popular",
+          "desc": "Any ramen with sliced marbled Wagyu over rice, finished at the table."
+        }
+      ],
+      "faq": [
+        [
+          "Do I need a reservation?",
+          "Walk-ins are welcome. Call ahead for groups or weekends, when Harajuku is busiest."
+        ],
+        [
+          "Is the ramen halal?",
+          "The Wagyu is halal-certified and no pork is used. Ask staff for details on each broth."
+        ],
+        [
+          "How do I get there?",
+          "We are on the 2nd floor of the Onden 1st. Building, about 3 minutes on foot from Meiji-jingumae Station."
+        ]
+      ],
+      "areaLabel": "Harajuku · Meiji Jingu",
+      "landmark": "Meiji Jingu",
+      "landmarkWalk": "",
+      "reserve_system": "",
+      "reserveUrl": "",
+      "hoursFull": "11:00 – 23:00",
+      "hoursNote": "Open daily",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "",
+      "mapPlaceUrl": "",
+      "stations": [
+        {
+          "name": "Meiji-jingumae Station",
+          "line": "Tokyo Metro Chiyoda / Fukutoshin Line",
+          "walk": "3 min walk"
+        },
+        {
+          "name": "Harajuku Station",
+          "line": "JR Yamanote Line",
+          "walk": "7 min walk"
+        },
+        {
+          "name": "Omotesando Station",
+          "line": "Tokyo Metro Ginza / Hanzomon / Chiyoda Line",
+          "walk": "10 min walk"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "seats": "",
+      "featureAlt": "Wagyu ramen with a large sheet of seared marbled Wagyu, green onion and bamboo shoots, steaming",
+      "opens": "11:00",
+      "closes": "23:00",
+      "heroEyebrow": "Harajuku · Meiji Jingu · Tokyo",
+      "storyTitle": "From a 1962 butcher shop to the streets of Harajuku",
+      "storyPlace": "here in Harajuku",
+      "placeName": "Harajuku",
+      "accessTitle": "Upstairs in Jingumae",
+      "addressLocality": "Tokyo",
+      "postalCode": "150-0001",
+      "heroLogo": {
+        "file": "logo-ramen-plain.png",
+        "w": 1100,
+        "h": 681,
+        "caption": "GOTS Harajuku"
+      }
     }
   ],
   "defaults": {

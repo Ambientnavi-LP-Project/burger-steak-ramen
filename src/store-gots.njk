@@ -325,7 +325,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </main>
 
 <footer class="gt-ft"><div class="gt-wrap">
-  <img src="/image/gots/{{ 'mark' if isRamen else 'logo' }}-{{ store.gotsType }}.png" alt="" loading="lazy">
+  <img src="/image/gots/{{ store.footerLogo if store.footerLogo else (('mark' if isRamen else 'logo') + '-' + store.gotsType + '.png') }}" alt="" loading="lazy">
   {{ store.fullName }}<br>
   {{ store.addressHtml | safe }}<br>
   <a href="{{ store.phoneHref }}" data-ga-event="tel_click" data-ga-location="footer">{{ store.phone }}</a>

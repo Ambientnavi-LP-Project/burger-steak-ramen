@@ -894,6 +894,115 @@
         "h": 681,
         "caption": "GOTS Harajuku"
       }
+    },
+    {
+      "permalink": "kanagawa/gots-hase-kosaten-burger",
+      "slug": "gots-hase-kosaten-burger",
+      "region": "kanagawa",
+      "category": "gots",
+      "gaStoreName": "gots-hase-kosaten-burger",
+      "gotsType": "burger",
+      "fullName": "Wagyu Hamburger Steak GOTS Halal Kobe beef Kamakura Restaurant",
+      "title": "GOTS Kamakura | Halal Wagyu Burger at Hase, near the Great Buddha",
+      "description": "Halal-certified Japanese Wagyu burgers and steak at Hase crossing in Kamakura, on the way to the Great Buddha and Hase-dera. From a butcher family working since 1962. Open daily 11:00–23:00.",
+      "h1": "Halal Wagyu Burgers at Hase, on the Way to the Great Buddha",
+      "lead": "Japanese Wagyu burgers from WAGYU GOTS, a butcher family working with meat since 1962. Halal-certified beef and no pork on the menu.",
+      "phone": "080-2128-9295",
+      "phoneHref": "tel:+81-80-2128-9295",
+      "addressHtml": "1F, 1-15-7 Hase, Kamakura<br>Kanagawa 248-0016, Japan",
+      "addressPlain": "1F, 1-15-7 Hase, Kamakura, Kanagawa 248-0016, Japan",
+      "addressJa": "〒248-0016 神奈川県鎌倉市長谷1-15-7 1F",
+      "streetAddress": "1F, 1-15-7 Hase",
+      "payment": "",
+      "facts": [
+        [
+          "11:00–23:00",
+          "Open daily"
+        ],
+        [
+          "Hase",
+          "Toward the Great Buddha"
+        ],
+        [
+          "Since 1962",
+          "Butcher family"
+        ]
+      ],
+      "menuTitle": "Wagyu, three ways",
+      "menuIntro": "Every patty and steak is Japanese Wagyu, cut and seasoned in-house.",
+      "featureImage": "feature-burger.jpg",
+      "menuItems": [
+        {
+          "ja": "和牛バーガー",
+          "name": "Wagyu Burger",
+          "tag": "Signature",
+          "desc": "Japanese Wagyu patty, signature house sauce, brioche bun."
+        },
+        {
+          "ja": "和牛ステーキ",
+          "name": "Wagyu Steak",
+          "tag": "",
+          "desc": "Premium cut, teppanyaki-style, finished with the chef's seasoning."
+        },
+        {
+          "ja": "バーガー＆ステーキ",
+          "name": "Burger & Steak Combo",
+          "tag": "",
+          "desc": "Wagyu patty and grilled Wagyu steak together. Value set available."
+        }
+      ],
+      "faq": [
+        [
+          "Do I need a reservation?",
+          "Walk-ins are welcome. Call ahead for groups or busy weekends in Kamakura."
+        ],
+        [
+          "Is the beef halal?",
+          "Yes. All beef is halal-certified Japanese Wagyu, and no pork is served."
+        ],
+        [
+          "Where are you in Kamakura?",
+          "We are at Hase crossing, on the main street that leads to the Great Buddha (Kotoku-in) and Hase-dera, a short walk from Hase Station on the Enoden line."
+        ]
+      ],
+      "areaLabel": "Hase · Kamakura",
+      "landmark": "Great Buddha of Kamakura",
+      "landmarkWalk": "",
+      "reserve_system": "",
+      "reserveUrl": "",
+      "hoursFull": "11:00 – 23:00",
+      "hoursNote": "Open daily",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "",
+      "mapPlaceUrl": "",
+      "stations": [
+        {
+          "name": "Hase Station",
+          "line": "Enoshima Electric Railway (Enoden)",
+          "walk": "5 min walk"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "seats": "",
+      "featureAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands",
+      "opens": "11:00",
+      "closes": "23:00",
+      "heroEyebrow": "Hase · Great Buddha · Kamakura",
+      "storyTitle": "From a 1962 butcher shop to the streets of Kamakura",
+      "storyPlace": "here in Kamakura",
+      "placeName": "Kamakura",
+      "accessTitle": "Find us at Hase crossing",
+      "addressLocality": "Kamakura",
+      "postalCode": "248-0016",
+      "heroLogo": {
+        "file": "logo-burger-plain.png",
+        "w": 1100,
+        "h": 400,
+        "caption": "GOTS Kamakura"
+      },
+      "footerLogo": "logo-burger-plain.png"
     }
   ],
   "defaults": {

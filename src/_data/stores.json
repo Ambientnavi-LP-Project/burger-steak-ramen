@@ -972,9 +972,9 @@
       "reserveUrl": "",
       "hoursFull": "11:00 – 23:00",
       "hoursNote": "Open daily",
-      "hideGoogleLinks": true,
-      "mapEmbedUrl": "",
-      "mapPlaceUrl": "",
+      "hideGoogleLinks": false,
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d813.9283249755929!2d139.5349085048771!3d35.31310466728505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845012b25186b%3A0xc84fabd52c13b816!2sWagyu%20Hamburger%20Steak%20GOTS%20Halal%20Kobe%20beef%20Kamakura%20Restaurant!5e0!3m2!1sja!2sjp!4v1792052645062!5m2!1sja!2sjp",
+      "mapPlaceUrl": "https://maps.app.goo.gl/ds4ag2vvmniAo4RB8",
       "stations": [
         {
           "name": "Hase Station",

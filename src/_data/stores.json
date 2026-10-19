@@ -1003,6 +1003,120 @@
         "caption": "GOTS Kamakura"
       },
       "footerLogo": "logo-burger-plain.png"
+    },
+    {
+      "permalink": "kanagawa/gots-hase-kosaten-ramen",
+      "slug": "gots-hase-kosaten-ramen",
+      "region": "kanagawa",
+      "category": "gots",
+      "gaStoreName": "gots-hase-kosaten-ramen",
+      "gotsType": "ramen",
+      "fullName": "Kamakura Wagyu Halal Ramen 轟津 Gots Kobe beef Restaurant",
+      "title": "轟津 GOTS Kamakura | Halal Wagyu Ramen at Hase, near the Great Buddha",
+      "description": "Miso, shoyu and spicy ramen topped with halal-certified Japanese Wagyu at Hase crossing in Kamakura, on the way to the Great Buddha and Hase-dera. From a butcher family working since 1962. Open daily 11:00–23:00.",
+      "h1": "Halal Wagyu Ramen at Hase, on the Way to the Great Buddha",
+      "lead": "Miso, shoyu and spicy broths topped with sliced Japanese Wagyu, from WAGYU GOTS, a butcher family working with meat since 1962. Halal-certified beef.",
+      "phone": "080-8378-3495",
+      "phoneHref": "tel:+81-80-8378-3495",
+      "addressHtml": "1F, 1-15-8 Hase, Kamakura<br>Kanagawa 248-0016, Japan",
+      "addressPlain": "1F, 1-15-8 Hase, Kamakura, Kanagawa 248-0016, Japan",
+      "addressJa": "〒248-0016 神奈川県鎌倉市長谷1-15-8 1F",
+      "streetAddress": "1F, 1-15-8 Hase",
+      "payment": "",
+      "facts": [
+        [
+          "11:00–23:00",
+          "Open daily"
+        ],
+        [
+          "Hase",
+          "Toward the Great Buddha"
+        ],
+        [
+          "Since 1962",
+          "Butcher family"
+        ]
+      ],
+      "menuTitle": "Three broths, one Wagyu",
+      "menuIntro": "Choose your broth. Every bowl is topped with sliced halal-certified Japanese Wagyu.",
+      "featureImage": "feature-ramen.jpg",
+      "menuItems": [
+        {
+          "kanji": "味噌",
+          "name": "Wagyu Miso Ramen",
+          "tag": "",
+          "desc": "A rich, deep miso broth layered with the umami of the Wagyu slices."
+        },
+        {
+          "kanji": "醤油",
+          "name": "Wagyu Shoyu Ramen",
+          "tag": "",
+          "desc": "A traditional shoyu broth that lets the Wagyu speak first."
+        },
+        {
+          "kanji": "辛",
+          "name": "Wagyu Spicy Ramen",
+          "tag": "",
+          "desc": "Signature spicy broth with house chili oil and chili threads."
+        },
+        {
+          "kanji": "丼",
+          "name": "Marbled Wagyu Donburi Set",
+          "tag": "Most popular",
+          "desc": "Any ramen with sliced marbled Wagyu over rice, finished at the table."
+        }
+      ],
+      "faq": [
+        [
+          "Do I need a reservation?",
+          "Walk-ins are welcome. Call ahead for groups or busy weekends in Kamakura."
+        ],
+        [
+          "Is the ramen halal?",
+          "The Wagyu is halal-certified and no pork is used. Ask staff for details on each broth."
+        ],
+        [
+          "Where are you in Kamakura?",
+          "We are at Hase crossing, on the main street that leads to the Great Buddha (Kotoku-in) and Hase-dera, a short walk from Hase Station on the Enoden line."
+        ]
+      ],
+      "areaLabel": "Hase · Kamakura",
+      "landmark": "Great Buddha of Kamakura",
+      "landmarkWalk": "",
+      "reserve_system": "",
+      "reserveUrl": "",
+      "hoursFull": "11:00 – 23:00",
+      "hoursNote": "Open daily",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "",
+      "mapPlaceUrl": "",
+      "stations": [
+        {
+          "name": "Hase Station",
+          "line": "Enoshima Electric Railway (Enoden)",
+          "walk": "5 min walk"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "seats": "",
+      "featureAlt": "Spicy Wagyu ramen with seared Wagyu slices, chili threads, green onion and bamboo shoots, noodles lifted with chopsticks",
+      "opens": "11:00",
+      "closes": "23:00",
+      "heroEyebrow": "Hase · Great Buddha · Kamakura",
+      "storyTitle": "From a 1962 butcher shop to the streets of Kamakura",
+      "storyPlace": "here in Kamakura",
+      "placeName": "Kamakura",
+      "accessTitle": "Find us at Hase crossing",
+      "addressLocality": "Kamakura",
+      "postalCode": "248-0016",
+      "heroLogo": {
+        "file": "logo-ramen-plain.png",
+        "w": 1100,
+        "h": 681,
+        "caption": "GOTS Kamakura"
+      }
     }
   ],
   "defaults": {

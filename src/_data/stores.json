@@ -663,7 +663,8 @@
       "addressLocality": "Kyoto",
       "postalCode": "605-0864",
       "heroImage": "hero-burger.jpg",
-      "heroImageAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands"
+      "heroImageAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands",
+      "heroImageWide": "hero-burger-wide.jpg"
     },
     {
       "permalink": "kyoto/gots-gojozaka-ramen",
@@ -1010,7 +1011,8 @@
       },
       "footerLogo": "logo-burger-plain.png",
       "heroImage": "hero-burger.jpg",
-      "heroImageAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands"
+      "heroImageAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands",
+      "heroImageWide": "hero-burger-wide.jpg"
     },
     {
       "permalink": "kanagawa/gots-hase-kosaten-ramen",

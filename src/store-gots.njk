@@ -109,7 +109,7 @@ img{display:block;max-width:100%;height:auto}
 /* hero（料理写真あり）：スマホは写真→本文の縦積み、写真の下端を背景色になじませてロゴを少し重ねる。PCは写真左・本文右 */
 .gt-hero--photo{padding:0;background:var(--bg)}
 .gt-hero__media{position:relative}
-.gt-hero__media img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.gt-hero__media img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
 .gt-hero__fade{position:absolute;left:0;right:0;bottom:-1px;height:28%;background:linear-gradient(180deg,transparent 0%,var(--bg) 100%)}
 .gt-hero__body{position:relative;margin-top:-22px;padding:0 16px 30px}
 .gt-hero--photo .gt-hero__logo{width:min({{ '300px,48%' if isRamen else '340px,58%' }});margin:0 auto 10px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.45))}
@@ -118,11 +118,14 @@ img{display:block;max-width:100%;height:auto}
 .gt-hero--photo .gt-ctas{margin:0 0 16px}
 .gt-hero--photo .gt-badges{margin:0 0 14px}
 .gt-hero--photo .gt-lead{margin:0 auto}
+/* PC（900px以上）：写真を右側いっぱいに敷き、左端を背景色にぼかして本文を左に置く（2026-10 案3）。heroImageWide があればPCだけその写真に差し替え */
 @media (min-width:900px){
-  .gt-hero--photo{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;align-items:center;max-width:1180px;margin:0 auto;padding:40px 24px 48px}
-  .gt-hero__media img{border-radius:6px}
-  .gt-hero__fade{display:none}
-  .gt-hero__body{margin-top:0;padding:0}
+  .gt-hero--photo{position:relative;display:flex;align-items:center;min-height:min(78vh,620px);overflow:hidden}
+  .gt-hero__media{position:absolute;top:0;bottom:0;right:0;left:32%}
+  .gt-hero__media picture{display:block;height:100%}
+  .gt-hero__media img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:50% 50%}
+  .gt-hero__fade{top:0;bottom:0;left:-1px;right:auto;width:45%;height:auto;background:linear-gradient(90deg,var(--bg) 0%,transparent 100%)}
+  .gt-hero__body{position:relative;width:min(46%,560px);margin:0 0 0 max(24px,calc((100% - 1180px)/2));padding:48px 0}
 }
 /* facts */
 .gt-facts{background:var(--deep);border-block:1px solid var(--line)}
@@ -224,7 +227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 {%- if store.heroImage %}
 {#- 料理写真つきヒーロー（2026-10 案B-1）：写真 → ロゴ → 見出し → 予約ボタン → ハラル表記 → 説明文。CTA の作り・data-ga-location="hero" は写真なし版と同じ #}
 <section class="gt-hero gt-hero--photo">
-  <div class="gt-hero__media"><img src="/image/gots/{{ store.heroImage }}" alt="{{ store.heroImageAlt or store.featureAlt or store.h1 }}" width="1200" height="800" fetchpriority="high"><span class="gt-hero__fade" aria-hidden="true"></span></div>
+  <div class="gt-hero__media"><picture>{% if store.heroImageWide %}<source media="(min-width:900px)" srcset="/image/gots/{{ store.heroImageWide }}">{% endif %}<img src="/image/gots/{{ store.heroImage }}" alt="{{ store.heroImageAlt or store.featureAlt or store.h1 }}" width="1200" height="800" fetchpriority="high"></picture><span class="gt-hero__fade" aria-hidden="true"></span></div>
   <div class="gt-hero__body">
     {%- if store.heroLogo %}
     <img class="gt-hero__logo" src="/image/gots/{{ store.heroLogo.file }}" alt="{{ store.fullName }}" width="{{ store.heroLogo.w }}" height="{{ store.heroLogo.h }}">

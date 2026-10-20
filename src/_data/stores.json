@@ -661,7 +661,9 @@
       "placeName": "Gojozaka",
       "accessTitle": "Find us on Gojozaka",
       "addressLocality": "Kyoto",
-      "postalCode": "605-0864"
+      "postalCode": "605-0864",
+      "heroImage": "hero-burger.jpg",
+      "heroImageAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands"
     },
     {
       "permalink": "kyoto/gots-gojozaka-ramen",
@@ -769,7 +771,9 @@
       "placeName": "Gojozaka",
       "accessTitle": "Upstairs on Gojozaka",
       "addressLocality": "Kyoto",
-      "postalCode": "605-0864"
+      "postalCode": "605-0864",
+      "heroImage": "hero-ramen.jpg",
+      "heroImageAlt": "Spicy Wagyu ramen with seared Wagyu slices and chili threads, noodles lifted with chopsticks"
     },
     {
       "permalink": "tokyo/gots-meiji-jingu-ramen",
@@ -893,7 +897,9 @@
         "w": 1100,
         "h": 681,
         "caption": "GOTS Harajuku"
-      }
+      },
+      "heroImage": "hero-ramen.jpg",
+      "heroImageAlt": "Spicy Wagyu ramen with seared Wagyu slices and chili threads, noodles lifted with chopsticks"
     },
     {
       "permalink": "kanagawa/gots-hase-kosaten-burger",
@@ -1002,7 +1008,9 @@
         "h": 400,
         "caption": "GOTS Kamakura"
       },
-      "footerLogo": "logo-burger-plain.png"
+      "footerLogo": "logo-burger-plain.png",
+      "heroImage": "hero-burger.jpg",
+      "heroImageAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands"
     },
     {
       "permalink": "kanagawa/gots-hase-kosaten-ramen",
@@ -1116,7 +1124,9 @@
         "w": 1100,
         "h": 681,
         "caption": "GOTS Kamakura"
-      }
+      },
+      "heroImage": "hero-ramen.jpg",
+      "heroImageAlt": "Spicy Wagyu ramen with seared Wagyu slices and chili threads, noodles lifted with chopsticks"
     }
   ],
   "defaults": {

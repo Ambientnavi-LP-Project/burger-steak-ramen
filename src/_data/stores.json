@@ -1129,6 +1129,245 @@
       },
       "heroImage": "hero-ramen.jpg",
       "heroImageAlt": "Spicy Wagyu ramen with seared Wagyu slices and chili threads, noodles lifted with chopsticks"
+    },
+    {
+      "permalink": "tokyo/gots-kabukicho-burger",
+      "slug": "gots-kabukicho-burger",
+      "region": "tokyo",
+      "category": "gots",
+      "gaStoreName": "gots-kabukicho-burger",
+      "gotsType": "burger",
+      "fullName": "Wagyu Kobe Beef Hamburger Steak Ramen GOTS Halal Vegan Shinjuku Restaurant",
+      "title": "GOTS Kabukicho | Halal Wagyu Burger in Shinjuku Kabukicho, Tokyo",
+      "description": "Halal-certified Japanese Wagyu burgers and steak in Kabukicho, Shinjuku, 4 min from Seibu-Shinjuku Station. From a butcher family working since 1962. Open daily 11:00–23:00.",
+      "h1": "Halal Wagyu Burgers in Kabukicho, Shinjuku",
+      "lead": "Japanese Wagyu burgers from WAGYU GOTS, a butcher family working with meat since 1962. Halal-certified beef and no pork on the menu.",
+      "phone": "080-7821-4810",
+      "phoneHref": "tel:+81-80-7821-4810",
+      "addressHtml": "B2F, Dai-58 Tokyo Bldg., 1-12-2 Kabukicho, Shinjuku-ku<br>Tokyo 160-0021, Japan",
+      "addressPlain": "B2F, Dai-58 Tokyo Bldg., 1-12-2 Kabukicho, Shinjuku-ku, Tokyo 160-0021, Japan",
+      "addressJa": "〒160-0021 東京都新宿区歌舞伎町1-12-2 B2F",
+      "streetAddress": "B2F, Dai-58 Tokyo Bldg., 1-12-2 Kabukicho, Shinjuku-ku",
+      "payment": "",
+      "facts": [
+        [
+          "11:00–23:00",
+          "Open daily"
+        ],
+        [
+          "4 min",
+          "Seibu-Shinjuku Sta."
+        ],
+        [
+          "Since 1962",
+          "Butcher family"
+        ]
+      ],
+      "menuTitle": "Wagyu, three ways",
+      "menuIntro": "Every patty and steak is Japanese Wagyu, cut and seasoned in-house.",
+      "featureImage": "feature-burger.jpg",
+      "menuItems": [
+        {
+          "ja": "和牛バーガー",
+          "name": "Wagyu Burger",
+          "tag": "Signature",
+          "desc": "Japanese Wagyu patty, signature house sauce, brioche bun."
+        },
+        {
+          "ja": "和牛ステーキ",
+          "name": "Wagyu Steak",
+          "tag": "",
+          "desc": "Premium cut, teppanyaki-style, finished with the chef's seasoning."
+        },
+        {
+          "ja": "バーガー＆ステーキ",
+          "name": "Burger & Steak Combo",
+          "tag": "",
+          "desc": "Wagyu patty and grilled Wagyu steak together. Value set available."
+        }
+      ],
+      "faq": [
+        [
+          "Do I need a reservation?",
+          "Walk-ins are welcome. Call ahead for groups or busy evenings in Shinjuku."
+        ],
+        [
+          "Is the beef halal?",
+          "Yes. All beef is halal-certified Japanese Wagyu, and no pork is served."
+        ],
+        [
+          "How do I find you?",
+          "We are on the second basement floor (B2F) of the Dai-58 Tokyo Building in Kabukicho 1-chome, about 4 minutes on foot from Seibu-Shinjuku Station."
+        ]
+      ],
+      "areaLabel": "Kabukicho · Shinjuku",
+      "landmark": "Kabukicho",
+      "landmarkWalk": "",
+      "reserve_system": "",
+      "reserveUrl": "",
+      "hoursFull": "11:00 – 23:00",
+      "hoursNote": "Open daily",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "",
+      "mapPlaceUrl": "",
+      "stations": [
+        {
+          "name": "Seibu-Shinjuku Station",
+          "line": "Seibu Shinjuku Line",
+          "walk": "4 min walk"
+        },
+        {
+          "name": "Shinjuku Station (East Exit)",
+          "line": "JR / Metro",
+          "walk": "8 min walk"
+        },
+        {
+          "name": "Shinjuku-sanchome Station",
+          "line": "Tokyo Metro / Toei",
+          "walk": "8 min walk"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "seats": "",
+      "featureAlt": "Triple Wagyu cheeseburger with lettuce, tomato and a bun branded 和牛, on a black slate plate",
+      "opens": "11:00",
+      "closes": "23:00",
+      "heroEyebrow": "Kabukicho · Shinjuku · Tokyo",
+      "storyTitle": "From a 1962 butcher shop to the heart of Kabukicho",
+      "storyPlace": "here in Kabukicho",
+      "placeName": "Kabukicho",
+      "accessTitle": "Downstairs in Kabukicho",
+      "addressLocality": "Tokyo",
+      "postalCode": "160-0021",
+      "heroLogo": {
+        "file": "logo-burger-plain.png",
+        "w": 1100,
+        "h": 400,
+        "caption": "GOTS Kabukicho"
+      },
+      "footerLogo": "logo-burger-plain.png",
+      "heroImage": "hero-burger.jpg",
+      "heroImageAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands",
+      "heroImageWide": "hero-burger-wide.jpg"
+    },
+    {
+      "permalink": "tokyo/gots-shinjuku-higashiguchi-burger",
+      "slug": "gots-shinjuku-higashiguchi-burger",
+      "region": "tokyo",
+      "category": "gots",
+      "gaStoreName": "gots-shinjuku-higashiguchi-burger",
+      "gotsType": "burger",
+      "fullName": "Wagyu Hamburger Steak GOTS Halal Kobe beef Shinjuku Restaurant",
+      "title": "GOTS Shinjuku East Exit | Halal Wagyu Burger near Shinjuku Station, Tokyo",
+      "description": "Halal-certified Japanese Wagyu burgers and steak near the East Exit of Shinjuku Station. From a butcher family working since 1962. Open daily 11:00–1:00, until 1 am.",
+      "h1": "Halal Wagyu Burgers by Shinjuku Station East Exit",
+      "lead": "Japanese Wagyu burgers from WAGYU GOTS, a butcher family working with meat since 1962. Halal-certified beef and no pork on the menu.",
+      "phone": "080-8955-3593",
+      "phoneHref": "tel:+81-80-8955-3593",
+      "addressHtml": "1F, Toshin Bldg., 3-21-7 Shinjuku, Shinjuku-ku<br>Tokyo 160-0022, Japan",
+      "addressPlain": "1F, Toshin Bldg., 3-21-7 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
+      "addressJa": "〒160-0022 東京都新宿区新宿3-21-7 1F",
+      "streetAddress": "1F, Toshin Bldg., 3-21-7 Shinjuku, Shinjuku-ku",
+      "payment": "",
+      "facts": [
+        [
+          "11:00–1:00",
+          "Open daily, until 1 am"
+        ],
+        [
+          "East Exit",
+          "Shinjuku Station"
+        ],
+        [
+          "Since 1962",
+          "Butcher family"
+        ]
+      ],
+      "menuTitle": "Wagyu, three ways",
+      "menuIntro": "Every patty and steak is Japanese Wagyu, cut and seasoned in-house.",
+      "featureImage": "feature-burger.jpg",
+      "menuItems": [
+        {
+          "ja": "和牛バーガー",
+          "name": "Wagyu Burger",
+          "tag": "Signature",
+          "desc": "Japanese Wagyu patty, signature house sauce, brioche bun."
+        },
+        {
+          "ja": "和牛ステーキ",
+          "name": "Wagyu Steak",
+          "tag": "",
+          "desc": "Premium cut, teppanyaki-style, finished with the chef's seasoning."
+        },
+        {
+          "ja": "バーガー＆ステーキ",
+          "name": "Burger & Steak Combo",
+          "tag": "",
+          "desc": "Wagyu patty and grilled Wagyu steak together. Value set available."
+        }
+      ],
+      "faq": [
+        [
+          "Do I need a reservation?",
+          "Walk-ins are welcome. We are open until 1 am, so drop in after a night out in Shinjuku. Call ahead for groups."
+        ],
+        [
+          "Is the beef halal?",
+          "Yes. All beef is halal-certified Japanese Wagyu, and no pork is served."
+        ],
+        [
+          "How do I get there?",
+          "We are on the ground floor of the Toshin Building at 3-21-7 Shinjuku, a short walk from the East Exit of Shinjuku Station."
+        ]
+      ],
+      "areaLabel": "Shinjuku East Exit",
+      "landmark": "Shinjuku Station",
+      "landmarkWalk": "",
+      "reserve_system": "",
+      "reserveUrl": "",
+      "hoursFull": "11:00 – 1:00 (next day)",
+      "hoursNote": "Open daily",
+      "hideGoogleLinks": true,
+      "mapEmbedUrl": "",
+      "mapPlaceUrl": "",
+      "stations": [
+        {
+          "name": "Shinjuku Station (East Exit)",
+          "line": "JR / Tokyo Metro",
+          "walk": "3 min walk"
+        },
+        {
+          "name": "Shinjuku-sanchome Station",
+          "line": "Tokyo Metro / Toei",
+          "walk": "3 min walk"
+        }
+      ],
+      "languages": [
+        "en"
+      ],
+      "seats": "",
+      "featureAlt": "Triple Wagyu cheeseburger with lettuce, tomato and a bun branded 和牛, on a black slate plate",
+      "opens": "11:00",
+      "closes": "01:00",
+      "heroEyebrow": "East Exit · Shinjuku · Tokyo",
+      "storyTitle": "From a 1962 butcher shop to the streets of Shinjuku",
+      "storyPlace": "here in Shinjuku",
+      "placeName": "Shinjuku East Exit",
+      "accessTitle": "Steps from the East Exit",
+      "addressLocality": "Tokyo",
+      "postalCode": "160-0022",
+      "heroLogo": {
+        "file": "logo-burger-plain.png",
+        "w": 1100,
+        "h": 400,
+        "caption": "GOTS Shinjuku East Exit"
+      },
+      "footerLogo": "logo-burger-plain.png",
+      "heroImage": "hero-burger.jpg",
+      "heroImageAlt": "Wagyu burger with cheese, tomato and lettuce on a bun branded 和牛, held in gloved hands",
+      "heroImageWide": "hero-burger-wide.jpg"
     }
   ],
   "defaults": {

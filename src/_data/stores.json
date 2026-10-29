@@ -911,7 +911,7 @@
       "gotsType": "burger",
       "fullName": "Wagyu Hamburger Steak GOTS Halal Kobe beef Kamakura Restaurant",
       "title": "GOTS Kamakura | Halal Wagyu Burger at Hase, near the Great Buddha",
-      "description": "Halal-certified Japanese Wagyu burgers and steak at Hase crossing in Kamakura, on the way to the Great Buddha and Hase-dera. From a butcher family working since 1962. Open daily 11:00–23:00.",
+      "description": "Halal-certified Japanese Wagyu burgers and steak at Hase crossing in Kamakura, on the way to the Great Buddha and Hase-dera. From a butcher family working since 1962. Open daily 8:00–21:00.",
       "h1": "Halal Wagyu Burgers at Hase, on the Way to the Great Buddha",
       "lead": "Japanese Wagyu burgers from WAGYU GOTS, a butcher family working with meat since 1962. Halal-certified beef and no pork on the menu.",
       "phone": "080-2128-9295",
@@ -923,7 +923,7 @@
       "payment": "",
       "facts": [
         [
-          "11:00–23:00",
+          "8:00–21:00",
           "Open daily"
         ],
         [
@@ -977,7 +977,7 @@
       "landmarkWalk": "",
       "reserve_system": "",
       "reserveUrl": "",
-      "hoursFull": "11:00 – 23:00",
+      "hoursFull": "8:00 – 21:00",
       "hoursNote": "Open daily",
       "hideGoogleLinks": false,
       "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d813.9283249755929!2d139.5349085048771!3d35.31310466728505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845012b25186b%3A0xc84fabd52c13b816!2sWagyu%20Hamburger%20Steak%20GOTS%20Halal%20Kobe%20beef%20Kamakura%20Restaurant!5e0!3m2!1sja!2sjp!4v1792052645062!5m2!1sja!2sjp",
@@ -994,8 +994,8 @@
       ],
       "seats": "",
       "featureAlt": "Triple Wagyu cheeseburger with lettuce, tomato and a bun branded 和牛, on a black slate plate",
-      "opens": "11:00",
-      "closes": "23:00",
+      "opens": "08:00",
+      "closes": "21:00",
       "heroEyebrow": "Hase · Great Buddha · Kamakura",
       "storyTitle": "From a 1962 butcher shop to the streets of Kamakura",
       "storyPlace": "here in Kamakura",
@@ -1023,7 +1023,7 @@
       "gotsType": "ramen",
       "fullName": "Kamakura Wagyu Halal Ramen 轟津 Gots Kobe beef Restaurant",
       "title": "轟津 GOTS Kamakura | Halal Wagyu Ramen at Hase, near the Great Buddha",
-      "description": "Miso, shoyu and spicy ramen topped with halal-certified Japanese Wagyu at Hase crossing in Kamakura, on the way to the Great Buddha and Hase-dera. From a butcher family working since 1962. Open daily 11:00–23:00.",
+      "description": "Miso, shoyu and spicy ramen topped with halal-certified Japanese Wagyu at Hase crossing in Kamakura, on the way to the Great Buddha and Hase-dera. From a butcher family working since 1962. Open daily 8:00–21:00.",
       "h1": "Halal Wagyu Ramen at Hase, on the Way to the Great Buddha",
       "lead": "Miso, shoyu and spicy broths topped with sliced Japanese Wagyu, from WAGYU GOTS, a butcher family working with meat since 1962. Halal-certified beef.",
       "phone": "080-8378-3495",
@@ -1035,7 +1035,7 @@
       "payment": "",
       "facts": [
         [
-          "11:00–23:00",
+          "8:00–21:00",
           "Open daily"
         ],
         [
@@ -1095,7 +1095,7 @@
       "landmarkWalk": "",
       "reserve_system": "",
       "reserveUrl": "",
-      "hoursFull": "11:00 – 23:00",
+      "hoursFull": "8:00 – 21:00",
       "hoursNote": "Open daily",
       "hideGoogleLinks": true,
       "mapEmbedUrl": "",
@@ -1112,8 +1112,8 @@
       ],
       "seats": "",
       "featureAlt": "Spicy Wagyu ramen with seared Wagyu slices, chili threads, green onion and bamboo shoots, noodles lifted with chopsticks",
-      "opens": "11:00",
-      "closes": "23:00",
+      "opens": "08:00",
+      "closes": "21:00",
       "heroEyebrow": "Hase · Great Buddha · Kamakura",
       "storyTitle": "From a 1962 butcher shop to the streets of Kamakura",
       "storyPlace": "here in Kamakura",

@@ -271,9 +271,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 {%- endif %}
 
 <div class="gt-facts" aria-label="Store information"><div class="gt-wrap">
-  {%- for f in store.facts %}
+  {%- for f in store.facts %}{%- if f[0] != "Since 1962" %}{# hidden:1962 — この条件を外すと「Since 1962」が再表示されます #}
   <div class="gt-fact"><b>{{ f[0] }}</b><span>{{ f[1] }}</span></div>
-  {%- endfor %}
+  {%- endif %}{%- endfor %}
 </div></div>
 
 <section class="gt-sec" id="menu"><div class="gt-wrap">
@@ -296,6 +296,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="gt-menu-cta"><a class="gt-cta gt-cta--ghost" href="{{ p.reserve.href }}" {{ reserveAttrs | safe }} data-ga-event="{{ p.reserve.event }}" data-ga-location="entry_menu">{{ p.reserve.label }}</a></div>
 </div></section>
 
+<template data-hidden="1962">
 <section class="gt-sec gt-story" id="story"><div class="gt-wrap">
   <div class="gt-kicker">WAGYU GOTS</div>
   <div class="gt-eyebrow"><span class="gt-dot"></span>Our story</div>
@@ -319,6 +320,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {#- TODO: ミシュランの区分（星／ビブグルマン／掲載）と対象年が確定したら下の注記に入れる。区分に合わせて本文の "listed" も直す #}
   <p class="gt-fn">* Refers to the original GOTS restaurant before it was taken over. This {{ store.placeName }} restaurant is a new location and is not itself listed in the MICHELIN Guide.</p>
 </div></section>
+</template>
 
 <section class="gt-sec" id="halal"><div class="gt-wrap gt-narrow">
   <div class="gt-eyebrow"><span class="gt-dot"></span>Halal &amp; dietary</div>

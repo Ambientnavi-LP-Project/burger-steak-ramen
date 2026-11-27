@@ -47,7 +47,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Stylesheet -->
 <style>
 /* ============================================================
- * Wagyu Beef (Halal) Steak Hamburger & Ramen ... 5W-Tokyo 1962 - Stylesheet
+ * Wagyu Beef (Halal) Steak Hamburger & Ramen ... 5W-Tokyo - Stylesheet
  * ============================================================ */
 
 :root {
@@ -1884,7 +1884,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
   <div class="container hero-content">
-    <div class="eyebrow hero-eyebrow">MUSLIM-FRIENDLY · JAPANESE WAGYU · SINCE 1962</div>
+    <div class="eyebrow hero-eyebrow">MUSLIM-FRIENDLY · JAPANESE WAGYU<template data-hidden="1962"> · SINCE 1962</template></div>
 
     <!-- Hours + Muslim-Friendly info badges -->
     <div class="hero-info">
@@ -1943,7 +1943,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span>Three tastes of </span><span class="accent">real Wagyu.</span>
       </h2>
       <p>
-        <span>From our signature steak to wagyu ramen and a combo of everything — all raised and prepared by us, all pork-free and alcohol-free.</span>
+        <span>From our signature steak to wagyu ramen and a combo of everything — all raised and prepared by us, all pork-free<template data-hidden="alcohol"> and alcohol-free</template>.</span>
       </p>
     </div>
 
@@ -2011,7 +2011,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="full-menu-header reveal">
       <div class="eyebrow" style="justify-content: center;">FULL MENU</div>
       <h2>
-        <span>Everything we serve — pork-free, alcohol-free.</span>
+        <span>Everything we serve — pork-free<template data-hidden="alcohol">, alcohol-free</template>.</span>
       </h2>
       <p>
         <span>Tap a category to explore.</span>
@@ -2172,7 +2172,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="fm-foot reveal">
       <p>
-        ※ All items above are <strong style="color: var(--light-ink);">Japanese Wagyu, pork-free and alcohol-free</strong>.<br>
+        ※ All items above are <strong style="color: var(--light-ink);">Japanese Wagyu, pork-free<template data-hidden="alcohol"> and alcohol-free</template></strong>.<br>
         ※ See in-store menu for full pricing.
       </p>
       <a href="{{ reserveHref }}" {{ reserveAttrs | safe }} class="fm-cta" data-ga-event="{{ reserveEvent }}">Reserve a Table →</a>
@@ -2189,7 +2189,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span>From our pasture, to your plate.</span>
       </h2>
       <p>
-        <span>Since 1962, we've raised our own cattle in Miyazaki and prepared every cut ourselves — here, in Tokyo. Fully vertically integrated, with no middlemen. Most "wagyu" outside Japan isn't really ours. This is.</span>
+        <span><template data-hidden="1962">Since 1962, we</template><span data-hidden-alt="1962">We</span>'ve raised our own cattle in Miyazaki and prepared every cut ourselves — here, in Tokyo. Fully vertically integrated, with no middlemen. Most "wagyu" outside Japan isn't really ours. This is.</span>
       </p>
     </div>
 
@@ -2324,11 +2324,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="accent">in every dish.</span>
       </h2>
       <p>
-        <span>Muslim-friendly dining isn't an add-on for us — it's how we cook, every day. No pork, no alcohol, anywhere in our kitchen. Welcome, whoever you are.</span>
+        <span>Muslim-friendly dining isn't an add-on for us — it's how we cook, every day. No pork<template data-hidden="alcohol">, no alcohol</template>, anywhere in our kitchen. Welcome, whoever you are.</span>
       </p>
     </div>
 
     <div class="halal-grid">
+      <template data-hidden="alcohol">
       <div class="halal-item reveal">
         <div class="halal-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3h8v6c0 2.21-1.79 4-4 4s-4-1.79-4-4V3z"/><line x1="12" y1="13" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="5" y1="5" x2="19" y2="19"/></svg>
@@ -2336,12 +2337,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3>Alcohol-free</h3>
         <p>No alcohol, in any sauce or any glass.</p>
       </div>
+      </template>
       <div class="halal-item reveal">
         <div class="halal-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
         </div>
         <h3>Muslim-Friendly</h3>
-        <p>Every dish on our menu is pork-free and alcohol-free.</p>
+        <p>Every dish on our menu is pork-free<template data-hidden="alcohol"> and alcohol-free</template>.</p>
       </div>
       <div class="halal-item reveal">
         <div class="halal-icon">
@@ -2355,8 +2357,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <details class="halal-details">
       <summary>Learn more about our Muslim-friendly practice</summary>
       <div class="halal-details-content">
-        Since 1962, we've handled wagyu ourselves — from the pasture to the plate. Welcoming Muslim guests is no exception: we built our practice from the source, every step our own.<br><br>
-        Our kitchen was designed pork-free and alcohol-free from day one. <strong style="color:var(--ink);">Every item on our menu is prepared the same way</strong>. Alcohol is not used, even in sauces.<br><br>
+        <template data-hidden="1962">Since 1962, we</template><span data-hidden-alt="1962">We</span>'ve handled wagyu ourselves — from the pasture to the plate. Welcoming Muslim guests is no exception: we built our practice from the source, every step our own.<br><br>
+        Our kitchen was designed pork-free<template data-hidden="alcohol"> and alcohol-free</template> from day one. <strong style="color:var(--ink);">Every item on our menu is prepared the same way</strong>. <template data-hidden="alcohol">Alcohol is not used, even in sauces.</template><br><br>
         Our staff are trained to answer any question about ingredients or preparation. Whether you're dining with family, observing religious practice, or simply seeking clean and trusted food — we're here for you.<br><br>
         <em style="color: var(--gold-pale);">Please note: We are not officially halal-certified. We invite you to ask any questions about our ingredients and kitchen practices.</em>
       </div>
@@ -2372,15 +2374,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="why-header reveal">
       <div class="eyebrow">WHY HERE</div>
       <h2>
-        <span>A story, in four numbers.</span>
+        <span>A story, in <template data-hidden="1962">four</template><span data-hidden-alt="1962">three</span> numbers.</span>
       </h2>
     </div>
     <div class="why-grid">
+      <template data-hidden="1962">
       <div class="why-item reveal">
         <div class="why-num">1962</div>
         <div class="why-label">SINCE</div>
         <div class="why-desc">Vertically integrated Wagyu — every step our own.</div>
       </div>
+      </template>
       <div class="why-item reveal">
         <div class="why-num en-word">Authentic</div>
         <div class="why-label">JAPANESE WAGYU</div>
@@ -2389,7 +2393,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="why-item reveal">
         <div class="why-num en-word">MUSLIM</div>
         <div class="why-label">FRIENDLY</div>
-        <div class="why-desc">No pork, no alcohol, in any dish.</div>
+        <div class="why-desc">No pork<template data-hidden="alcohol">, no alcohol</template>, in any dish.</div>
       </div>
       <div class="why-item reveal">
         <div class="why-num">4.8<span class="small">★</span></div>
@@ -2476,8 +2480,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="faq-list">
         <div class="faq-item reveal">
-          <div class="faq-q">Is everything pork-free and alcohol-free?</div>
-          <div class="faq-a">Yes — every dish, every ingredient, every step. As a <strong style="color:var(--ink);font-weight:600;">fully vertically integrated wagyu operation</strong>, we control the practice from the source: cattle in Miyazaki, processing, and our pork-free, alcohol-free kitchen in Tokyo. <strong style="color:var(--ink);font-weight:600;">Every item on our menu is Muslim-friendly.</strong> Alcohol is never used, even in sauces. <em style="color:var(--ink-soft);">Please note: we are not officially halal-certified.</em></div>
+          <div class="faq-q">Is everything pork-free<template data-hidden="alcohol"> and alcohol-free</template>?</div>
+          <div class="faq-a">Yes — every dish, every ingredient, every step. As a <strong style="color:var(--ink);font-weight:600;">fully vertically integrated wagyu operation</strong>, we control the practice from the source: cattle in Miyazaki, processing, and our pork-free<template data-hidden="alcohol">, alcohol-free</template> kitchen in Tokyo. <strong style="color:var(--ink);font-weight:600;">Every item on our menu is Muslim-friendly.</strong> <template data-hidden="alcohol">Alcohol is never used, even in sauces. </template><em style="color:var(--ink-soft);">Please note: we are not officially halal-certified.</em></div>
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Do you have English-speaking staff?</div>
@@ -2603,7 +2607,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Scripts -->
 <script>
 /* ============================================================
- * Wagyu Beef (Halal) Steak Hamburger & Ramen ... 5W-Tokyo 1962 - JavaScript
+ * Wagyu Beef (Halal) Steak Hamburger & Ramen ... 5W-Tokyo - JavaScript
  * ============================================================ */
 
 // ============================================================
